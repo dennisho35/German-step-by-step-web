@@ -302,21 +302,13 @@ function speak(text,rate){
 }
 function stopSpeak(){ try{ if('speechSynthesis' in window) window.speechSynthesis.cancel(); }catch(e){} }
 
-/* ================= 5. PURE NUMBER FUNCTIONS (reused) ================= */
+/* /* ================= 5. PURE NUMBER FUNCTIONS (reused) ================= */
 const NUM_W={0:'null',1:'eins',2:'zwei',3:'drei',4:'vier',5:'fünf',6:'sechs',7:'sieben',8:'acht',9:'neun',
   10:'zehn',11:'elf',12:'zwölf',13:'dreizehn',14:'vierzehn',15:'fünfzehn',16:'sechzehn',17:'siebzehn',18:'achtzehn',19:'neunzehn',
   20:'zwanzig',30:'dreißig',40:'vierzig',50:'fünfzig',60:'sechzig',70:'siebzig',80:'achtzig',90:'neunzig'};
-function numberToGerman(n){
-  n=Math.round(Math.abs(n));
-  if(n===0)return'null';
-  if(n<=19)return NUM_W[n];
-  if(n<100){const ones=n%10,tens=Math.floor(n/10)*10;if(ones===0)return NUM_W[tens];const ow=(ones===1)?'ein':NUM_W[ones];return ow+'und'+NUM_W[tens];}
-  if(n<1000){const h=Math.floor(n/100),rest=n%100;const hw=(h===1)?'einhundert':NUM_W[h]+'hundert';return hw+(rest>0?numberToGerman(rest):'');}
-  if(n<1000000){const th=Math.floor(n/1000),r2=n%1000;const tw=(th===1)?'eintausend':numberToGerman(th)+'tausend';return tw+(r2>0?numberToGerman(r2):'');}
-  if(n<1e9){const m1=Math.floor(n/1e6),r3=n%1e6;const mw=(m1===1)?'eine Million':numberToGerman(m1)+' Millionen';return mw+(r3>0?' '+numberToGerman(r3):'');}
-  if(n<1e12){const m2=Math.floor(n/1e9),r4=n%1e9;const m2w=(m2===1)?'eine Milliarde':numberToGerman(m2)+' Milliarden';return m2w+(r4>0?' '+numberToGerman(r4):'');}
-  const b1=Math.floor(n/1e12),r5=n%1e12;const bw=(b1===1)?'eine Billion':numberToGerman(b1)+' Billionen';return bw+(r5>0?' '+numberToGerman(r5):'');
-}
+function intGerman(n){n=Math.round(Math.abs(n));if(n===0)return'null';if(n<=19)return NUM_W[n];if(n<100){const ones=n%10,tens=Math.floor(n/10)*10;if(ones===0)return NUM_W[tens];const ow=(ones===1)?'ein':NUM_W[ones];return ow+'und'+NUM_W[tens];}if(n<1000){const h=Math.floor(n/100),rest=n%100;const hw=(h===1)?'einhundert':NUM_W[h]+'hundert';return hw+(rest>0?intGerman(rest):'');}if(n<1000000){const th=Math.floor(n/1000),r2=n%1000;const tw=(th===1)?'eintausend':intGerman(th)+'tausend';return tw+(r2>0?intGerman(r2):'');}if(n<1e9){const m1=Math.floor(n/1e6),r3=n%1e6;const mw=(m1===1)?'eine Million':intGerman(m1)+' Millionen';return mw+(r3>0?' '+intGerman(r3):'');}if(n<1e12){const m2=Math.floor(n/1e9),r4=n%1e9;const m2w=(m2===1)?'eine Milliarde':intGerman(m2)+' Milliarden';return m2w+(r4>0?' '+intGerman(r4):'');}const b1=Math.floor(n/1e12),r5=n%1e12;const bw=(b1===1)?'eine Billion':intGerman(b1)+' Billionen';return bw+(r5>0?' '+intGerman(r5):'');}
+const NUM_MAX=999999999999999;
+function numberToGerman(n){n=Number(n);if(!isFinite(n))return'—';const neg=n<0,abs=Math.abs(n);if(!Number.isInteger(abs)){const ip=Math.floor(abs);let ds=(abs-ip).toFixed(10).replace(/0+$/,'').replace(/^0\./,'');const w=['null','eins','zwei','drei','vier','fünf','sechs','sieben','acht','neun'];return(neg?'minus ':'')+intGerman(ip)+' Komma '+ds.split('').map(d=>w[+d]).join(' ');}return(neg?'minus ':'')+intGerman(abs);}
 function digitToGerman(str){const map={'0':'null','1':'eins','2':'zwei','3':'drei','4':'vier','5':'fünf','6':'sechs','7':'sieben','8':'acht','9':'neun'};return String(str).replace(/\D/g,'').split('').map(d=>map[d]||d).join(', ');}
 function yearToGerman(n){n=Math.round(Math.abs(n));if(n>=2000){const th=Math.floor(n/1000),r=n%1000;const tw=(th===1)?'eintausend':numberToGerman(th)+'tausend';return tw+(r>0?numberToGerman(r):'');}if(n<100)return numberToGerman(n);if(n<1000)return numberToGerman(n);const h=Math.floor(n/100),rest=n%100;return numberToGerman(h)+'hundert'+(rest>0?numberToGerman(rest):'');}
 function moneyToGerman(x){x=Math.abs(x);const euros=Math.floor(x);const cents=Math.round((x-euros)*100);if(cents===0)return numberToGerman(euros)+' Euro';return numberToGerman(euros)+' Euro '+numberToGerman(cents);}
@@ -324,6 +316,8 @@ function ordinalToGerman(n){n=Math.round(Math.abs(n));const irr={1:'erste',2:'zw
 function parseGermanInput(str){str=String(str).trim();if(!str)return null;if(str.indexOf(':')>=0)return{kind:'time',raw:str};const hasC=str.indexOf(',')>=0,hasD=str.indexOf('.')>=0;let norm;if(hasC&&hasD){norm=str.replace(/\./g,'').replace(',','.');}else if(hasC){norm=str.replace(',','.');}else if(hasD){const di=str.indexOf('.');const after=str.slice(di+1);if(/^\d{3}$/.test(after)&&str.replace(/\D/g,'').length===di+3){norm=str.replace(/\./g,'');}else norm=str;}else{norm=str;}const num=parseFloat(norm);if(isNaN(num))return null;return{kind:'number',value:num};}
 function convertByCtx(inputStr,ctxId){
   const parsed=parseGermanInput(inputStr); if(!parsed) return null;
+  const TOO_BIG={'zh-HK':'⚠️ 數字過大，超出顯示範圍','en-GB':'⚠️ Number too large','ja-JP':'⚠️ 数が大きすぎます','ko-KR':'⚠️ 숫자가 너무 큽니다','th-TH':'⚠️ ตัวเลขใหญ่เกินไป','vi-VN':'⚠️ Số quá lớn'};
+  if(parsed.kind==='number'&&Math.abs(parsed.value)>NUM_MAX) return{text:(TOO_BIG[state.locale]||TOO_BIG['en-GB'])};
   if(ctxId==='phone') return {text:digitToGerman(parsed.kind==='number'?parsed.value:inputStr)};
   if(ctxId==='time'){ if(parsed.kind!=='time'){ if(parsed.kind==='number')return{text:numberToGerman(parsed.value)+' Uhr'}; return null;} const p=parsed.raw.split(':');return{text:numberToGerman(parseInt(p[0],10))+' Uhr'+(parseInt(p[1]||'0',10)>0?' '+numberToGerman(parseInt(p[1],10)):'')}; }
   if(parsed.kind!=='number') return null;
@@ -5495,34 +5489,6 @@ const DE_MOD_C_ESSENTIALS = {
 /* =====================================================================
  * 【ISS-06】強化版數字轉換器（支援負數 minus、小數 Komma 與超大數安全邊界）
  * ===================================================================== */
-function convertByCtxEnhanced(inputStr, ctxId) {
-  const raw = String(inputStr == null ? '' : inputStr).trim();
-  if (!raw) return null;
-  if (ctxId === 'phone') return { text: digitToGerman(raw) };
-  if (ctxId === 'time' && raw.indexOf(':') >= 0) return convertByCtx(raw, 'time');
-
-  const isNeg = raw.startsWith('-');
-  const clean = isNeg ? raw.slice(1).trim() : raw;
-  const parsed = parseGermanInput(clean);
-  if (!parsed || parsed.kind !== 'number') return convertByCtx(raw, ctxId);
-
-  if (Math.abs(parsed.value) >= 1e15) {
-    return { text: "⚠️ Zahl zu groß (Max: 999 Billionen / < 10¹⁵)" };
-  }
-  const prefix = isNeg ? 'minus ' : '';
-
-  if (ctxId === 'count') {
-    const commaMatch = clean.match(/^(\d+)[,\.](\d+)$/);
-    if (commaMatch && !(clean.indexOf('.') >= 0 && commaMatch[2].length === 3 && clean.indexOf(',') < 0)) {
-      const intPart = numberToGerman(parseInt(commaMatch[1], 10));
-      const decDigits = commaMatch[2].split('').map(d => NUM_W[parseInt(d, 10)] || d).join(' ');
-      return { text: prefix + intPart + ' Komma ' + decDigits };
-    }
-    return { text: prefix + numberToGerman(parsed.value) };
-  }
-  const base = convertByCtx(clean, ctxId);
-  return base ? { text: prefix + base.text } : null;
-}
 
 /* 匯總 13 課旅遊與生活會話（第 10 課為 T_L10，避開 L10 函式命名衝突） */
 const DE_LESSONS = [L1, L2, L3, L4, L5, L6, L7, L8, L9, T_L10, L11, L12, L13];
@@ -5919,14 +5885,14 @@ function renderNumbersView(root) {
       <div id="numSubBody"></div>
     </div>
   `;
-  document.getElementById('numConvBtn').onclick = () => {
+document.getElementById('numConvBtn').onclick = () => {
     const val = document.getElementById('numConvInput').value;
     const ctx = document.getElementById('numConvCtx').value;
-    const res = convertByCtxEnhanced(val, ctx);
+    const res = convertByCtx(val, ctx); // 已經改回呼叫豆包升級後的原生函式
     const box = document.getElementById('numConvOut');
     if (res && res.text) {
       box.textContent = res.text;
-      if (res.text.indexOf('⚠️') < 0) speak(res.text);
+      if (res.text.indexOf('⚠️') < 0) speak(res.text); // 防呆不發音警告字串
     } else {
       box.textContent = '?';
     }
