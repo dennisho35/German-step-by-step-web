@@ -7006,7 +7006,285 @@ const NEW_UI6 = {
 };
 
 /* Node/browser interop (no DOM). */
+/* ============================================================================
+ * MODULE C: 日期、時間、數量及單位 (Dates, Time, Quantities & Units) 擴充教材庫
+ * 完整填寫 en-GB 與 zh-HK 範本，其餘 14 語系預留 // TODO 供開發者後續補上
+ * ========================================================================== */
+function i18nC(enText, zhText) {
+  return {
+    'en-GB': enText,
+    'zh-HK': zhText,
+    en: enText,
+    zh: zhText
+    // TODO: 這裡由開發者後續補上其餘 14 種語言:
+    // 'fr-FR': '', 'ja-JP': '', 'es-ES': '', 'ru-RU': '', 'uk-UA': '',
+    // 'it-IT': '', 'ko-KR': '', 'th-TH': '', 'vi-VN': '', 'my-MM': '',
+    // 'id-ID': '', 'fil-PH': '', 'km-KH': '', 'de-DE': ''
+  };
+}
 
+const DE_MODULE_C_EXT = {
+  header: {
+    title: i18nC(
+      'Module C: Dates, Time, Quantities, Units & Containers',
+      '模組 C：日期、時間、數量、單位及容器搭配專區'
+    ),
+    sub: i18nC(
+      'Master how German numbers combine with noun gender, singular/plural forms, cases (ein/eine/einen), containers, addresses, and DACH regional formats.',
+      '掌握德語數字與名詞陰陽中性、單複數、格位（ein/eine/einen）、容器單位、地址房號及德奧瑞地區差異的正確搭配。'
+    )
+  },
+
+  /* 1. 經過德語文法校對的 8 句指定核心例句（附音訊、IPA、詞性與文法條件解析） */
+  verifiedSentences: {
+    title: i18nC(
+      '1. Verified Core Sentences: Numbers, Nouns & Containers',
+      '1. 德語教材核心例句（經文法校對・點擊即發音）'
+    ),
+    items: [
+      {
+        de: 'ein Buch',
+        ipa: 'aɪn buːx',
+        grammarTag: 'Neutrum (das Buch) · Singular · Nominativ / Akkusativ',
+        tr: i18nC('one book / a book', '一本書。'),
+        note: i18nC(
+          'Neuter noun (das Buch): uses "ein" (no ending) in both Nominative and Accusative singular.',
+          '中性名詞（das Buch）：單數主格（Nominativ）與受格（Akkusativ）均使用無字尾的「ein」。'
+        )
+      },
+      {
+        de: 'zwei Bücher',
+        ipa: 'tsvaɪ ˈbyːçɐ',
+        grammarTag: 'Neutrum Plural (die Bücher) · Umlaut u → ü + -er',
+        tr: i18nC('two books', '兩本書。'),
+        note: i18nC(
+          'Plural of das Buch is die Bücher (vowel umlaut u → ü plus -er ending). Cardinal numbers 2+ do not inflect.',
+          'das Buch 的複數為 die Bücher（母音變音 u → ü 並加字尾 -er）。2 以上的基數詞本身不作詞尾變化。'
+        )
+      },
+      {
+        de: 'eine Person',
+        ipa: 'ˈaɪnə pɛʁˈzoːn',
+        grammarTag: 'Femininum (die Person) · Singular · Nominativ / Akkusativ',
+        tr: i18nC('one person', '一個人。'),
+        note: i18nC(
+          'Feminine noun (die Person): requires "eine" (-e ending) for "one / a" in Nominative and Accusative.',
+          '陰性名詞（die Person）：表示「一個」時，主格與受格均須加上 -e 字尾變成「eine」。'
+        )
+      },
+      {
+        de: 'drei Personen',
+        ipa: 'dʁaɪ pɛʁˈzoːnən',
+        grammarTag: 'Femininum Plural (die Personen) · + -en',
+        tr: i18nC('three people / three persons', '三個人。'),
+        note: i18nC(
+          'Feminine nouns ending in suffix -on form their plural with -en (die Personen). Used in restaurants & hotels.',
+          '以 -on 結尾的陰性名詞加 -en 構成複數（die Personen），廣泛用於餐廳候位與酒店訂房。'
+        )
+      },
+      {
+        de: 'ein Glas Wasser',
+        ipa: 'aɪn ɡlaːs ˈvasɐ',
+        grammarTag: 'Neutrum Maßwort (das Glas) + Stoffnomen (Wasser)',
+        tr: i18nC('a glass of water', '一杯水。'),
+        note: i18nC(
+          'Container noun "das Glas" is neuter ("ein Glas"). The substance "Wasser" follows in direct apposition without "von".',
+          '容器「das Glas（玻璃杯）」為中性，故用「ein Glas」；後接物質名詞「Wasser」直接並置，不加介詞 von。'
+        )
+      },
+      {
+        de: 'zwei Flaschen Wasser',
+        ipa: 'tsvaɪ ˈflaʃn̩ ˈvasɐ',
+        grammarTag: 'Femininum Maßwort im Plural (die Flaschen) + Stoffnomen im Singular',
+        tr: i18nC('two bottles of water', '兩瓶水。'),
+        note: i18nC(
+          'Feminine container nouns ending in -e take plural form (zwei Flaschen), while uncountable "Wasser" stays singular.',
+          '以 -e 結尾的陰性容器名詞在數量 2 以上時必須變複數（zwei Flaschen），但不可數的內容物「Wasser」保持單數。'
+        )
+      },
+      {
+        de: 'eine Tasse Kaffee',
+        ipa: 'ˈaɪnə ˈtasə ˈkafeː',
+        grammarTag: 'Femininum Maßwort (die Tasse) + Stoffnomen (Kaffee)',
+        tr: i18nC('a cup of coffee', '一杯咖啡。'),
+        note: i18nC(
+          '"die Tasse" (cup with handle) is feminine, so it uses "eine Tasse". Plural: zwei Tassen Kaffee.',
+          '「die Tasse（有耳杯）」是陰性名詞，故搭配「eine Tasse」。若是兩杯則說「zwei Tassen Kaffee」。'
+        )
+      },
+      {
+        de: 'drei Paar Schuhe',
+        ipa: 'dʁaɪ paːɐ̯ ˈʃuːə',
+        grammarTag: 'Neutrum Maßwort unverändert (Paar) + Pluralnomen (Schuhe)',
+        tr: i18nC('three pairs of shoes', '三雙鞋。'),
+        note: i18nC(
+          'Capitalized "Paar" (pair) is a neuter measure unit and stays singular after numbers (drei Paar), while "Schuhe" is plural.',
+          '大寫「Paar（雙／對）」作為中性計量單位時，接在數字後維持單數不變形（drei Paar），而後方的鞋子用複數「Schuhe」。'
+        )
+      }
+    ]
+  },
+
+  /* 2. ein / eine / einen 等形式及其文法條件 + 單複數搭配規則 */
+  einGrammar: {
+    title: i18nC(
+      '2. Grammar Conditions for "eins" vs. "ein / eine / einen" & Noun Plurals',
+      '2. 數字「1」與不定冠詞（eins vs. ein / eine / einen）及單複數文法條件'
+    ),
+    explanation: i18nC(
+      'In German, "eins" is only used when counting abstractly on its own (1, 2, 3 = eins, zwei, drei). As soon as "1" stands before a noun, it functions as the indefinite article/numeral "ein-" and MUST inflect according to the noun\'s gender (masculine, feminine, neuter) and grammatical case (Nominative, Accusative, Dative).',
+      '在德語中，「eins」只在單獨數數或報數時使用（1, 2, 3 = eins, zwei, drei）。一旦「1」放在名詞前面搭配使用，就必須轉為「ein-」並根據該名詞的「陰陽中性」與句子中的「格位（主格／受格／與格）」進行詞尾變化！'
+    ),
+    tableHeaders: i18nC(
+      ['Gender', 'Definite Article', 'Nominative (Subject)', 'Accusative (Direct Object)', 'Dative (After mit/in/zu)', 'Plural (2, 3...)'],
+      ['名詞性別', '定冠詞', '主格 Nominativ (作主詞)', '受格 Akkusativ (作直接受詞/點餐)', '與格 Dativ (接在 mit/in 等後)', '複數 (搭配 2, 3 以上數字)']
+    ),
+    rows: [
+      {
+        gender: i18nC('Masculine (陽性)', '陽性 Maskulinum'),
+        defArt: 'der Tisch / der Kaffee',
+        nom: 'ein Tisch / ein Kaffee',
+        akk: 'einen Tisch / einen Kaffee',
+        dat: 'einem Tisch / einem Kaffee',
+        pl: 'zwei Tische'
+      },
+      {
+        gender: i18nC('Feminine (陰性)', '陰性 Femininum'),
+        defArt: 'die Person / die Tasse',
+        nom: 'eine Person / eine Tasse',
+        akk: 'eine Person / eine Tasse',
+        dat: 'einer Person / einer Tasse',
+        pl: 'drei Personen / zwei Tassen'
+      },
+      {
+        gender: i18nC('Neuter (中性)', '中性 Neutrum'),
+        defArt: 'das Buch / das Glas',
+        nom: 'ein Buch / ein Glas',
+        akk: 'ein Buch / ein Glas',
+        dat: 'einem Buch / einem Glas',
+        pl: 'zwei Bücher / zwei Glas Wasser'
+      }
+    ],
+    keyRules: [
+      {
+        de: 'Ich hätte gern einen Kaffee, eine Tasse Tee und ein Glas Wasser.',
+        tr: i18nC(
+          'I would like a coffee (Masc. Acc. = einen), a cup of tea (Fem. Acc. = eine), and a glass of water (Neut. Acc. = ein).',
+          '我想要一杯咖啡（陽性受格 = einen）、一杯茶（陰性受格 = eine）和一杯水（中性受格 = ein）。'
+        )
+      },
+      {
+        de: 'Maßeinheiten: Maskuline/neutrale Einheiten bleiben im Plural unverändert (zwei Glas, drei Stück, zwei Kilo); feminine auf -e werden pluralisiert (zwei Flaschen, drei Tassen).',
+        tr: i18nC(
+          'Measure units rule: Masculine & neuter units stay singular after numbers (zwei Glas, drei Stück, zwei Kilo), whereas feminine units ending in -e take plural endings (zwei Flaschen, drei Tassen).',
+          '單位單複數鐵則：陽性與中性度量／容器單位在數字 2 以上時保持單數不變形（zwei Glas, drei Stück, zwei Kilo）；但以 -e 結尾的陰性容器則必須變複數（zwei Flaschen, drei Tassen）。'
+        )
+      }
+    ]
+  },
+
+  /* 3. 地址、門牌號碼與房間號碼 (Addresses & Room Numbers) */
+  addressesAndRooms: {
+    title: i18nC(
+      '3. Addresses, House Numbers, Room Numbers & Dates/Years in Context',
+      '3. 地址、門牌號碼、酒店房間號碼與年份／日期格式'
+    ),
+    items: [
+      {
+        topic: i18nC('Street Address Order (街道與門牌順序)', '德國地址與門牌順序（街名在前、門牌在後）'),
+        de: 'Ich wohne in der Bahnhofstraße 12 (zwölf), 10115 (einhunderteins fünfzehn) Berlin.',
+        tr: i18nC(
+          'I live at Bahnhofstraße 12, 10115 Berlin. (Street name first, house number second; 5-digit postcode before city).',
+          '我住在柏林（郵遞區號 10115）車站街 12 號。（德語地址先寫街道名、後寫門牌號碼；五位數郵遞區號寫在城市名前方）。'
+        )
+      },
+      {
+        topic: i18nC('Hotel Room Numbers (酒店房間號碼讀法)', '酒店房間號碼讀法（三位數房號）'),
+        de: 'Ihr Zimmer ist Nummer 214 (zweihundertvierzehn / zwei-eins-vier) im zweiten Stock.',
+        tr: i18nC(
+          'Your room is number 214 (read as a full number "zweihundertvierzehn" or digit-by-digit "zwei-eins-vier") on the second floor.',
+          '您的房間在二樓（台灣/香港三樓）214 號房（可連讀為「zweihundertvierzehn」或逐字讀「zwei-eins-vier」）。'
+        )
+      },
+      {
+        topic: i18nC('Formal vs. Colloquial Dates & Years (正式與口語日期及年份)', '正式與口語日期、月份及年份讀法'),
+        de: 'Heute ist der 3. Mai 1998 (der dritte Mai neunzehnhundertachtundneunzig). Am 20.10.2026 (am zwanzigsten Oktober zweitausendsechsundzwanzig).',
+        tr: i18nC(
+          'Written dates use a dot after the day and month (20.10.2026 = ordinal marker!). Nominative: "der dritte Mai"; after "am" (an + dem, Dative): "am dritten Mai". Years 1100–1999 are read in hundreds (1998 = 19-hundert-98); 2000+ as full thousands.',
+          '德語書寫日期在日與月後加句點「.」代表序數（20.10.2026）。主格讀「der dritte Mai（五月三日）」，接在「am（在…日，與格）」後詞尾加 -n 讀「am dritten Mai」。1999 年以前按百位拆讀，2000 年起按千位讀。'
+        )
+      }
+    ]
+  },
+
+  /* 4. 德語 vs. 西班牙語常見負遷移誤區警示 */
+  spanishContrast: {
+    title: i18nC(
+      '4. Crucial Warning: German is NOT Spanish! (Avoiding Cross-Language Traps)',
+      '4. 跨語言誤區警示：德語不是西班牙語！切勿套用西語規則'
+    ),
+    points: [
+      {
+        contrast: 'ein / eine / einen ≠ uno / un / una',
+        de: 'Eins → ein Buch (Neutrum), eine Person (Femininum), einen Kaffee (Maskulinum Akkusativ).',
+        tr: i18nC(
+          'Unlike Spanish (which only has masculine un/uno and feminine una), German has THREE genders (der/die/das) and changes the article for case (e.g., masculine direct object becomes "einen").',
+          '不可套用西語二性（un/una）：德語有「陽、陰、中」三性，且「ein-」必須隨四格變化（例如點餐時陽性受格必須變為 einen Kaffee）。'
+        )
+      },
+      {
+        contrast: 'sein ≠ ser / estar',
+        de: 'Ich bin müde (Zustand). Ich bin Lehrer (Beruf). Das Hotel ist in Berlin (Ort).',
+        tr: i18nC(
+          'German has only ONE verb "sein" (to be) for permanent traits, temporary states, and locations — never split it into Spanish ser/estar.',
+          '不可套用西語 ser/estar 二分法：德語只有一個動詞「sein」，同時用於身分、暫時狀態與所在位置（搭配 liegen/stehen 表示物體擺放）。'
+        )
+      },
+      {
+        contrast: 'es gibt + Akkusativ ≠ hay',
+        de: 'Hier gibt es einen Supermarkt (Akkusativ!) und zwei Bäckereien.',
+        tr: i18nC(
+          'To express existence ("there is / there are"), German uses "es gibt" followed strictly by the ACCUSATIVE case (einen Supermarkt), not an invariable word like Spanish "hay".',
+          '不可套用西語不變形的 hay：德語表達「有／存在」使用「es gibt」，且後方名詞必須強制使用「第四格受格（Akkusativ）」，如 es gibt einen Park。'
+        )
+      }
+    ]
+  },
+
+  /* 5. 德國 (DE)、奧地利 (AT)、瑞士 (CH) 常見格式與表達差異 */
+  dachDifferences: {
+    title: i18nC(
+      '5. Regional Format & Usage Differences: Germany (DE) vs. Austria (AT) vs. Switzerland (CH)',
+      '5. 德國（DE）與奧地利（AT）、瑞士（CH）常見格式及表達差異'
+    ),
+    items: [
+      {
+        region: '🇩🇪 🇦🇹 🇨🇭 Number & Currency Formatting (數字與貨幣格式)',
+        de: 'DE/AT: 1.250,50 € (Punkt = Tausender, Komma = Dezimal) · CH: CHF 1’250.50 (Franken & Rappen)',
+        tr: i18nC(
+          'Germany & Austria use a dot for thousands and a comma for decimals (1.250,50 €). Switzerland often uses an apostrophe for thousands and a dot for currency decimals (CHF 1’250.50, Franken & Rappen).',
+          '德國與奧地利使用「句點」分隔千位、「逗號」作為小數點（1.250,50 €）；瑞士則使用瑞士法郎（Franken 與 Rappen），常以撇號分隔千位（CHF 1’250.50）。'
+        )
+      },
+      {
+        region: '🇩🇪 🇦🇹 🇨🇭 Regional Time Expressions (10:15 & 10:45 地區時間說法)',
+        de: '10:15 = Viertel nach zehn (West-DE/CH) / viertel elf (Ost-DE/Süd-DE/AT) · 10:45 = Viertel vor elf / dreiviertel elf',
+        tr: i18nC(
+          '10:15 is "Viertel nach zehn" in western Germany/Switzerland, but "viertel elf" (one quarter toward 11) in eastern/southern Germany & Austria. 10:45 is "Viertel vor elf" or "dreiviertel elf".',
+          '10:15 在西德與瑞士說「Viertel nach zehn」，但在東德、南德與奧地利則常說「viertel elf（邁向11點的四分之一）」；10:45 則對應「Viertel vor elf」或「dreiviertel elf」。'
+        )
+      },
+      {
+        region: '🇩🇪 🇦🇹 🇨🇭 Months & Spelling (月份與拼寫差異)',
+        de: 'DE: Januar, Februar, Straße (mit ß) · AT: Jänner, Feber · CH: Januar, Strasse (immer ss statt ß)',
+        tr: i18nC(
+          'In Austria, January is officially "Jänner" (and February colloquially "Feber"). In Switzerland, the letter "ß" is not used at all ("Straße" is always written "Strasse").',
+          '奧地利將一月稱為「Jänner」（二月口語常稱 Feber）；瑞士德語則完全不使用字母「ß」，一律以「ss」取代（如 Straße 寫作 Strasse）。'
+        )
+      }
+    ]
+  }
+};
 
 /*===VIEWS==*/
 'use strict';
@@ -7185,9 +7463,19 @@ function tabTrainer(){
     '<button class="btn btn-red btn-sm" id="trAgain">🔁 '+t('srs.again')+'</button></div></div>';
 }
 function bindAlphabet(pane){
-  pane.querySelectorAll('[data-speak]').forEach(b=>b.onclick=()=>speak(b.getAttribute('data-speak')));
-  pane.querySelectorAll('[data-spk]').forEach(b=>b.onclick=()=>speak(b.getAttribute('data-spk')));
-  pane.querySelectorAll('[data-openletter]').forEach(b=>b.onclick=()=>openLetterModal(b.getAttribute('data-openletter')));
+  // 修復：加入 e.stopPropagation()，確保按下小喇叭只直接發音，絕不彈出教學視窗
+  pane.querySelectorAll('[data-speak]').forEach(b=>b.onclick=(e)=>{
+    e.stopPropagation();
+    speak(b.getAttribute('data-speak'));
+  });
+  pane.querySelectorAll('[data-spk]').forEach(b=>b.onclick=(e)=>{
+    e.stopPropagation();
+    speak(b.getAttribute('data-spk'));
+  });
+  pane.querySelectorAll('[data-openletter]').forEach(b=>b.onclick=(e)=>{
+    e.stopPropagation();
+    openLetterModal(b.getAttribute('data-openletter'));
+  });
   pane.querySelectorAll('[data-letter]').forEach(b=>b.onclick=()=>openLetterModal(b.getAttribute('data-letter')));
   if(alphaTab==='trainer'){
     const next=()=>{ const it=DE_A5LIST[Math.floor(Math.random()*DE_A5LIST.length)]; trainerCur=it;
@@ -7197,6 +7485,7 @@ function bindAlphabet(pane){
     document.getElementById('trReplay').onclick=()=>{ if(trainerCur) speak(trainerCur.text,state.speed); };
     document.getElementById('trGood').onclick=()=>{ document.getElementById('trDisplay').textContent=trainerCur.text+'  /'+trainerCur.ipa+'/'; trainerStats.done++; toast('✓'); };
     document.getElementById('trAgain').onclick=()=>{ if(trainerCur) speak(trainerCur.text,0.5); };
+
   }
 }
 
@@ -7336,7 +7625,72 @@ function renderNumbers(){
       '<button class="btn btn-outline btn-sm" data-spk="'+e.num+'">🔊</button></div>';
   });
   html+='</div>';
+  /* === 新增：渲染模組 C（日期、時間、數量及單位）5 大深度教學區塊 === */
+  if (typeof DE_MODULE_C_EXT !== 'undefined') {
+    const mc = DE_MODULE_C_EXT;
+    html += '<div class="hero-card" style="margin-top:18px"><h2 style="color:var(--navy-900)">📐 ' + esc(tr6(mc.header.title)) + '</h2>' +
+      '<p class="muted" style="margin-top:4px">' + esc(tr6(mc.header.sub)) + '</p></div>';
 
+    /* 1. 8 句經文法校對的核心例句 */
+    html += '<div class="panel"><h3 style="color:var(--navy-900)">✅ ' + esc(tr6(mc.verifiedSentences.title)) + '</h3><div class="grid grid-2" style="margin-top:10px">';
+    mc.verifiedSentences.items.forEach(it => {
+      html += '<div class="card"><div class="row" style="justify-content:space-between">' +
+        '<span style="font-size:1.15rem;font-weight:800;color:var(--navy-900)">' + esc(it.de) + '</span>' +
+        '<button class="btn btn-outline btn-sm" data-spk="' + esc(it.de) + '">🔊</button></div>' +
+        (lyr('ipa') ? '<div class="l-ipa">/' + esc(it.ipa) + '/</div>' : '') +
+        '<div class="chip chip-learned" style="margin:4px 0">' + esc(it.grammarTag) + '</div>' +
+        (lyr('trans') ? '<div class="l-trans" style="margin-top:4px">' + esc(tr6(it.tr)) + '</div>' : '') +
+        (lyr('notes') ? '<div class="l-note">' + esc(tr6(it.note)) + '</div>' : '') +
+        '</div>';
+    });
+    html += '</div></div>';
+
+    /* 2. ein / eine / einen 文法條件與單複數表格 */
+    const eg = mc.einGrammar;
+    const ths = tr6(eg.tableHeaders) || eg.tableHeaders['en-GB'];
+    html += '<div class="panel"><h3 style="color:var(--navy-900)">📘 ' + esc(tr6(eg.title)) + '</h3>' +
+      '<p style="font-size:.86rem;margin:6px 0">' + esc(tr6(eg.explanation)) + '</p>' +
+      '<div style="overflow-x:auto"><table class="gram-table"><tr>' + ths.map(h => '<th>' + esc(h) + '</th>').join('') + '</tr>';
+    eg.rows.forEach(r => {
+      html += '<tr><td><b>' + esc(tr6(r.gender)) + '</b></td><td>' + esc(r.defArt) + '</td>' +
+        '<td><b>' + esc(r.nom) + '</b></td><td style="color:var(--de-red);font-weight:700">' + esc(r.akk) + '</td>' +
+        '<td>' + esc(r.dat) + '</td><td>' + esc(r.pl) + '</td></tr>';
+    });
+    html += '</table></div>';
+    eg.keyRules.forEach(kr => {
+      html += '<div class="row" style="justify-content:space-between;padding:6px 0;border-top:1px dashed var(--border-color)">' +
+        '<span><b>' + esc(kr.de) + '</b><br><span class="muted">' + esc(tr6(kr.tr)) + '</span></span>' +
+        '<button class="btn btn-outline btn-sm" data-spk="' + esc(kr.de) + '">🔊</button></div>';
+    });
+    html += '</div>';
+
+    /* 3. 地址、門牌、房間號碼與正式/口語日期年份 */
+    html += '<div class="panel"><h3 style="color:var(--navy-900)">🏠 ' + esc(tr6(mc.addressesAndRooms.title)) + '</h3><div class="grid grid-2" style="margin-top:8px">';
+    mc.addressesAndRooms.items.forEach(it => {
+      html += '<div class="card"><h3>' + esc(tr6(it.topic)) + '</h3>' +
+        '<div style="font-weight:700;margin:6px 0">' + esc(it.de) + ' <button class="btn btn-outline btn-sm" data-spk="' + esc(it.de.replace(/\(.*?\)/g, '')) + '">🔊</button></div>' +
+        '<p class="muted" style="font-size:.82rem">' + esc(tr6(it.tr)) + '</p></div>';
+    });
+    html += '</div></div>';
+
+    /* 4. 德語 vs. 西班牙語誤區對比 */
+    html += '<div class="panel"><h3 style="color:var(--de-red)">⚠️ ' + esc(tr6(mc.spanishContrast.title)) + '</h3><div class="grid grid-2" style="margin-top:8px">';
+    mc.spanishContrast.points.forEach(pt => {
+      html += '<div class="card" style="border-color:var(--de-red)"><h3>' + esc(pt.contrast) + '</h3>' +
+        '<div style="font-weight:700;margin:5px 0">' + esc(pt.de) + ' <button class="btn btn-outline btn-sm" data-spk="' + esc(pt.de.replace(/\(.*?\)/g, '')) + '">🔊</button></div>' +
+        '<p class="muted" style="font-size:.82rem">' + esc(tr6(pt.tr)) + '</p></div>';
+    });
+    html += '</div></div>';
+
+    /* 5. 德、奧、瑞 (DACH) 格式差異 */
+    html += '<div class="panel"><h3 style="color:var(--navy-900)">🌍 ' + esc(tr6(mc.dachDifferences.title)) + '</h3><div class="grid grid-2" style="margin-top:8px">';
+    mc.dachDifferences.items.forEach(it => {
+      html += '<div class="card"><h3>' + esc(it.region) + '</h3>' +
+        '<div style="font-weight:700;margin:5px 0">' + esc(it.de) + '</div>' +
+        '<p class="muted" style="font-size:.82rem">' + esc(tr6(it.tr)) + '</p></div>';
+    });
+    html += '</div></div>';
+  }
   root.innerHTML=html;
   /* build cells */
   DE_NUM_CATS.forEach(cat=>buildNumCells(cat));
