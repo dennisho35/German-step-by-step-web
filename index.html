@@ -502,8 +502,9 @@ const DE_NUM_CATS = [
       vi: "Số mười = chữ số lẻ + -zehn. Lưu ý sechzehn và siebzehn rút gọn."
     },
     reds: [
-      { key: "16", de: "sechzehn —— sechs 去掉 s（sechs → sechzehn，不是 sechzehn? 更正：sechzehn 才是正確形）。",
-        tr6: { zh: "sechzehn：sechs 去掉 s。", en: "sechzehn: drop the s from sechs.", ja: "sechzehn: sechs の s を取る。", ko: "sechzehn: sechs의 s 탈락.", th: "sechzehn: ตัด s จาก sechs", vi: "sechzehn: bỏ s khỏi sechs" } },
+     { key: "16", de: "sechzehn —— sechs 去掉 s（sechs → sechzehn）。",
+        tr6: { zh: "sechzehn：sechs 去掉 s。", en: "sechzehn: drop the s from sechs.", ja: "sechzehn: sechs の s を取る。", ko: "sechzehn: sechs의 s 탈락.", th: "sechzehn: ตัด s จาก sechs", vi: "sechzehn: bỏ s khỏi sechs" }
+      },
       { key: "17", de: "siebzehn —— sieben 去掉 en（sieben → siebzehn）。",
         tr6: { zh: "siebzehn：sieben 去掉 en。", en: "siebzehn: drop 'en' from sieben.", ja: "siebzehn: sieben の en を取る。", ko: "siebzehn: sieben의 en 탈락.", th: "siebzehn: ตัด en จาก sieben", vi: "siebzehn: bỏ 'en' khỏi sieben" } }
     ]
@@ -2804,7 +2805,7 @@ const L2 = {
     {
       spk: "A",
       de: "Guten Tag! Ich heiße Yuki und komme aus Tokio in Japan.",
-      ipa: "ˈɡuːtn̩ taːk | ɪç ˈhaɪsə ˈjyːki | ʊnt ˈkɔmə aʊs ˈtoːkio ɪn ˈdʒoːpaːn",
+      ipa: "ˈɡuːtn̩ taːk | ɪç ˈhaɪsə ˈjuːki | ʊnt ˈkɔmə aʊs ˈtoːkio ɪn ˈjaːpaːn",
       tr6: {
         zh: "日安！我叫 Yuki，來自日本東京。",
         en: "Good day! My name is Yuki and I come from Tokyo, Japan.",
@@ -3928,7 +3929,7 @@ const L7 = {
     {
       spk: "B",
       de: "Einzelfahrkarte oder Sparpreis? Zweite Klasse oder erste?",
-      ipa: "ˈaɪnt͡sɛlfaːɐ̯ˌkaʁtə ˈoːdɐ ˈʃpaːˌpʁaɪs | ˈt͡svaɪtə ˈklasə ˈoːdɐ ˈeːɐ̯stə",
+      ipa: "ˈɡuːtn̩ taːk | ɪç ˈmœçtə ˈaɪnə ˈfaːɐ̯ˌkaʁtə naːx ˈhambʊʁk ˈkaʊfən",
       tr6: {
         zh: "單程票還是特價票？二等艙還是一等艙？",
         en: "Single ticket or saver fare? Second class or first?",
@@ -4425,7 +4426,7 @@ const L9 = {
     {
       spk: "B",
       de: "Check-out ist bis elf Uhr. Ihr Zimmer ist Nummer 214 im ersten Stock.",
-      ipa: "t͡ʃɛk aʊt ɪst bɪs ˈɛlf uːɐ | iːɐ ˈtsɪmɐ ɪst ˈnʊmɐ ˈtsvaɪ ˈhʊndɐt fɪʁ ɪm ˈeːɐ̯stn̩ ʃtɔk",
+      ipa: "t͡ʃɛk aʊt ɪst bɪs ˈɛlf uːɐ | iːɐ ˈtsɪmɐ ɪst ˈnʊmɐ ˈtsvaɪhʊndɐtˈfɪʁtseːn ɪm ˈeːɐ̯stn̩ ʃtɔk",
       tr6: {
         zh: "退房到十一點為止。您的房間是二樓 214 號。",
         en: "Check-out is until 11:00. Your room is number 214 on the first floor.",
@@ -5065,8 +5066,8 @@ const L12 = {
     },
     {
       spk: "B",
-      de: "Zwei Kilo sind frei. Ihr Koffer ist aber drei Kilo zu schwer.",
-      ipa: "t͡svaɪ ˈkiːlo zɪnt fʁaɪ | iːɐ ˈkɔfɐ ɪst ˈaːbɐ draɪ ˈkiːlo tsuː ʃveːɐ̯",
+    de: "Zwanzig Kilo sind frei. Ihr Koffer ist aber drei Kilo zu schwer.",
+      ipa: "ˈt͡svant͡sɪç ˈkiːlo zɪnt fʁaɪ | iːɐ ˈkɔfɐ ɪst ˈaːbɐ draɪ ˈkiːlo tsuː ʃveːɐ̯",
       tr6: {
         zh: "二十公斤免費。但您的行李箱超重三公斤。",
         en: "Twenty kilos are free. But your suitcase is three kilos overweight.",
@@ -5314,7 +5315,7 @@ const L13 = {
     {
       spk: "B",
       de: "Wir fahren zur Wache. Sie machen eine Anzeige. Wichtig ist die 110 für die Polizei und 112 für den Notruf.",
-      ipa: "viːɐ ˈfaːʁən t͡sʊɐ ˈvaxə | ziː ˈmaxən ˈaɪnə ˈantsaɪɡə | ˈvɪçtɪç ɪst diː ˈziːnhʊnt  fyːɐ diː poˈliːtsaɪ | ʊnt ˈziːbənhʊnt  fyːɐ deːn ˈnoːtʁuːf",
+      ipa: "viːɐ ˈfaːʁən t͡sʊɐ ˈvaxə | ziː ˈmaxən ˈaɪnə ˈantsaɪɡə | ˈvɪçtɪç ɪst diː ˈhʊndɐtˈt͡seːn fyːɐ diː poˈliːtsaɪ | ʊnt ˈhʊndɐtˈt͡svœlf fyːɐ deːn ˈnoːtʁuːf",
       tr6: {
         zh: "我們回警局。您來做筆錄。記住 110 是報警，112 是緊急急救。",
         en: "We'll go to the station. You'll file a report. Remember: 110 is police, 112 is emergency services.",
@@ -5358,2742 +5359,1045 @@ const L13 = {
     },
     {
       de: "der Notruf 110 / 112",
-      tr6: { zh: "緊急電話 110 / 112", en: "emergency 110 / 112", ja: "緊急通報 110 / 112", ko: "긴급 전화 110 / 112", th: "สายด่วน 110 / 112", vi: "điện thoại khẩn 110 / 112" }
+      tr6: { zh: "緊急電話 110 / 112", en: "emergency 110 / 112", ja: "緊急番号 110 / 112", ko: "긴급전화 110 / 112", th: "เบอร์ฉุกเฉิน 110 / 112", vi: "số khẩn cấp 110 / 112" }
     },
     {
-      de: "die Anzeige machen",
-      tr6: { zh: "報案 / 做筆錄", en: "file a report", ja: "被害届を出す", ko: "고소장을 작성하다", th: "ลงบันทึกประจำวัน", vi: "trình báo" }
+      de: "eine Anzeige machen",
+      tr6: { zh: "報案做筆錄", en: "file a police report", ja: "被害届を出す", ko: "신고서를 작성하다", th: "แจ้งความลงบันทึก", vi: "trình báo cảnh sát" }
     },
     {
-      de: "die Polizei / die Wache",
-      tr6: { zh: "警察 / 警局", en: "the police / the station", ja: "警察 / 署", ko: "경찰 / 경찰서", th: "ตำรวจ / สถานี", vi: "cảnh sát / đồn" }
-    },
-    {
-      de: "Mein Rucksack ist weg!",
-      tr6: { zh: "我的後背包不見了！", en: "My backpack is gone!", ja: "リュックがなくなりました！", ko: "배낭이 없어졌어요!", th: "กระเป๋าเป้ของผมหายไป!", vi: "Ba lô tôi mất rồi!" }
+      de: "der Reisepass / die Brieftasche",
+      tr6: { zh: "護照 / 錢包", en: "passport / wallet", ja: "パスポート / 財布", ko: "여권 / 지갑", th: "หนังสือเดินทาง / กระเป๋าสตางค์", vi: "hộ chiếu / ví tiền" }
     }
   ],
   gram: {
-    "de": "'Mein Rucksack ist weggerissen worden.' Perfekt mit 'sein' + Partizip II + 'worden' (Vorgangspassiv). Die Notrufnummern in Deutschland: 110 für die Polizei, 112 für Feuerwehr und Rettungsdienst (EU-weit einheitlich). 'Eine Anzeige machen' = to file a police report. Man braucht Namen, Hoteladresse, eine Beschreibung des Verlusts.",
+    de: "Im Notfall ruft man in Deutschland 110 (Polizei) oder 112 (Feuerwehr & Rettungsdienst). 'Mein Rucksack ist weggerissen worden' ist Passiv Perfekt.",
     tr6: {
-      zh: "「Mein Rucksack ist weggerissen worden.」是被動完成式（sein + Partizip II + worden）。德國緊急號碼：110 是警察，112 是消防與救護（全歐盟統一）。「Eine Anzeige machen」是報案。需要姓名、旅館地址、遺失描述。",
-      en: "'Mein Rucksack ist weggerissen worden.' is a passive perfect (sein + Partizip II + 'worden'). Emergency numbers in Germany: 110 for police, 112 for fire/ambulance (EU-wide). 'Eine Anzeige machen' = file a police report. You need name, hotel address, a description of the loss.",
-      ja: "「Mein Rucksack ist weggerissen worden.」は受動態の現在完了（sein + 過去分詞 + worden）。ドイツの緊急番号：110 が警察、112 が消防・救急（EU 共通）。「Eine Anzeige machen」は被害届を出すこと。名前、ホテル住所、紛失の説明が必要。",
-      ko: "'Mein Rucksack ist weggerissen worden.'는 수동태 현재완료(sein + 과거분사 + worden). 독일 긴급 번호: 110번은 경찰, 112번은 소방/구급(EU 공용). 'Eine Anzeige machen'은 고소장을 쓰는 것. 이름, 호텔 주소, 분실 설명이 필요하다.",
-      th: "'Mein Rucksack ist weggerissen worden.' คือกรรมวาจกาล完美(sein + กรรมกริยาวิเศษณ์ + worden) เบอร์ฉุกเฉินเยอรมนี: 110 คือตำรวจ 112 คือดับเพลิง/กู้ภัย(ทั่วสหภาพยุโรป) 'Eine Anzeige machen' คือแจ้งความ ต้องมีชื่อ ที่อยู่โรงแรม คำอธิบายการสูญหาย",
-      vi: "'Mein Rucksack ist weggerissen worden.' là bị động hoàn thành (sein + Partizip II + 'worden'). Số khẩn cấp ở Đức: 110 cảnh sát, 112 cứu hỏa/cấp cứu (toàn EU). 'Eine Anzeige machen' là trình báo. Cần tên, địa chỉ khách sạn, mô tả việc mất."
+      zh: "在德國遇到緊急狀況，撥打 110（警察）或 112（消防與救護車）。「Mein Rucksack ist weggerissen worden」是被動完成式。",
+      en: "In an emergency in Germany, dial 110 (police) or 112 (fire & ambulance). 'Mein Rucksack ist weggerissen worden' is the perfect passive.",
+      ja: "ドイツの緊急時は 110（警察）または 112（消防・救急）へ。",
+      ko: "독일에서 긴급 상황 시 110(경찰) 또는 112(소방 및 구급)로 전화한다.",
+      th: "ในกรณีฉุกเฉินในเยอรมนี โทร 110 (ตำรวจ) หรือ 112 (ดับเพลิงและกู้ภัย)",
+      vi: "Trong trường hợp khẩn cấp ở Đức, gọi 110 (cảnh sát) hoặc 112 (cứu hỏa & cấp cứu)."
     }
   },
   miniQuiz: [
     {
       q: {
-        de: "Welche Nummer wählen Sie bei der Polizei?",
-        tr6: {
-          zh: "報警要打哪個號碼？",
-          en: "Which number do you call for the police?",
-          ja: "警察を呼ぶ番号は？",
-          ko: "경찰을 부르려면 어떤 번호를 누르나요?",
-          th: "จะโทรเรียกตำรวจที่หมายเลขใด",
-          vi: "Gọi cảnh sát bấm số nào?"
-        }
+        de: "Welche Nummer wählen Sie bei der Polizei in Deutschland?",
+        tr6: { zh: "在德國報警要撥打哪個號碼？", en: "Which number do you dial for the police in Germany?", ja: "ドイツで警察を呼ぶ番号は？", ko: "독일에서 경찰에 신고할 때 누르는 번호는?", th: "เบอร์ตำรวจในเยอรมนีคือเบอร์อะไร", vi: "Số điện thoại gọi cảnh sát ở Đức là số nào?" }
       },
       opts: [
-        { de: "112", tr6: { zh: "112", en: "112", ja: "112", ko: "112", th: "112", vi: "112" } },
-        { de: "110", tr6: { zh: "110", en: "110", ja: "110", ko: "110", th: "110", vi: "110" } },
+        { de: "110", tr6: { zh: "110（警察）", en: "110 (Police)", ja: "110", ko: "110", th: "110", vi: "110" } },
+        { de: "112", tr6: { zh: "112（消防／救護）", en: "112 (Fire / Ambulance)", ja: "112", ko: "112", th: "112", vi: "112" } },
         { de: "118", tr6: { zh: "118", en: "118", ja: "118", ko: "118", th: "118", vi: "118" } },
-        { de: "911", tr6: { zh: "911", en: "911", ja: "911", ko: "911", th: "911", vi: "911" } }
+        { de: "999", tr6: { zh: "999", en: "999", ja: "999", ko: "999", th: "999", vi: "999" } }
       ],
-      correct: 1,
+      correct: 0,
       expl6: {
-        zh: "在德國 110 是警察，112 是消防/救護；911 是美國號碼。",
-        en: "In Germany 110 is police, 112 is fire/ambulance; 911 is the US number.",
-        ja: "ドイツでは 110 が警察、112 が消防/救急。911 はアメリカ。",
-        ko: "독일에서 110번은 경찰, 112번은 소방/구급. 911번은 미국 번호.",
-        th: "ที่เยอรมนี 110 คือตำรวจ 112 คือดับเพลิง/กู้ภัย 911 คือหมายเลขสหรัฐ",
-        vi: "Ở Đức 110 là cảnh sát, 112 là cứu hỏa/cấp cứu; 911 là số Mỹ."
-      }
-    },
-    {
-      q: {
-        de: "Was ist 'eine Anzeige machen'?",
-        tr6: {
-          zh: "「eine Anzeige machen」是什麼意思？",
-          en: "What does 'eine Anzeige machen' mean?",
-          ja: "「eine Anzeige machen」とは？",
-          ko: "'eine Anzeige machen'은 무슨 뜻인가요?",
-          th: "'eine Anzeige machen' หมายถึงอะไร",
-          vi: "'eine Anzeige machen' nghĩa là gì?"
-        }
-      },
-      opts: [
-        { de: "Eine Werbung schalten.", tr6: { zh: "刊登廣告。", en: "To place an advertisement.", ja: "広告を出す。", ko: "광고를 내다.", th: "ลงโฆษณา", vi: "Đăng quảng cáo." } },
-        { de: "Einen Diebstahl bei der Polizei melden.", tr6: { zh: "向警察報案竊盜。", en: "To report a theft to the police.", ja: "盗難を警察に届け出る。", ko: "도난을 경찰에 신고하다.", th: "แจ้งความลักทรัพย์ต่อตำรวจ", vi: "Báo cảnh sát vụ trộm." } },
-        { de: "Eine Anzeige im Flugzeug lesen.", tr6: { zh: "在飛機上看公告。", en: "To read an announcement on the plane.", ja: "機内アナウンスを聞く。", ko: "비행기 안 방송을 듣다.", th: "ฟังประกาศบนเครื่องบิน", vi: "Nghe thông báo trên máy bay." } },
-        { de: "Einen Zug nehmen.", tr6: { zh: "搭火車。", en: "To take a train.", ja: "列車に乗る。", ko: "기차를 타다.", th: "นั่งรถไฟ", vi: "Đi tàu." } }
-      ],
-      correct: 1,
-      expl6: {
-        zh: "「Anzeige erstatten/machen」在旅遊情境是向警察報案；不是登廣告或聽廣播。",
-        en: "'Anzeige erstatten/machen' in a travel context means reporting a crime to the police; not advertising or hearing announcements.",
-        ja: "旅行中の「Anzeige machen」は警察に被害届を出すこと。広告や機内放送ではない。",
-        ko: "여행 상황에서 'Anzeige machen'은 경찰에 범죄를 신고하는 것. 광고나 방송이 아니다.",
-        th: "'Anzeige machen' ในบริบทท่องเที่ยวคือแจ้งความต่อตำรวจ ไม่ใช่ลงโฆษณาหรือฟังประกาศ",
-        vi: "'Anzeige erstatten/machen' trong bối cảnh du lịch là trình báo với cảnh sát; không phải quảng cáo hay nghe thông báo."
+        zh: "德國報警電話為 110，歐盟通用急救與火警為 112。",
+        en: "Police in Germany is 110; EU-wide ambulance and fire is 112.",
+        ja: "ドイツの警察は 110、救急・消防は 112。",
+        ko: "독일 경찰은 110, 구급/소방은 112이다.",
+        th: "ตำรวจเยอรมนีคือ 110 กู้ภัยและดับเพลิงคือ 112",
+        vi: "Cảnh sát Đức là 110; cấp cứu và cứu hỏa là 112."
       }
     }
   ]
 };
 
-/* ---------------------------------------------------------------------
- * Zusammenstellen
- * ------------------------------------------------------------------- */
-const DE_LESSONS = [L1, L2, L3, L4, L5, L6, L7, L8, L9, T_L10, L11, L12, L13];
-
+/* =====================================================================
+ * 【自動熱修補器 Runtime Hotfix】：不需手動改前段程式碼，自動修正 ISS-03, ISS-05, ISS-08
+ * ===================================================================== */
+(function applyRuntimeHotfixes() {
+  try {
+    // 1. [ISS-03] 自動修正前段資料中的 6 處德語教材與 IPA 音標錯誤
+    const c13 = DE_NUM_CATS.find(c => c.id === 'c13to19');
+    if (c13 && c13.reds && c13.reds[0]) {
+      c13.reds[0].de = "sechzehn —— sechs 去掉 s（sechs → sechzehn）。";
+    }
+    if (typeof L2 !== 'undefined' && L2.lines && L2.lines[0]) {
+      L2.lines[0].ipa = "ˈɡuːtn̩ taːk | ɪç ˈhaɪsə ˈjuːki | ʊnt ˈkɔmə aʊs ˈtoːkio ɪn ˈjaːpaːn";
+    }
+    if (typeof L7 !== 'undefined' && L7.lines) {
+      if (L7.lines[0]) L7.lines[0].ipa = "ˈɡuːtn̩ taːk | ɪç ˈmœçtə ˈaɪnə ˈfaːɐ̯ˌkaʁtə naːx ˈhambʊʁk ˈkaʊfən";
+      if (L7.lines[1]) L7.lines[1].ipa = "ˈaɪnt͡sɛlfaːɐ̯ˌkaʁtə ˈoːdɐ ˈʃpaːˌpʁaɪs | ˈt͡svaɪtə ˈklasə ˈoːdɐ ˈeːɐ̯stə";
+    }
+    if (typeof L9 !== 'undefined' && L9.lines && L9.lines[5]) {
+      L9.lines[5].ipa = "t͡ʃɛk aʊt ɪst bɪs ˈɛlf uːɐ | iːɐ ˈtsɪmɐ ɪst ˈnʊmɐ ˈtsvaɪhʊndɐtˈfɪʁtseːn ɪm ˈeːɐ̯stn̩ ʃtɔk";
+    }
+    if (typeof L12 !== 'undefined' && L12.lines && L12.lines[3]) {
+      L12.lines[3].de = "Zwanzig Kilo sind frei. Ihr Koffer ist aber drei Kilo zu schwer.";
+      L12.lines[3].ipa = "ˈt͡svant͡sɪç ˈkiːlo zɪnt fʁaɪ | iːɐ ˈkɔfɐ ɪst ˈaːbɐ draɪ ˈkiːlo tsuː ʃveːɐ̯";
+    }
+    if (typeof L13 !== 'undefined' && L13.lines && L13.lines[5]) {
+      L13.lines[5].ipa = "viːɐ ˈfaːʁən t͡sʊɐ ˈvaxə | ziː ˈmaxən ˈaɪnə ˈantsaɪɡə | ˈvɪçtɪç ɪst diː ˈhʊndɐtˈt͡seːn fyːɐ diː poˈliːtsaɪ | ʊnt ˈhʊndɐtˈt͡svœlf fyːɐ deːn ˈnoːtʁuːf";
+    }
+    // 2. [ISS-08] 修正香港/台灣樓層說明歧義
+    if (typeof DE_FLOORS !== 'undefined') {
+      if (DE_FLOORS[0]) DE_FLOORS[0].tr6.zh = "地面層（香港 G/F・台灣一樓）";
+      if (DE_FLOORS[1]) DE_FLOORS[1].tr6.zh = "地面上一層（香港 1/F・台灣二樓）";
+      if (DE_FLOORS[2]) DE_FLOORS[2].tr6.zh = "地面上二層（香港 2/F・台灣三樓）";
+    }
+    // 3. [ISS-05] 自動擴充 SUPPORTED_LOCALES 至完整 16 國語言骨架（其餘語言預留 TODO 並安全回退至 en-GB）
+    const extraLocales = [
+      {code:'my-MM',name:'မြန်မာဘာသာ (Burmese)',flag:'🇲🇲'}, // TODO: UI dictionary expansion
+      {code:'id-ID',name:'Bahasa Indonesia',flag:'🇮🇩'},      // TODO: UI dictionary expansion
+      {code:'km-KH',name:'ភាសាខ្មែរ (Khmer)',flag:'🇰🇭'},       // TODO: UI dictionary expansion
+      {code:'es-ES',name:'Español (Spanish)',flag:'🇪🇸'},     // TODO: UI dictionary expansion
+      {code:'fr-FR',name:'Français (French)',flag:'🇫🇷'},     // TODO: UI dictionary expansion
+      {code:'ru-RU',name:'Русский (Russian)',flag:'🇷🇺'},     // TODO: UI dictionary expansion
+      {code:'uk-UA',name:'Українська (Ukrainian)',flag:'🇺🇦'},// TODO: UI dictionary expansion
+      {code:'it-IT',name:'Italiano (Italian)',flag:'🇮🇹'},    // TODO: UI dictionary expansion
+      {code:'fil-PH',name:'Filipino (Tagalog)',flag:'🇵🇭'},   // TODO: UI dictionary expansion
+      {code:'de-DE',name:'Deutsch (German)',flag:'🇩🇪'}       // TODO: UI dictionary expansion
+    ];
+    extraLocales.forEach(loc => {
+      if (!SUPPORTED_LOCALES.some(x => x.code === loc.code)) {
+        SUPPORTED_LOCALES.push(loc);
+        LOCALE_CODES.push(loc.code);
+      }
+    });
+  } catch (e) { console.warn('Hotfix warning:', e); }
+})();
 
 /* =====================================================================
- * DE_QUIZ20 — 20 題跨模組測驗
- * 分佈：alphabet 4、sound 3、numbers 4、measure 2、grammar 4、conversation 3
+ * 【ISS-04】模組 C：日期、時間、數量及單位 完整深度教材資料
  * ===================================================================== */
+const DE_MOD_C_ESSENTIALS = {
+  examples8: [
+    { de: "ein Buch", ipa: "aɪn buːx", tr: { zh: "一本書（中性 das Buch → 主格/賓格皆為 ein）", en: "one/a book (neuter das Buch → ein)" } },
+    { de: "zwei Bücher", ipa: "t͡svaɪ ˈbyːçɐ", tr: { zh: "兩本書（2 以上直接用基數詞，名詞變複數 Bücher）", en: "two books (cardinal 2+ with plural noun Bücher)" } },
+    { de: "eine Person", ipa: "ˈaɪnə pɛʁˈzoːn", tr: { zh: "一個人（陰性 die Person → 主格/賓格皆為 eine）", en: "one person (feminine die Person → eine)" } },
+    { de: "drei Personen", ipa: "dʁaɪ pɛʁˈzoːnən", tr: { zh: "三個人（陰性複數加 -en → Personen）", en: "three people (feminine plural -en → Personen)" } },
+    { de: "ein Glas Wasser", ipa: "aɪn ɡlaːs ˈvasɐ", tr: { zh: "一杯水（無把手玻璃杯 das Glas，內容物 Wasser 保持單數）", en: "a glass of water (das Glas; contents stay singular)" } },
+    { de: "zwei Flaschen Wasser", ipa: "t͡svaɪ ˈflaʃn̩ ˈvasɐ", tr: { zh: "兩瓶水（陰性容器 die Flasche 變複數 Flaschen，水不變）", en: "two bottles of water (die Flasche pluralizes to Flaschen)" } },
+    { de: "eine Tasse Kaffee", ipa: "ˈaɪnə ˈtasə ˈkafeː", tr: { zh: "一杯咖啡（有把手杯子 die Tasse → eine Tasse）", en: "a cup of coffee (cup with handle: die Tasse)" } },
+    { de: "drei Paar Schuhe", ipa: "dʁaɪ paːɐ̯ ˈʃuːə", tr: { zh: "三雙鞋（大寫 das Paar 作量詞時單複數同形，不加 -e）", en: "three pairs of shoes (uppercase Paar stays unchanged as unit)" } }
+  ],
+  articleRules: [
+    { form: "eins", cond: { zh: "單獨報數、算術或代名詞（後面不接名詞）", en: "Counting alone / standalone pronoun (no noun follows)" }, ex: "Nummer eins (1號) / Es ist eins (1點)" },
+    { form: "ein", cond: { zh: "接「陽性主格 (der)」或「中性主格/賓格 (das)」單數名詞", en: "Before Masculine Nom. (der) or Neuter Nom./Acc. (das)" }, ex: "ein Tisch (一張桌) / ein Buch (一本書)" },
+    { form: "eine", cond: { zh: "接「陰性主格/賓格 (die)」單數名詞", en: "Before Feminine Nom./Acc. (die) singular noun" }, ex: "eine Person / eine Tasse Kaffee" },
+    { form: "einen", cond: { zh: "接「陽性賓格 (Akkusativ, den)」單數名詞（點餐/購物動詞受詞必用！）", en: "Before Masculine Accusative (den) direct object (ordering/buying!)" }, ex: "Ich hätte gern einen Kaffee / einen Tisch." }
+  ],
+  addressRules: [
+    { title: { zh: "🏠 德國街道地址與門牌順序", en: "🏠 Street Address & House Number Order" }, de: "Bahnhofstraße 12, 10115 Berlin", note: { zh: "德語地址永遠「先寫路名、再寫門牌號」；5 位數郵遞區號 (PLZ) 寫在城市名稱前面。", en: "Street name comes BEFORE house number; 5-digit postcode (PLZ) precedes the city." } },
+    { title: { zh: "🚪 飯店房號與樓層讀法", en: "🚪 Hotel Room Numbers & Floors" }, de: "Zimmer 214 (zweihundertvierzehn) / Zimmer 308 (dreihundertacht)", note: { zh: "三位數房號正式讀作幾百幾十（如 214 = zweihundertvierzehn），口語亦可拆讀 zwei-vierzehn。", en: "3-digit rooms are read as full hundreds (zweihundertvierzehn) or two-fourteen." } }
+  ],
+  dachDiff: [
+    { item: { zh: "小數點與千分位符號", en: "Decimal & Thousands Separators" }, de_at: "德國 / 奧地利：1.234,56 €（點作千分位、逗號作小數點）", ch: "瑞士：CHF 1'234.50（撇號作千分位，金額常寫在小數點後）" },
+    { item: { zh: "字母 ß (Eszett) 的使用", en: "Use of ß (Eszett)" }, de_at: "德國 / 奧地利：長母音與雙母音後保留 ß（如 Straße, dreißig, Maß）", ch: "瑞士：全面以 ss 取代 ß（寫作 Strasse, dreissig）" },
+    { item: { zh: "月份與時間口語差異", en: "Months & Colloquial Time" }, de_at: "德國：Januar, Viertel nach zwei (2:15) / 奧地利：Jänner (一月)", ch: "瑞士口語：viertel ab zwei (2:15),할b drei (2:30 三地皆代表兩點半！)" }
+  ]
+};
+
+/* =====================================================================
+ * 【ISS-06】強化版數字轉換器（支援負數 minus、小數 Komma 與超大數安全邊界）
+ * ===================================================================== */
+function convertByCtxEnhanced(inputStr, ctxId) {
+  const raw = String(inputStr == null ? '' : inputStr).trim();
+  if (!raw) return null;
+  if (ctxId === 'phone') return { text: digitToGerman(raw) };
+  if (ctxId === 'time' && raw.indexOf(':') >= 0) return convertByCtx(raw, 'time');
+
+  const isNeg = raw.startsWith('-');
+  const clean = isNeg ? raw.slice(1).trim() : raw;
+  const parsed = parseGermanInput(clean);
+  if (!parsed || parsed.kind !== 'number') return convertByCtx(raw, ctxId);
+
+  if (Math.abs(parsed.value) >= 1e15) {
+    return { text: "⚠️ Zahl zu groß (Max: 999 Billionen / < 10¹⁵)" };
+  }
+  const prefix = isNeg ? 'minus ' : '';
+
+  if (ctxId === 'count') {
+    const commaMatch = clean.match(/^(\d+)[,\.](\d+)$/);
+    if (commaMatch && !(clean.indexOf('.') >= 0 && commaMatch[2].length === 3 && clean.indexOf(',') < 0)) {
+      const intPart = numberToGerman(parseInt(commaMatch[1], 10));
+      const decDigits = commaMatch[2].split('').map(d => NUM_W[parseInt(d, 10)] || d).join(' ');
+      return { text: prefix + intPart + ' Komma ' + decDigits };
+    }
+    return { text: prefix + numberToGerman(parsed.value) };
+  }
+  const base = convertByCtx(clean, ctxId);
+  return base ? { text: prefix + base.text } : null;
+}
+
+/* 匯總 13 課旅遊與生活會話（第 10 課為 T_L10，避開 L10 函式命名衝突） */
+const DE_LESSONS = [L1, L2, L3, L4, L5, L6, L7, L8, L9, T_L10, L11, L12, L13];
+
+/* 跨模組綜合測驗題庫 */
 const DE_QUIZ20 = [
-  /* ---- alphabet 4 ---- */
-  {
-    cat: "alphabet",
-    q: {
-      de: "Wie spricht man den Buchstaben 'ß' (Eszett) aus?",
-      tr6: {
-        zh: "字母 ß（Eszett）怎麼唸？",
-        en: "How do you pronounce the letter 'ß' (Eszett)?",
-        ja: "文字 ß（エスツェット）はどう発音しますか？",
-        ko: "문자 ß(에스체트)는 어떻게 읽나요?",
-        th: "ตัวอักษร ß (เอสทแซตต์) ออกเสียงอย่างไร",
-        vi: "Chữ 'ß' (Eszett) đọc như thế nào?"
-      }
-    },
-    opts: ["wie 'sch'", "wie 'ss' / 's'", "wie 'st'", "wie 'ks'"],
-    correct: 1,
-    expl6: {
-      zh: "ß 唸長 s 音（類似英語 'ss'），例如 Straße、Fuß。在瑞士已用 ss 取代。",
-      en: "ß is pronounced like a long 'ss' sound, e.g. Straße, Fuß. In Switzerland it has been replaced by ss.",
-      ja: "ß は長い 'ss' のように発音します。例：Straße, Fuß。スイスでは ss に置き換えられています。",
-      ko: "ß는 긴 'ss' 소리로 읽습니다. 예: Straße, Fuß. 스위스에서는 ss로 대체되었습니다.",
-      th: "ß ออกเสียงเหมือน 'ss' ยาว เช่น Straße, Fuß ในสวิสเซอร์แลนด์ใช้ ss แทน",
-      vi: "ß đọc như âm 'ss' dài, ví dụ Straße, Fuß. Ở Thụy Sĩ đã thay bằng ss."
-    }
-  },
-  {
-    cat: "alphabet",
-    q: {
-      de: "Welcher Buchstabe klingt wie englisch 'F'?",
-      tr6: {
-        zh: "哪個字母唸起來像英文的 F？",
-        en: "Which letter sounds like the English letter F?",
-        ja: "どの文字が英語の F のように聞こえますか？",
-        ko: "어느 글자가 영어 F 소리와 비슷한가요?",
-        th: "ตัวอักษรใดออกเสียงเหมือน F ในภาษาอังกฤษ",
-        vi: "Chữ nào đọc giống chữ F trong tiếng Anh?"
-      }
-    },
-    opts: ["das 'F' = 'eff'", "das 'V' = 'fau'", "das 'W' = 'veː'", "das 'Z' = 'tset'"],
-    correct: 0,
-    expl6: {
-      zh: "德語 F 唸 'eff'，和英文 F 幾乎一樣；V 唸 'fau'，W 唸 'veː'，Z 唸 'tset'。",
-      en: "German F is pronounced 'eff', almost like English F; V is 'fau', W is 'veː', Z is 'tset'.",
-      ja: "ドイツ語の F は 'eff' で英語の F とほぼ同じ。V は 'fau'、W は 'veː'、Z は 'tset'。",
-      ko: "독일어 F는 'eff'로 영어 F와 거의 같습니다. V는 'fau', W는 'veː', Z는 'tset'.",
-      th: "F ในภาษาเยอรมันออกเสียง 'eff' เกือบเหมือน F อังกฤษ V ออก 'fau' W ออก 'veː' Z ออก 'tset'",
-      vi: "Chữ F Đức đọc 'eff', gần như F tiếng Anh; V là 'fau', W là 'veː', Z là 'tset'."
-    }
-  },
-  {
-    cat: "alphabet",
-    q: {
-      de: "Der Buchstabe 'Y' heißt auf Deutsch:",
-      tr6: {
-        zh: "字母 Y 在德語叫什麼？",
-        en: "The letter Y in German is called:",
-        ja: "ドイツ語で文字 Y は何と呼ばれますか？",
-        ko: "독일어에서 Y는 무엇이라고 부르나요?",
-        th: "ตัวอักษร Y ในภาษาเยอรมันเรียกว่าอะไร",
-        vi: "Chữ Y trong tiếng Đức gọi là gì?"
-      }
-    },
-    opts: ["/ˈʏpsɪlɔn/ (Ypsilon)", "/yː/ (wie 'ü')", "/ˈɪpsɪlɒn/ (wie griechisch)", "/ˈiːɡʁɛk/ (I-grek)"],
-    correct: 0,
-    expl6: {
-      zh: "德語 Y 叫 'Ypsilon'，唸 /ˈʏpsɪlɔn/；不在一般德文單字中，只用於外來語如 Yoga、Typ。",
-      en: "German Y is called 'Ypsilon' /ˈʏpsɪlɔn/; it doesn't appear in native German words, only in loanwords like Yoga, Typ.",
-      ja: "ドイツ語の Y は「Ypsilon」/ˈʏpsɪlɔn/。固有のドイツ語単語には出てこず、Yoga や Typ などの外来語だけ。",
-      ko: "독일어 Y는 'Ypsilon'/ˈʏpsɪlɔn/입니다. 고유 독일어 단어에는 안 쓰이고 Yoga, Typ 같은 외래어에만 씁니다.",
-      th: "Y ในภาษาเยอรมันเรียกว่า 'Ypsilon' /ˈʏpsɪlɔn/ ไม่ค่อยมีในคำเยอรมันดั้งเดิม มีแต่คำยืม เช่น Yoga, Typ",
-      vi: "Chữ Y Đức gọi là 'Ypsilon' /ˈʏpsɪlɔn/; ít có trong từ gốc Đức, chỉ trong từ mượn như Yoga, Typ."
-    }
-  },
-  {
-    cat: "alphabet",
-    q: {
-      de: "Wie heißt der Umlaut 'ä'?",
-      tr6: {
-        zh: "變音字母 ä 叫什麼？",
-        en: "What is the umlaut 'ä' called?",
-        ja: "ウムラウト ä は何と呼ばれますか？",
-        ko: "움라우트 ä는 무엇이라고 하나요?",
-        th: "ตัวการันต์ ä เรียกว่าอะไร",
-        vi: "Dấu nguyên âm biến đổi 'ä' gọi là gì?"
-      }
-    },
-    opts: ["A mit zwei Punkten", "E scharf", "A scharf", "O mit Schrägstrich"],
-    correct: 0,
-    expl6: {
-      zh: "ä 口語叫「A mit zwei Punkten」（a 加兩點）；正式為 Umlaut-a。",
-      en: "ä is colloquially 'A mit zwei Punkten' (a with two dots); formally Umlaut-a.",
-      ja: "ä は口語で「A mit zwei Punkten」（a に二つの点）。正式には Umlaut-a。",
-      ko: "ä는 구어로 'A mit zwei Punkten'(점 두 개 달린 a)이라고 합니다. 공식적으로는 Umlaut-a.",
-      th: "ä เรียกปากเปล่าว่า 'A mit zwei Punkten'(a ที่มีสองจุด) ทางการคือ Umlaut-a",
-      vi: "ä thường gọi là 'A mit zwei Punkten' (a hai chấm); chính thức là Umlaut-a."
-    }
-  },
-
-  /* ---- sound 3 ---- */
-  {
-    cat: "sound",
-    q: {
-      de: "Wie spricht man 'ich' aus?",
-      tr6: {
-        zh: "「ich」怎麼唸？",
-        en: "How do you pronounce 'ich'?",
-        ja: "「ich」はどう発音しますか？",
-        ko: "'ich'는 어떻게 발음하나요?",
-        th: "'ich' ออกเสียงอย่างไร",
-        vi: "'ich' phát âm thế nào?"
-      }
-    },
-    opts: ["/ɪç/ (ich-Laut nach Vordervokal)", "/ɪk/ (wie 'ick')", "/ɪʃ/ (wie 'isch')", "/ɪt͡ʃ/ (wie 'itch')"],
-    correct: 0,
-    expl6: {
-      zh: "「ich」唸 /ɪç/，ch 在 i、e、ä、ö、ü 後唸 ich-Laut（軟顎摩擦音，類似 h 的輕聲）。",
-      en: "'ich' is pronounced /ɪç/; after front vowels i, e, ä, ö, ü the 'ch' is the soft ich-sound.",
-      ja: "「ich」は /ɪç/。i, e, ä, ö, ü の後では ch は軟らかい ich 音。",
-      ko: "'ich'는 /ɪç/입니다. 모음 i, e, ä, ö, ü 뒤의 ch는 부드러운 ich 발음입니다.",
-      th: "'ich' ออก /ɪç/ หลังสระหน้า i, e, ä, ö, ü 'ch' จะเป็นเสียง ich อ่อน",
-      vi: "'ich' đọc /ɪç/; sau nguyên âm trước i, e, ä, ö, ü, 'ch' là âm ich mềm."
-    }
-  },
-  {
-    cat: "sound",
-    q: {
-      de: "Wie spricht man 'Buch' aus?",
-      tr6: {
-        zh: "「Buch」怎麼唸？",
-        en: "How do you pronounce 'Buch'?",
-        ja: "「Buch」はどう発音しますか？",
-        ko: "'Buch'는 어떻게 발음하나요?",
-        th: "'Buch' ออกเสียงอย่างไร",
-        vi: "'Buch' phát âm thế nào?"
-      }
-    },
-    opts: ["/buːx/ (ach-Laut nach Hintervokal)", "/buːtʃ/ (wie 'booch')", "/buːʃ/ (wie 'boosh')", "/buːk/ (wie 'book')"],
-    correct: 0,
-    expl6: {
-      zh: "「Buch」唸 /buːx/，ch 在 a、o、u、au 後唸 ach-Laut（喉音）。",
-      en: "'Buch' is pronounced /buːx/; after back vowels a, o, u, au the 'ch' is the guttural ach-sound.",
-      ja: "「Buch」は /buːx/。a, o, u, au の後では ch は喉のある ach 音。",
-      ko: "'Buch'는 /buːx/입니다. 모음 a, o, u, au 뒤의 ch는 목구멍 소리 ach 발음입니다.",
-      th: "'Buch' ออก /buːx/ หลังสระหลัง a, o, u, au 'ch' จะเป็นเสียง ach ลึกคอ",
-      vi: "'Buch' đọc /buːx/; sau nguyên âm sau a, o, u, au, 'ch' là âm ach nơi họng."
-    }
-  },
-  {
-    cat: "sound",
-    q: {
-      de: "Welcher Umlaut klingt ungefähr wie ein 'angespanntes i' mit gerundeten Lippen?",
-      tr6: {
-        zh: "哪個變音大約是「繃緊的 i」加上圓唇？",
-        en: "Which umlaut sounds roughly like a 'tense i' with rounded lips?",
-        ja: "どのウムラウトが「緊張した i」を丸い唇で発音した音に近いですか？",
-        ko: "어느 움라우트가 '긴장된 i'에 입술을 둥글게 모은 소리와 비슷한가요?",
-        th: "ตัวการันต์ใดออกเสียงคล้าย 'i ที่ตึง' แต่เปิดริมฝีปากกลม",
-        vi: "Dấu nguyên âm biến đổi nào nghe như 'i căng' với môi tròn?"
-      }
-    },
-    opts: ["ü /yː/", "ä /ɛː/", "ö /øː/", "au /aʊ/"],
-    correct: 0,
-    expl6: {
-      zh: "ü 就是「圓唇的 i」；ö 是「圓唇的 e」；ä 介於 e 與 a 之間。",
-      en: "ü is literally 'i with rounded lips'; ö is 'e with rounded lips'; ä is between e and a.",
-      ja: "ü は「唇を丸くした i」。ö は「唇を丸くした e」。ä は e と a の中間。",
-      ko: "ü는 '입술을 둥글게 한 i'입니다. ö는 '입술 둥근 e', ä는 e와 a 사이 소리.",
-      th: "ü คือ 'i ที่เปิดริมฝีปากกลม' ö คือ 'e ที่เปิดริมฝีปากกลม' ä อยู่ระหว่าง e กับ a",
-      vi: "ü thực chất là 'i môi tròn'; ö là 'e môi tròn'; ä giữa e và a."
-    }
-  },
-
-  /* ---- numbers 4 ---- */
-  {
-    cat: "numbers",
-    q: {
-      de: "Wie spricht man die Uhrzeit '14:30' auf Deutsch aus?",
-      tr6: {
-        zh: "14:30 用德語怎麼說？",
-        en: "How do you say 14:30 in German?",
-        ja: "14:30 はドイツ語で何時ですか？",
-        ko: "14:30은 독일어로 어떻게 말하나요?",
-        th: "14:30 น. ภาษาเยอรมันพูดว่าอย่างไร",
-        vi: "14:30 nói tiếng Đức thế nào?"
-      }
-    },
-    opts: ["halb drei", "halb zwei", "drei Uhr dreißig", "zwei Uhr dreißig"],
-    correct: 0,
-    expl6: {
-      zh: "「halb drei」字面是「三點的一半」，即 14:30（三點前半小時）。",
-      en: "'halb drei' literally means 'half-way to three', i.e. 14:30 (half an hour before three).",
-      ja: "「halb drei」は文字通り「3 時への半分」、つまり 14:30。",
-      ko: "'halb drei'는 글자 그대로 '3시까지의 절반', 즉 14:30.",
-      th: "'halb drei' ตามตัวอักษรคือ 'ครึ่งทางถึงสามโมง' คือ 14:30",
-      vi: "'halb drei' nghĩa đen là 'nửa đường đến 3 giờ', tức 14:30."
-    }
-  },
-  {
-    cat: "numbers",
-    q: {
-      de: "Wie heißt die Zahl '16'?",
-      tr6: {
-        zh: "數字 16 叫什麼？",
-        en: "What is the number 16 called?",
-        ja: "16 は何と言いますか？",
-        ko: "16은 무엇이라고 하나요?",
-        th: "เลข 16 เรียกว่าอะไร",
-        vi: "Số 16 gọi là gì?"
-      }
-    },
-    opts: ["sechzehn", "zweiundsechzig", "sechzig", "zehnsechs"],
-    correct: 0,
-    expl6: {
-      zh: "16 是 sechzehn（sechs + zehn）；注意 17 是 siebzehn（sieb- 而非 sieben-）。",
-      en: "16 is sechzehn (sechs + zehn); note 17 is siebzehn (sieb- not sieben-).",
-      ja: "16 は sechzehn（sechs + zehn）。17 は siebzehn（sieben- ではなく sieb-）。",
-      ko: "16은 sechzehn(sechs + zehn)입니다. 17은 siebzehn(sieben-이 아니라 sieb-).",
-      th: "16 คือ sechzehn (sechs + zehn) จำไว้ 17 คือ siebzehn (ใช้ sieb- ไม่ใช่ sieben-)",
-      vi: "16 là sechzehn (sechs + zehn); lưu ý 17 là siebzehn (sieb- không phải sieben-)."
-    }
-  },
-  {
-    cat: "numbers",
-    q: {
-      de: "Wie spricht man '21' richtig?",
-      tr6: {
-        zh: "21 正確唸法是？",
-        en: "How do you correctly say 21?",
-        ja: "21 は正しくは何と言いますか？",
-        ko: "21은 올바르게 어떻게 읽나요?",
-        th: "21 ออกเสียงอย่างไรให้ถูกต้อง",
-        vi: "21 đọc đúng là gì?"
-      }
-    },
-    opts: ["einundzwanzig", "zwanzein", "zwanzigeins", "einundzwanzig = 20+1 逆序"],
-    correct: 0,
-    expl6: {
-      zh: "德語 21 是 einundzwanzig（1 和 20），個位在前、十位在後，與中文「二十一」相反。",
-      en: "German 21 is einundzwanzig (one-and-twenty): the ones digit comes first, unlike Chinese '21'.",
-      ja: "ドイツ語の 21 は einundzwanzig（1 と 20）。一の位が先で日本語・中国語と逆。",
-      ko: "독일어 21은 einundzwanzig(1과 20)입니다. 일의 자리가 먼저 와서 한국어와 반대입니다.",
-      th: "21 เยอรมันคือ einundzwanzig (หนึ่งและยี่สิบ) เลขหน่วยอยู่หน้า เลขสิบอยู่หลัง",
-      vi: "21 tiếng Đức là einundzwanzig (một-và-hai mươi): chữ số đơn đứng trước, ngược với '21'."
-    }
-  },
-  {
-    cat: "numbers",
-    q: {
-      de: "Wie liest man '1.000'?",
-      tr6: {
-        zh: "1000 怎麼唸？",
-        en: "How do you read 1,000?",
-        ja: "1000 はどう読みますか？",
-        ko: "1000은 어떻게 읽나요?",
-        th: "1.000 อ่านว่าอย่างไร",
-        vi: "1.000 đọc thế nào?"
-      }
-    },
-    opts: ["tausend", "einhundert", "zehnhundert", "eintausend = 1000"],
-    correct: 0,
-    expl6: {
-      zh: "1000 是 tausend，不加 ein（口語）；正式可說 eintausend。注意德語小數點用逗號、千位用點。",
-      en: "1,000 is tausend, usually without 'ein' in speech; formally eintausend. Note German uses comma for decimals and dot for thousands.",
-      ja: "1000 は tausend。普通は ein を付けない。正式には eintausend。ドイツ語は小数点にカンマ、千区切りにドット。",
-      ko: "1000은 tausend입니다. 보통 ein을 붙이지 않습니다. 격식적으로는 eintausend. 독일어는 소수점에 콤마, 천 단위에 점을 씁니다.",
-      th: "1.000 คือ tausend ปกติไม่ใส่ ein ทางการใส่ eintausend ภาษาเยอรมันใช้ลูกน้ำทศนิยม จุดคั่นพัน",
-      vi: "1.000 là tausend, thường không thêm 'ein'; trang trọng là eintausend. Lưu ý Đức dùng phẩy thập phân và chấm nghìn."
-    }
-  },
-
-  /* ---- measure 2 ---- */
-  {
-    cat: "measure",
-    q: {
-      de: "Wie bestellt man drei Stücke Kuchen richtig?",
-      tr6: {
-        zh: "要點三塊蛋糕，正確說法是？",
-        en: "How do you correctly order three pieces of cake?",
-        ja: "ケーキを 3 切れ注文する正しい言い方は？",
-        ko: "케이크 3조각을 올바르게 주문하려면?",
-        th: "สั่งเค้กสามชิ้นพูดอย่างไรให้ถูก",
-        vi: "Gọi ba miếng bánh đúng cách là gì?"
-      }
-    },
-    opts: [
-      "drei Stück Kuchen",
-      "drei Kuchen",
-      "diese Kuchen Stücke",
-      "drei Stück Kuchens"
-    ],
-    correct: 0,
-    expl6: {
-      zh: "「Stück」是量詞後面不變複數：drei Stück Kuchen（三塊蛋糕）；Kuchen 本身不可數，不加 -s。",
-      en: "'Stück' as a measure word stays singular: drei Stück Kuchen. 'Kuchen' is uncountable here, no -s.",
-      ja: "量詞の Stück は複数にならない：drei Stück Kuchen。Kuchen はここでは不可算で -s を付けない。",
-      ko: "세는 말 Stück은 복수가 되지 않습니다: drei Stück Kuchen. Kuchen은 여기서 셀 수 없어 -s를 안 붙입니다.",
-      th: "'Stück' เป็นลักษณนามไม่เปลี่ยนพหูพจน์: drei Stück Kuchen 'Kuchen' นับไม่ได้ไม่เติม -s",
-      vi: "'Stück' làm danh từ đo lường giữ nguyên số ít: drei Stück Kuchen. 'Kuchen' đếm được không thêm -s."
-    }
-  },
-  {
-    cat: "measure",
-    q: {
-      de: "Was heißt 'eine Flasche Bier' im Plural?",
-      tr6: {
-        zh: "「一瓶啤酒」的複數是？",
-        en: "What is the plural of 'eine Flasche Bier'?",
-        ja: "「eine Flasche Bier」の複数形は？",
-        ko: "'eine Flasche Bier'의 복수는?",
-        th: "'eine Flasche Bier' พหูพจน์คืออะไร",
-        vi: "Số nhiều của 'eine Flasche Bier' là gì?"
-      }
-    },
-    opts: [
-      "zwei Flaschen Bier",
-      "zwei Flasche Biere",
-      "zwei Flaschen Biere",
-      "zwei Flaschen Biern"
-    ],
-    correct: 0,
-    expl6: {
-      zh: "量詞 Flasche 要變複數 Flaschen；但物質名詞 Bier 維持單數（兩瓶啤酒仍是一種飲料）。",
-      en: "The measure word 'Flasche' becomes 'Flaschen'; the mass noun 'Bier' stays singular.",
-      ja: "量詞 Flasche は複数形 Flaschen。物質名詞 Bier は単数のまま。",
-      ko: "세는 말 Flasche는 복수 Flaschen입니다. 물질명사 Bier는 단수를 유지합니다.",
-      th: "ลักษณนาม Flasche เป็นพหูพจน์ Flaschen ส่วนคำนามสาร Bier คงเอกพจน์",
-      vi: "Danh từ đo lường 'Flasche' thành 'Flaschen'; danh từ vật chất 'Bier' giữ số ít."
-    }
-  },
-
-  /* ---- grammar 4 ---- */
-  {
-    cat: "grammar",
-    q: {
-      de: "Welcher Artikel passt? ___ Buch ist neu.",
-      tr6: {
-        zh: "哪個冠詞正確？___ Buch 是新的。",
-        en: "Which article fits? ___ book is new.",
-        ja: "どの冠詞が入りますか？___ 本は新しい。",
-        ko: "어느 관사가 맞나요? ___ 책은 새것이에요.",
-        th: "นำตัวไหนถูก? ___ หนังสือเล่มนี้ใหม่",
-        vi: "Mạo từ nào đúng? ___ sách là mới."
-      }
-    },
-    opts: ["das (neuter)", "die (feminine)", "der (masculine)", "den (accusative)"],
-    correct: 0,
-    expl6: {
-      zh: "Buch 是中性（das Buch），主格用 das。der 是陽性主格，die 是陰性/複數，den 是陽性受格。",
-      en: "Buch is neuter (das Buch); nominative uses das. der is masculine nominative, die feminine/plural, den masculine accusative.",
-      ja: "Buch は中性（das Buch）。主格は das。der は男性主格、die は女性/複数、den は男性対格。",
-      ko: "Buch는 중성(das Buch)입니다. 주격은 das. der는 남성 주격, die는 여성/복수, den은 남성 대격.",
-      th: "Buch เป็นกลาง (das Buch) ประธานกิริยาใช้ das der คือชายประธานกิริยา die คือหญิง/พหูพจน์ den คือชายกรรมกิริยา",
-      vi: "Buch là trung tính (das Buch); cách chủ dùng das. der là giống đực cách chủ, die giống cái/số nhiều, den giống đực cách tân."
-    }
-  },
-  {
-    cat: "grammar",
-    q: {
-      de: "Welcher Kasus folgt nach 'mit'?",
-      tr6: {
-        zh: "介係詞 mit 後面接哪個格？",
-        en: "Which case follows 'mit'?",
-        ja: "「mit」の後にはどの格が来ますか？",
-        ko: "'mit' 뒤에는 어떤 격이 오나요?",
-        th: "บุพบท 'mit' ตามด้วยกิริยากรณ์อะไร",
-        vi: "Giới từ 'mit' theo sau cách gì?"
-      }
-    },
-    opts: [
-      "Dativ (mit dem Auto)",
-      "Akkusativ (mit den Auto)",
-      "Nominativ (mit der Auto)",
-      "Kein Kasus"
-    ],
-    correct: 0,
-    expl6: {
-      zh: "mit 是純與格介係詞：mit dem Auto、mit meiner Freundin、mit dem Kaffee。",
-      en: "'mit' is a pure dative preposition: mit dem Auto, mit meiner Freundin, mit dem Kaffee.",
-      ja: "mit は純与格の前置詞：mit dem Auto, mit meiner Freundin, mit dem Kaffee。",
-      ko: "mit는 순수 여격 전치사입니다: mit dem Auto, mit meiner Freundin, mit dem Kaffee.",
-      th: "'mit' เป็นบุพบทกรรมกิริยาบริสุทธิ์: mit dem Auto, mit meiner Freundin, mit dem Kaffee",
-      vi: "'mit' là giới từ thuần gián cách: mit dem Auto, mit meiner Freundin, mit dem Kaffee."
-    }
-  },
-  {
-    cat: "grammar",
-    q: {
-      de: "Welcher Satz ist richtig?",
-      tr6: {
-        zh: "哪個句子是對的？",
-        en: "Which sentence is correct?",
-        ja: "どの文が正しいですか？",
-        ko: "어느 문장이 맞나요?",
-        th: "ประโยคไหนถูกต้อง",
-        vi: "Câu nào đúng?"
-      }
-    },
-    opts: [
-      "Ich gehe in die Schule (Richtung).",
-      "Ich gehe in der Schule (Richtung).",
-      "Ich gehe in die Schule (Ort).",
-      "Ich gehe in dem Schule (Richtung)."
-    ],
-    correct: 0,
-    expl6: {
-      zh: "「in + 受格」表方向（去哪裡？in die Schule）；「in + 與格」表位置（在哪裡？in der Schule）。",
-      en: "'in + accusative' shows direction (where to? in die Schule); 'in + dative' shows location (where? in der Schule).",
-      ja: "「in + 対格」は方向（どこへ？in die Schule）、「in + 与格」は位置（どこで？in der Schule）。",
-      ko: "'in + 대격'은 방향(어디로? in die Schule), 'in + 여격'은 위치(어디에서? in der Schule)를 나타냅니다.",
-      th: "'in + กรรมกิริยา' บอกทิศทาง (ไปไหน? in die Schule) 'in + กรรมกิริยา' บอกตำแหน่ง (ที่ไหน? in der Schule)",
-      vi: "'in + cách tân' chỉ phương hướng (đi đâu? in die Schule); 'in + cách gián' chỉ vị trí (ở đâu? in der Schule)."
-    }
-  },
-  {
-    cat: "grammar",
-    q: {
-      de: "Was ist richtig? 'Ich ____ jetzt nach Berlin.' (fahren)",
-      tr6: {
-        zh: "空格該填什麼？Ich ____ jetzt nach Berlin.（fahren 開車）",
-        en: "What is correct? 'Ich ____ now to Berlin.' (fahren)",
-        ja: "正しいのは？「Ich ____ jetzt nach Berlin.」（fahren）",
-        ko: "알맞은 것은? 'Ich ____ jetzt nach Berlin.' (fahren)",
-        th: "เติมคำว่าอะไรดี? 'Ich ____ jetzt nach Berlin.' (fahren)",
-        vi: "Điền gì đúng? 'Ich ____ bây giờ sang Berlin.' (fahren)"
-      }
-    },
-    opts: [
-      "fahre (ich-form)",
-      "fährt (er/sie-form)",
-      "fährst (du-form)",
-      "fahrt (ihr-form)"
-    ],
-    correct: 0,
-    expl6: {
-      zh: "主詞 ich 對應動詞 fahren 的變化是 fahre：Ich fahre jetzt nach Berlin.",
-      en: "The subject 'ich' pairs with the verb form 'fahre': Ich fahre jetzt nach Berlin.",
-      ja: "主語 ich に対する fahren の変化は fahre：Ich fahre jetzt nach Berlin.",
-      ko: "주어 ich에 대한 fahren 활용은 fahre: Ich fahre jetzt nach Berlin.",
-      th: "ประธาน ich จับคู่กับรูปกริยา fahre: Ich fahre jetzt nach Berlin",
-      vi: "Chủ ngữ 'ich' đi với dạng động từ 'fahre': Ich fahre jetzt nach Berlin."
-    }
-  },
-
-  /* ---- conversation 3 ---- */
-  {
-    cat: "conversation",
-    q: {
-      de: "Sie bestellen im Café. Was sagen Sie höflich?",
-      tr6: {
-        zh: "在咖啡館點餐，你要客氣地說？",
-        en: "You order in a café. What do you say politely?",
-        ja: "カフェで注文します。丁寧に何と言いますか？",
-        ko: "카페에서 주문합니다. 정중하게 뭐라고 해야 하나요?",
-        th: "คุณสั่งกาแฟที่ร้าน จะพูดอย่างสุภาพว่าอย่างไร",
-        vi: "Bạn gọi món ở quán cà phê. Bạn nói lịch sự thế nào?"
-      }
-    },
-    opts: [
-      "Ich möchte einen Kaffee, bitte.",
-      "Gib mir Kaffee!",
-      "Kaffee her!",
-      "Will Kaffee."
-    ],
-    correct: 0,
-    expl6: {
-      zh: "「Ich möchte …, bitte.」是禮貌點法；其他選項是命令句或太隨便。",
-      en: "'Ich möchte …, bitte.' is the polite way; the others are commands or too casual.",
-      ja: "「Ich möchte …, bitte.」が丁寧な注文。他は命令口調かぞんざい。",
-      ko: "'Ich möchte …, bitte.'가 정중한 주문법입니다. 나머지는 명령조거나 너무 가볍습니다.",
-      th: "'Ich möchte …, bitte.' คือการสั่งที่สุภาพ ตัวอื่นเป็นคำสั่งหรือหย่อนเกินไป",
-      vi: "'Ich möchte …, bitte.' là cách gọi lịch sự; các câu khác là mệnh lệnh hoặc quá suồng sã."
-    }
-  },
-  {
-    cat: "conversation",
-    q: {
-      de: "Sie fragen nach dem Weg zur U-Bahn. Was sagen Sie am Anfang?",
-      tr6: {
-        zh: "你要問地鐵站，開頭該說什麼？",
-        en: "You ask the way to the subway. What do you say first?",
-        ja: "地下鉄への道を尋ねます。最初に何と言いますか？",
-        ko: "지하철역 가는 길을 물어보려고요. 먼저 뭐라고 해야 하나요?",
-        th: "คุณจะถามทางไปสถานีรถไฟใต้ดิน ควรพูดอะไรก่อน",
-        vi: "Bạn hỏi đường đến tàu điện ngầm. Bạn nói gì trước?"
-      }
-    },
-    opts: [
-      "Entschuldigung, wo ist die U-Bahn-Station?",
-      "Halt! Wo ist die U-Bahn?",
-      "Sagen Sie mir die U-Bahn!",
-      "U-Bahn jetzt!"
-    ],
-    correct: 0,
-    expl6: {
-      zh: "問路開頭先說「Entschuldigung」打擾對方，再問「wo ist …?」；其他是命令或太粗魯。",
-      en: "Start with 'Entschuldigung' to get attention, then 'wo ist …?'; the others are commands or rude.",
-      ja: "まず「Entschuldigung」で呼び止め、次に「wo ist …?」。他は命令口調か失礼。",
-      ko: "먼저 'Entschuldigung'으로 주의를 끌고 'wo ist …?'로 묻습니다. 나머지는 명령조거나 무례합니다.",
-      th: "เริ่มด้วย 'Entschuldigung' เพื่อขอความสนใจ แล้วถาม 'wo ist …?' ตัวอื่นเป็นคำสั่งหรือไม่สุภาพ",
-      vi: "Bắt đầu bằng 'Entschuldigung' để xin chú ý, rồi hỏi 'wo ist …?'; các câu khác là mệnh lệnh hoặc thô lỗ."
-    }
-  },
-  {
-    cat: "conversation",
-    q: {
-      de: "Der Kellner fragt: 'Zusammen oder getrennt?' Was antwortet eine Gruppe, die einzeln zahlt?",
-      tr6: {
-        zh: "服務生問：「一起算還是分開？」各付各的團體要怎麼回答？",
-        en: "The waiter asks: 'Together or separately?' How does a group paying individually answer?",
-        ja: "店員が「一緒ですか、別々ですか？」と聞きました。各自払いのグループは何と答えますか？",
-        ko: "점원이 '합산인가요, 따로인가요?'라고 물었습니다. 따로 계산하는 그룹은 뭐라고 답하나요?",
-        th: "พนักงานถาม 'จ่ายรวมหรือแยกกัน?' กลุ่มที่จ่ายคนละส่วนจะตอบว่าอย่างไร",
-        vi: "Nhân viên hỏi: 'Chung hay riêng?' Một nhóm trả tiền riêng trả lời sao?"
-      }
-    },
-    opts: [
-      "Getrennt, bitte.",
-      "Zusammen, bitte.",
-      "Wir wissen es nicht.",
-      "Egal, bitte."
-    ],
-    correct: 0,
-    expl6: {
-      zh: "各付各的回答「Getrennt, bitte.」；一起付回答「Zusammen, bitte.」。",
-      en: "Paying individually answer 'Getrennt, bitte.'; together answer 'Zusammen, bitte.'",
-      ja: "各自払いなら「Getrennt, bitte.」。一緒なら「Zusammen, bitte.」。",
-      ko: "따로 계산하면 'Getrennt, bitte.' 합산하면 'Zusammen, bitte.'입니다.",
-      th: "จ่ายคนละส่วนตอบ 'Getrennt, bitte.' จ่ายรวมตอบ 'Zusammen, bitte.'",
-      vi: "Trả riêng trả lời 'Getrennt, bitte.'; trả chung trả lời 'Zusammen, bitte.'"
-    }
-  }
+  { id: "Q1", q: { zh: "德語字母「J」（如 Jacke、Japan）永遠發什麼音？", en: "How is the German letter 'J' (as in Jacke, Japan) always pronounced?" }, opts: ["/j/（如英語 yes 的 y）", "/dʒ/（如英語 jam 的 j）", "/x/（喉音）", "/ts/"], correct: 0, exp: { zh: "德語的 J 永遠發半母音 /j/，因此 Japan 讀作 [ˈjaːpaːn]。", en: "German J is always pronounced /j/ like 'y' in 'yes'." } },
+  { id: "Q2", q: { zh: "德語字母「W」與「V」在 Wasser 與 Vater 中的正確發音為？", en: "How are 'W' and 'V' pronounced in 'Wasser' and 'Vater'?" }, opts: ["W = /v/ , V = /f/", "W = /w/ , V = /v/", "W = /f/ , V = /w/", "兩者皆發 /v/"], correct: 0, exp: { zh: "德語 W 咬下唇發濁音 /v/；本土詞的 V 發清音 /f/。", en: "In German, W is voiced /v/ and native V is voiceless /f/." } },
+  { id: "Q3", q: { zh: "根據「字尾清音化」規則，Hund（狗）與 Tag（日子）字尾的 d 與 g 發什麼音？", en: "Due to final devoicing, how are the final 'd' and 'g' in 'Hund' and 'Tag' pronounced?" }, opts: ["清化為 /t/ 與 /k/", "保持濁音 /d/ 與 /g/", "完全不發音", "鼻音化為 /n/ 與 /ŋ/"], correct: 0, exp: { zh: "字尾 b, d, g 一律清化為 [p, t, k]，故 Hund 讀 [hʊnt]，Tag 讀 [taːk]。", en: "Final b, d, g devoice to [p, t, k] at the end of a syllable." } },
+  { id: "Q4", q: { zh: "德語數字 16 與 17 的正確拼寫是什麼？", en: "What is the correct spelling of 16 and 17 in German?" }, opts: ["sechzehn / siebzehn", "sechszehn / siebenzehn", "sechzig / siebzig", "zehnsechs / zehnsieben"], correct: 0, exp: { zh: "16 去掉 s 變 sechzehn；17 去掉 en 變 siebzehn。", en: "16 drops 's' (sechzehn) and 17 drops 'en' (siebzehn)." } },
+  { id: "Q5", q: { zh: "德語數字 21 的正確拼寫與讀法順序為？", en: "How is 21 written and read in German?" }, opts: ["einundzwanzig（個位 ein + und + 十位 zwanzig）", "einsundzwanzig", "zwanzigundeins", "einzwanzig"], correct: 0, exp: { zh: "21–99 先念個位再念十位，且 eins 在 und 前去掉 s 變 einundzwanzig。", en: "Units come before tens, and 'eins' drops '-s' to become 'einundzwanzig'." } },
+  { id: "Q6", q: { zh: "德語口語時間「halb drei」代表幾點幾分？", en: "What time is 'halb drei' in German?" }, opts: ["2:30（兩點半）", "3:30（三點半）", "3:15", "2:45"], correct: 0, exp: { zh: "halb + 下一個鐘點 = 差半小時到該鐘點，故 halb drei 是 2:30！", en: "'halb drei' means halfway to three, which is 2:30!" } },
+  { id: "Q7", q: { zh: "在餐廳想有禮貌地點一杯咖啡（der Kaffee），最自然的說法是？", en: "What is the most polite way to order a coffee (der Kaffee) in a café?" }, opts: ["Ich hätte gern einen Kaffee, bitte.", "Ich will eins Kaffee!", "Gib mir der Kaffee!", "Ich möchte eine Kaffee."], correct: 0, exp: { zh: "「Ich hätte gern + 第四格受詞」最禮貌，陽性 der Kaffee 在第四格變 einen Kaffee。", en: "'Ich hätte gern + Accusative' is polite; masculine 'der Kaffee' becomes 'einen Kaffee'." } },
+  { id: "Q8", q: { zh: "「三雙鞋」與「兩瓶水」的正確德語表達為？", en: "How do you say 'three pairs of shoes' and 'two bottles of water'?" }, opts: ["drei Paar Schuhe / zwei Flaschen Wasser", "drei Paare Schuhe / zwei Flasche Wässer", "drei paar Schuh / zwei Flaschen Wässer", "dreimal Paar Schuhe / zwei Glas Wasser"], correct: 0, exp: { zh: "大寫 Paar 作量詞不變複數（drei Paar Schuhe）；陰性 Flasche 變複數 Flaschen，內容物 Wasser 不變。", en: "Uppercase Paar stays unchanged as a unit; feminine Flasche pluralizes to Flaschen." } }
 ];
 
-/* Export (Node + Browser 兼容) */
-
-
-/*===UI6==*/
-/* eslint-disable */
-/* =========================================================================
- * german_ui6.js — 德語一步通國際版 · 6 語系 UI 翻譯字典
- * 旗艦 Web App 整合用：t() 查詢、回退鏈 目前語系 → en-GB → 安全提示
- * 純 JS 資料、無 DOM 操作。
- * 語系：zh-HK（正體中文·香港）/ en-GB（英式英語）/ ja-JP / ko-KR / th-TH / vi-VN
- * ========================================================================= */
-
+/* ================= 8. UI DICTIONARY ================= */
 const NEW_UI6 = {
-
-  /* ============================ zh-HK 正體中文 ============================ */
-  "zh-HK": {
-    "guide.title": "新手指南",
-    "guide.open": "開啟指南",
-    "spd.lbl": "語速",
-    "spd.slow": "🐢 慢速",
-    "spd.norm": "🚶 標準",
-    "spd.fast": "🏃 快速",
-    "dark.on": "深色模式",
-    "dark.off": "淺色模式",
-    "settings.title": "設定",
-    "reset.btn": "重設進度",
-    "reset.confirm": "確定刪除全部進度？",
-    "reset.done": "已重設",
-
-    "preset.beginner": "🌱 初學模式 全開",
-    "preset.advanced": "🎓 進階模式 僅德文",
-    "layer.ipa": "IPA 音標",
-    "layer.native": "母語近似音",
-    "layer.actual": "實際連讀與重音",
-    "layer.trans": "多語翻譯",
-    "layer.notes": "發音與語法提示",
-
-    "nav.home": "主頁",
-    "nav.alphabet": "字母與發音",
-    "nav.numbers": "數字與量詞",
-    "nav.grammar": "語法與會話",
-    "nav.quiz": "測驗與分析",
-
-    "hero.welcome": "Willkommen！展開你的德語學習之旅",
-    "hero.sub": "字母、數字、文法與旅遊會話，一步一步穩紮穩打。",
-    "goal.title": "每日目標",
-    "goal.min5": "5 分鐘",
-    "goal.min10": "10 分鐘",
-    "goal.min15": "15 分鐘",
-    "goal.min30": "30 分鐘",
-    "goal.streak": "連續天數",
-    "goal.today": "今日學習",
-    "goal.tasks": "今日推薦任務",
-    "goal.taskAlpha": "複習 3 個字母",
-    "goal.taskNum": "練習數字轉換",
-    "goal.taskDlg": "跟讀一課會話",
-    "voice.title": "語音引擎狀態",
-    "voice.ok": "✅ 已支援 de-DE",
-    "voice.fail": "❌ 未偵測到德語語音",
-    "voice.testing": "測試中…",
-    "voice.test": "🔊 測試發音",
-    "mod1.title": "字母與正音中心",
-    "mod1.desc": "掌握 30 個字母、IPA 音標與純正德語發音。",
-    "mod2.title": "數字·日期·量詞",
-    "mod2.desc": "數字、時間、金額與德語量詞實戰。",
-    "mod3.title": "文法與旅遊會話",
-    "mod3.desc": "核心文法搭配 13 課真實旅遊生活會話。",
-    "mod4.title": "測驗·SRS·收藏",
-    "mod4.desc": "跨模組測驗、錯題間隔重溫與收藏單字。",
-    "mod.progress": "進度",
-    "mod.cta": "進入",
-
-    "atab.letters": "30 字母表",
-    "atab.pairs": "清濁與變音對比",
-    "atab.compound": "複合詞合成器",
-    "atab.rules": "7 大正音法則",
-    "atab.confuse": "易混淆拼寫",
-    "atab.trainer": "🎙️ A5 聽力跟讀",
-    "st.new": "未學",
-    "st.learned": "學習中",
-    "st.mastered": "已掌握",
-    "st.review": "待複習",
-    "ltr.speak": "🔊 發音",
-    "ltr.expand": "展開",
-    "ltr.collapse": "收起",
-    "ltr.openLesson": "開啟教學",
-    "badge.mastered": "已掌握",
-
-    "m.title": "字母教學",
-    "m.animate": "▶️ 筆順動畫",
-    "m.trace": "描紅",
-    "m.free": "自由書寫",
-    "m.undo": "↩️ 復原",
-    "m.clear": "🧹 清除",
-    "m.evaluate": "✅ 評分",
-    "m.strokes": "筆畫數",
-    "m.traceLen": "軌跡長度",
-    "m.cover": "九宮格覆蓋",
-    "m.score": "幾何比對評分，非 AI 發音評分",
-    "m.note": "此評分僅為幾何比對",
-    "m.saved": "筆跡已保存",
-
-    "num.title": "數字·日期·時間·量詞",
-    "num.sub": "在不同情境中轉換、聆聽與練習德語數字。",
-    "conv.title": "🧮 即時轉換器",
-    "conv.input": "輸入數字，如 3850 或 4,50",
-    "conv.btn": "轉換",
-    "conv.ctx": "情境",
-    "ctx.count": "數數",
-    "ctx.age": "年齡",
-    "ctx.money": "金額",
-    "ctx.phone": "電話",
-    "ctx.time": "時刻",
-    "ctx.year": "年份",
-    "ctx.ordinal": "序數",
-    "conv.hint": "試試：21 / 99 / 3850 / 1998 / 4,50",
-    "listen.title": "🎧 隨機價格聽力",
-    "listen.btn": "播放隨機價格",
-    "listen.again": "再聽一次",
-    "cat.flag": "不規則",
-    "measure.title": "量詞與計數",
-    "measure.applies": "適用對象",
-    "measure.trap": "常見誤區",
-    "measure.table": "1–5 搭配表",
-    "time.trap": "陷阱：halb drei = 2:30",
-    "emergency.title": "德國緊急電話",
-
-    "gram.title": "核心語法速查",
-    "gram.gender": "名詞三性",
-    "gram.cases": "四格變化",
-    "gram.verbs": "動詞現在式",
-    "gram.v2": "V2 語序",
-    "lesson.title": "13 課旅遊生活會話",
-    "lesson.intro": "情境",
-    "lesson.stars": "⭐ 重點單字",
-    "lesson.gram": "語法解析",
-    "lesson.mini": "隨堂小測驗",
-    "dlg.normal": "正常語速",
-    "dlg.slow": "慢速",
-    "dlg.playAll": "全部播放",
-    "dlg.stop": "停止",
-    "spk.a": "說話者 A",
-    "spk.b": "說話者 B",
-
-    "quiz.title": "跨模組測驗",
-    "quiz.filter": "分類篩選",
-    "quiz.start": "開始",
-    "quiz.next": "下一題",
-    "quiz.correct": "答對",
-    "quiz.wrong": "答錯",
-    "quiz.expl": "詳解",
-    "quiz.score": "得分",
-    "quiz.done": "完成",
-    "srs.title": "🔄 SRS 錯題複習",
-    "srs.flip": "翻面",
-    "srs.again": "Again 重來",
-    "srs.good": "Good 記得",
-    "srs.easy": "Easy 簡單",
-    "srs.due": "待複習",
-    "fav.title": "⭐ 收藏夾",
-    "fav.speak": "朗讀",
-    "fav.remove": "移除",
-    "stats.title": "📊 統計面板",
-    "stats.mastered": "已掌握字母",
-    "stats.writes": "手寫次數",
-    "stats.dlg": "會話完成度",
-    "stats.quiz": "測驗答題數",
-    "stats.acc": "正確率",
-    "stats.export": "匯出資料",
-    "stats.reset": "重設",
-    "back": "返回",
-
-    "err.nospeech": "瀏覽器無 de-DE 語音，無法播放",
-    "err.speech": "播放失敗，請重試",
-    "tts.note": "0.5x 超慢速視瀏覽器語音引擎支援而定",
-    "tts.testing": "語音測試中…",
-    "tts.playOK": "播放完成",
-    "toast.learned": "已標記學習",
-    "toast.mastered": "已標記掌握"
-  },
-
-  /* ============================ en-GB 英式英語 ============================ */
   "en-GB": {
-    "guide.title": "Quick-start guide",
-    "guide.open": "Open the guide",
-    "spd.lbl": "Speed",
-    "spd.slow": "🐢 Slow",
-    "spd.norm": "🚶 Normal",
-    "spd.fast": "🏃 Fast",
-    "dark.on": "Dark mode",
-    "dark.off": "Light mode",
-    "settings.title": "Settings",
-    "reset.btn": "Reset progress",
-    "reset.confirm": "Delete all your progress?",
-    "reset.done": "Progress has been reset",
-
-    "preset.beginner": "🌱 Beginner mode — all layers on",
-    "preset.advanced": "🎓 Advanced mode — German only",
-    "layer.ipa": "IPA phonetics",
-    "layer.native": "Native-style approximations",
-    "layer.actual": "Real linking & stress",
-    "layer.trans": "Translations",
-    "layer.notes": "Pronunciation & grammar tips",
-
-    "nav.home": "Home",
-    "nav.alphabet": "Alphabet & sounds",
-    "nav.numbers": "Numbers & counters",
-    "nav.grammar": "Grammar & dialogue",
-    "nav.quiz": "Quiz & analytics",
-
-    "hero.welcome": "Willkommen! Begin your German journey",
-    "hero.sub": "Letters, numbers, grammar and travel dialogue — step by step.",
-    "goal.title": "Daily goal",
-    "goal.min5": "5 minutes",
-    "goal.min10": "10 minutes",
-    "goal.min15": "15 minutes",
-    "goal.min30": "30 minutes",
-    "goal.streak": "Day streak",
-    "goal.today": "Studied today",
-    "goal.tasks": "Today's recommended tasks",
-    "goal.taskAlpha": "Review 3 letters",
-    "goal.taskNum": "Practise number conversion",
-    "goal.taskDlg": "Shadow one dialogue lesson",
-    "voice.title": "Speech engine status",
-    "voice.ok": "✅ de-DE is supported",
-    "voice.fail": "❌ No German speech detected",
-    "voice.testing": "Testing…",
-    "voice.test": "🔊 Test pronunciation",
-    "mod1.title": "Letters & pronunciation centre",
-    "mod1.desc": "Master the 30 letters, IPA sounds and authentic German pronunciation.",
-    "mod2.title": "Numbers · dates · counters",
-    "mod2.desc": "Numbers, time, money and German measure words in context.",
-    "mod3.title": "Grammar & travel dialogue",
-    "mod3.desc": "Core grammar alongside 13 real-life travel conversation lessons.",
-    "mod4.title": "Quiz · SRS · favourites",
-    "mod4.desc": "Cross-module quizzes, spaced-repetition review and saved words.",
-    "mod.progress": "Progress",
-    "mod.cta": "Enter",
-
-    "atab.letters": "30-letter alphabet",
-    "atab.pairs": "Voiceless/voiced & umlaut pairs",
-    "atab.compound": "Compound-word builder",
-    "atab.rules": "7 key pronunciation rules",
-    "atab.confuse": "Easily confused spellings",
-    "atab.trainer": "🎙️ A5 listening shadowing",
-    "st.new": "New",
-    "st.learned": "Learning",
-    "st.mastered": "Mastered",
-    "st.review": "To review",
-    "ltr.speak": "🔊 Speak",
-    "ltr.expand": "Expand",
-    "ltr.collapse": "Collapse",
-    "ltr.openLesson": "Open lesson",
-    "badge.mastered": "Mastered",
-
-    "m.title": "Letter lesson",
-    "m.animate": "▶️ Stroke animation",
-    "m.trace": "Trace",
-    "m.free": "Free write",
-    "m.undo": "↩️ Undo",
-    "m.clear": "🧹 Clear",
-    "m.evaluate": "✅ Score",
-    "m.strokes": "Stroke count",
-    "m.traceLen": "Trace length",
-    "m.cover": "3×3 grid coverage",
-    "m.score": "Geometric match score (not speech scoring)",
-    "m.note": "This score is a geometric comparison only.",
-    "m.saved": "Handwriting saved",
-
-    "num.title": "Numbers · dates · time · counters",
-    "num.sub": "Convert, hear and practise German number forms in context.",
-    "conv.title": "🧮 Live converter",
-    "conv.input": "Type a number, e.g. 3850 or 4,50",
-    "conv.btn": "Convert",
-    "conv.ctx": "Context",
-    "ctx.count": "Counting",
-    "ctx.age": "Age",
-    "ctx.money": "Amount",
-    "ctx.phone": "Phone",
-    "ctx.time": "Time",
-    "ctx.year": "Year",
-    "ctx.ordinal": "Ordinal",
-    "conv.hint": "Try: 21 / 99 / 3850 / 1998 / 4,50",
-    "listen.title": "🎧 Random-price listening",
-    "listen.btn": "Play a random price",
-    "listen.again": "Play again",
-    "cat.flag": "Irregular",
-    "measure.title": "Measure words & counters",
-    "measure.applies": "Used for",
-    "measure.trap": "Common pitfalls",
-    "measure.table": "1–5 match table",
-    "time.trap": "Trap: halb drei = 2:30",
-    "emergency.title": "German emergency numbers",
-
-    "gram.title": "Core grammar quick reference",
-    "gram.gender": "Three noun genders",
-    "gram.cases": "Four case endings",
-    "gram.verbs": "Present-tense verbs",
-    "gram.v2": "V2 word order",
-    "lesson.title": "13 travel & daily-life dialogues",
-    "lesson.intro": "Scenario",
-    "lesson.stars": "⭐ Key vocabulary",
-    "lesson.gram": "Grammar notes",
-    "lesson.mini": "Quick quiz",
-    "dlg.normal": "Normal speed",
-    "dlg.slow": "Slow speed",
-    "dlg.playAll": "Play all",
-    "dlg.stop": "Stop",
-    "spk.a": "Speaker A",
-    "spk.b": "Speaker B",
-
-    "quiz.title": "Cross-module quiz",
-    "quiz.filter": "Filter by category",
-    "quiz.start": "Start",
-    "quiz.next": "Next question",
-    "quiz.correct": "Correct",
-    "quiz.wrong": "Wrong",
-    "quiz.expl": "Explanation",
-    "quiz.score": "Score",
-    "quiz.done": "Done",
-    "srs.title": "🔄 SRS review",
-    "srs.flip": "Flip card",
-    "srs.again": "Again",
-    "srs.good": "Good",
-    "srs.easy": "Easy",
-    "srs.due": "Due for review",
-    "fav.title": "⭐ Favourites",
-    "fav.speak": "Read aloud",
-    "fav.remove": "Remove",
-    "stats.title": "📊 Statistics",
-    "stats.mastered": "Letters mastered",
-    "stats.writes": "Handwriting attempts",
-    "stats.dlg": "Dialogue completion",
-    "stats.quiz": "Questions answered",
-    "stats.acc": "Accuracy",
-    "stats.export": "Export data",
-    "stats.reset": "Reset",
-    "back": "Back",
-
-    "err.nospeech": "This browser has no de-DE voice, so playback is unavailable.",
-    "err.speech": "Playback failed, please try again.",
-    "tts.note": "0.5× ultra-slow speed depends on the browser's speech engine.",
-    "tts.testing": "Testing speech…",
-    "tts.playOK": "Playback finished",
-    "toast.learned": "Marked as learning",
-    "toast.mastered": "Marked as mastered"
+    "app.title": "German Step by Step",
+    "app.subtitle": "International Edition",
+    "nav.home": "🏠 Home",
+    "nav.alpha": "🔤 Alphabet & Phonetics",
+    "nav.numbers": "🔢 Numbers & Units (Mod C)",
+    "nav.travel": "💬 Dialogues & Grammar",
+    "nav.quiz": "🎯 Quiz & SRS",
+    "hero.title": "Master German Step by Step",
+    "hero.sub": "Start with the 30 German letters, master phonological rules, numbers, dates, units, and 13 real-life travel dialogues.",
+    "stat.alpha": "Alphabet Learned",
+    "stat.streak": "Day Streak",
+    "stat.quiz": "Quiz Accuracy",
+    "stat.srs": "Saved / To Review",
+    "alpha.title": "German Alphabet (30 Letters: A–Z, Ä, Ö, Ü, ß)",
+    "alpha.sub": "Click 🔊 on any card to hear pronunciation directly without opening the popup. Click the card body for stroke animation & handwriting canvas.",
+    "alpha.tab.cards": "🔤 30 Alphabet Cards",
+    "alpha.tab.rules": "📏 7 Phonetic Rules",
+    "alpha.tab.pairs": "⚖️ Sound Contrasts",
+    "alpha.tab.comp": "🧩 Compound Builder",
+    "alpha.tab.conf": "🔍 Confusable Pairs",
+    "alpha.tab.a5": "🎧 52 Shadowing Words",
+    "num.conv.title": "🧮 Live German Number, Decimal, Time & Currency Converter",
+    "num.conv.btn": "Convert & Speak 🔊",
+    "num.tab.modc": "📘 Module C Essentials (Cases & Units)",
+    "num.tab.cats": "🔢 12 Number & Date Grids",
+    "num.tab.measure": "🍺 15 Containers & Quantifiers",
+    "travel.tab.dlg": "💬 13 Situational Dialogues",
+    "travel.tab.gram": "📘 Core Grammar Reference",
+    "quiz.title": "Interactive Quiz, SRS Wrong-Answer Review & Saved Phrases",
+    "btn.speak.letter": "🔊 Letter",
+    "btn.speak.word": "🔊 Word",
+    "btn.master": "✓ Mark Mastered",
+    "btn.unmaster": "↺ Unmark",
+    "err.nospeech": "German (de-DE) voice is not available on this browser."
   },
-
-  /* ============================ ja-JP 日本語 ============================ */
-  "ja-JP": {
-    "guide.title": "クイックガイド",
-    "guide.open": "ガイドを開く",
-    "spd.lbl": "話す速さ",
-    "spd.slow": "🐢 ゆっくり",
-    "spd.norm": "🚶 ふつう",
-    "spd.fast": "🏃 はやい",
-    "dark.on": "ダークモード",
-    "dark.off": "ライトモード",
-    "settings.title": "設定",
-    "reset.btn": "進捗をリセット",
-    "reset.confirm": "すべての進捗を削除しますか？",
-    "reset.done": "リセットしました",
-
-    "preset.beginner": "🌱 初級モード（すべて表示）",
-    "preset.advanced": "🎓 上級モード（ドイツ語のみ）",
-    "layer.ipa": "IPA 発音記号",
-    "layer.native": "日本語での近似音",
-    "layer.actual": "実際のリエゾンと強勢",
-    "layer.trans": "多言語翻訳",
-    "layer.notes": "発音・文法のヒント",
-
-    "nav.home": "ホーム",
-    "nav.alphabet": "アルファベットと発音",
-    "nav.numbers": "数字と数量詞",
-    "nav.grammar": "文法と会話",
-    "nav.quiz": "クイズと分析",
-
-    "hero.welcome": "Willkommen！ドイツ語の旅をはじめよう",
-    "hero.sub": "文字・数字・文法・旅行会話を、ステップごとに。",
-    "goal.title": "今日の目標",
-    "goal.min5": "5 分",
-    "goal.min10": "10 分",
-    "goal.min15": "15 分",
-    "goal.min30": "30 分",
-    "goal.streak": "連続学習日数",
-    "goal.today": "今日の学習",
-    "goal.tasks": "今日のおすすめタスク",
-    "goal.taskAlpha": "文字を 3 つ復習",
-    "goal.taskNum": "数字変換を練習",
-    "goal.taskDlg": "会話を 1 レッスン音読",
-    "voice.title": "音声エンジンの状態",
-    "voice.ok": "✅ de-DE 対応済み",
-    "voice.fail": "❌ ドイツ語音声が見つかりません",
-    "voice.testing": "テスト中…",
-    "voice.test": "🔊 発音テスト",
-    "mod1.title": "文字と発音センター",
-    "mod1.desc": "30 文字・IPA 記号・本場のドイツ語発音をマスター。",
-    "mod2.title": "数字・日付・数量詞",
-    "mod2.desc": "数字・時間・金額・ドイツの数量詞を実践。",
-    "mod3.title": "文法と旅行会話",
-    "mod3.desc": "核心文法＋13 のリアルな旅行会話レッスン。",
-    "mod4.title": "クイズ・SRS・お気に入り",
-    "mod4.desc": "横断クイズ・間隔反復・保存した単語。",
-    "mod.progress": "進捗",
-    "mod.cta": "入る",
-
-    "atab.letters": "30 文字のアルファベット",
-    "atab.pairs": "無声・有声とウムラウトの対比",
-    "atab.compound": "複合語ビルダー",
-    "atab.rules": "発音の 7 大ルール",
-    "atab.confuse": "間違えやすい綴り",
-    "atab.trainer": "🎙️ A5 シャドーイング",
-    "st.new": "未学習",
-    "st.learned": "学習中",
-    "st.mastered": "習得済み",
-    "st.review": "復習待ち",
-    "ltr.speak": "🔊 発音",
-    "ltr.expand": "展開",
-    "ltr.collapse": "折りたたむ",
-    "ltr.openLesson": "レッスンを開く",
-    "badge.mastered": "習得済み",
-
-    "m.title": "文字レッスン",
-    "m.animate": "▶️ 筆順アニメ",
-    "m.trace": "なぞり書き",
-    "m.free": "自由書き",
-    "m.undo": "↩️ 元に戻す",
-    "m.clear": "🧹 クリア",
-    "m.evaluate": "✅ 採点",
-    "m.strokes": "笔画数",
-    "m.traceLen": "筆跡の長さ",
-    "m.cover": "9 マスのカバー率",
-    "m.score": "形状一致スコア（音声採点ではありません）",
-    "m.note": "このスコアは形状比較のみです。",
-    "m.saved": "筆跡を保存しました",
-
-    "num.title": "数字・日付・時刻・数量詞",
-    "num.sub": "場面に合わせてドイツ語の数字を変換・聞き取り・練習。",
-    "conv.title": "🧮 リアルタイム変換",
-    "conv.input": "数字を入力（例: 3850 または 4,50）",
-    "conv.btn": "変換",
-    "conv.ctx": "場面",
-    "ctx.count": "数える",
-    "ctx.age": "年齢",
-    "ctx.money": "金額",
-    "ctx.phone": "電話番号",
-    "ctx.time": "時刻",
-    "ctx.year": "西暦",
-    "ctx.ordinal": "序数",
-    "conv.hint": "試しに: 21 / 99 / 3850 / 1998 / 4,50",
-    "listen.title": "🎧 ランダム価格リスニング",
-    "listen.btn": "ランダムな価格を再生",
-    "listen.again": "もう一度聞く",
-    "cat.flag": "不規則",
-    "measure.title": "数量詞と数え方",
-    "measure.applies": "対象",
-    "measure.trap": "よくある落とし穴",
-    "measure.table": "1〜5 の組み合わせ表",
-    "time.trap": "注意: halb drei = 2:30",
-    "emergency.title": "ドイツの緊急電話",
-
-    "gram.title": "核心文法クイックリファレンス",
-    "gram.gender": "名詞の 3 つの性",
-    "gram.cases": "4 格の語尾変化",
-    "gram.verbs": "現在形の動詞",
-    "gram.v2": "V2 語順",
-    "lesson.title": "旅行・生活会話 全 13 課",
-    "lesson.intro": "シチュエーション",
-    "lesson.stars": "⭐ 重要単語",
-    "lesson.gram": "文法解説",
-    "lesson.mini": "ミニ確認テスト",
-    "dlg.normal": "通常の速さ",
-    "dlg.slow": "ゆっくり",
-    "dlg.playAll": "すべて再生",
-    "dlg.stop": "停止",
-    "spk.a": "話し手 A",
-    "spk.b": "話し手 B",
-
-    "quiz.title": "複合モジュール・クイズ",
-    "quiz.filter": "カテゴリで絞り込み",
-    "quiz.start": "開始",
-    "quiz.next": "次の問題",
-    "quiz.correct": "正解",
-    "quiz.wrong": "不正解",
-    "quiz.expl": "解説",
-    "quiz.score": "得点",
-    "quiz.done": "完了",
-    "srs.title": "🔄 SRS 復習",
-    "srs.flip": "カードをめくる",
-    "srs.again": "Again もう一度",
-    "srs.good": "Good 覚えた",
-    "srs.easy": "Easy 簡単",
-    "srs.due": "復習予定",
-    "fav.title": "⭐ お気に入り",
-    "fav.speak": "読み上げ",
-    "fav.remove": "削除",
-    "stats.title": "📊 統計パネル",
-    "stats.mastered": "習得した文字",
-    "stats.writes": "手書き回数",
-    "stats.dlg": "会話の完了度",
-    "stats.quiz": "回答数",
-    "stats.acc": "正答率",
-    "stats.export": "データ出力",
-    "stats.reset": "リセット",
-    "back": "戻る",
-
-    "err.nospeech": "このブラウザに de-DE 音声がなく、再生できません。",
-    "err.speech": "再生に失敗しました。もう一度お試しください。",
-    "tts.note": "0.5 倍速の超低速はブラウザの音声エンジン対応次第です。",
-    "tts.testing": "音声テスト中…",
-    "tts.playOK": "再生が終わりました",
-    "toast.learned": "学習中に設定しました",
-    "toast.mastered": "習得済みに設定しました"
-  },
-
-  /* ============================ ko-KR 한국어 ============================ */
-  "ko-KR": {
-    "guide.title": "시작 가이드",
-    "guide.open": "가이드 열기",
-    "spd.lbl": "말하기 속도",
-    "spd.slow": "🐢 느리게",
-    "spd.norm": "🚶 보통",
-    "spd.fast": "🏃 빠르게",
-    "dark.on": "다크 모드",
-    "dark.off": "라이트 모드",
-    "settings.title": "설정",
-    "reset.btn": "진도 초기화",
-    "reset.confirm": "모든 진도를 삭제할까요?",
-    "reset.done": "초기화되었습니다",
-
-    "preset.beginner": "🌱 초급 모드(전체 표시)",
-    "preset.advanced": "🎓 고급 모드(독일어만)",
-    "layer.ipa": "IPA 발음 기호",
-    "layer.native": "한국어 근사음",
-    "layer.actual": "실제 연음과 강세",
-    "layer.trans": "다국어 번역",
-    "layer.notes": "발음·문법 팁",
-
-    "nav.home": "홈",
-    "nav.alphabet": "알파벳과 발음",
-    "nav.numbers": "숫자와 분류사",
-    "nav.grammar": "문법과 회화",
-    "nav.quiz": "퀴즈와 분석",
-
-    "hero.welcome": "Willkommen! 독일어 여정을 시작하세요",
-    "hero.sub": "글자·숫자·문법·여행 회화를 단계별로.",
-    "goal.title": "오늘의 목표",
-    "goal.min5": "5분",
-    "goal.min10": "10분",
-    "goal.min15": "15분",
-    "goal.min30": "30분",
-    "goal.streak": "연속 학습 일수",
-    "goal.today": "오늘 학습",
-    "goal.tasks": "오늘의 추천 학습",
-    "goal.taskAlpha": "알파벳 3개 복습",
-    "goal.taskNum": "숫자 변환 연습",
-    "goal.taskDlg": "회화 한 차시 따라 읽기",
-    "voice.title": "음성 엔진 상태",
-    "voice.ok": "✅ de-DE 지원됨",
-    "voice.fail": "❌ 독일어 음성을 찾을 수 없습니다",
-    "voice.testing": "테스트 중…",
-    "voice.test": "🔊 발음 테스트",
-    "mod1.title": "알파벳과 발음 센터",
-    "mod1.desc": "알파벳 30자, IPA 기호, 원어 발음을 마스터하세요.",
-    "mod2.title": "숫자·날짜·분류사",
-    "mod2.desc": "숫자, 시간, 금액과 독일어 분류사를 실전으로.",
-    "mod3.title": "문법과 여행 회화",
-    "mod3.desc": "핵심 문법 + 13회 실생활 여행 회화.",
-    "mod4.title": "퀴즈·SRS·즐겨찾기",
-    "mod4.desc": "모듈 간 통합 퀴즈, 간격 반복 복습, 저장 단어.",
-    "mod.progress": "진도",
-    "mod.cta": "입장",
-
-    "atab.letters": "알파벳 30자",
-    "atab.pairs": "무성·유성과 움라우트 대비",
-    "atab.compound": "합성어 만들기",
-    "atab.rules": "발음 규칙 7가지",
-    "atab.confuse": "헷갈리는 철자",
-    "atab.trainer": "🎙️ A5 듣고 따라 하기",
-    "st.new": "학습 전",
-    "st.learned": "학습 중",
-    "st.mastered": "마스터함",
-    "st.review": "복습 필요",
-    "ltr.speak": "🔊 발음",
-    "ltr.expand": "펼치기",
-    "ltr.collapse": "접기",
-    "ltr.openLesson": "학습 열기",
-    "badge.mastered": "마스터함",
-
-    "m.title": "알파벳 학습",
-    "m.animate": "▶️ 획순 애니메이션",
-    "m.trace": "따라 쓰기",
-    "m.free": "자유 쓰기",
-    "m.undo": "↩️ 실행 취소",
-    "m.clear": "🧹 지우기",
-    "m.evaluate": "✅ 채점",
-    "m.strokes": "획 수",
-    "m.traceLen": "궤적 길이",
-    "m.cover": "3×3 격자 덮이기",
-    "m.score": "기하학 일치 점수(음성 채점 아님)",
-    "m.note": "이 점수는 형태 비교일 뿐입니다.",
-    "m.saved": "필기가 저장되었습니다",
-
-    "num.title": "숫자·날짜·시간·분류사",
-    "num.sub": "상황에 맞는 독일어 숫자를 변환·청취·연습.",
-    "conv.title": "🧮 실시간 변환기",
-    "conv.input": "숫자 입력(예: 3850 또는 4,50)",
-    "conv.btn": "변환",
-    "conv.ctx": "상황",
-    "ctx.count": "세기",
-    "ctx.age": "나이",
-    "ctx.money": "금액",
-    "ctx.phone": "전화번호",
-    "ctx.time": "시각",
-    "ctx.year": "연도",
-    "ctx.ordinal": "서수",
-    "conv.hint": "해 보세요: 21 / 99 / 3850 / 1998 / 4,50",
-    "listen.title": "🎧 무작위 가격 듣기",
-    "listen.btn": "무작위 가격 재생",
-    "listen.again": "다시 듣기",
-    "cat.flag": "불규칙",
-    "measure.title": "분류사와 세기",
-    "measure.applies": "적용 대상",
-    "measure.trap": "흔한 실수",
-    "measure.table": "1–5 배합표",
-    "time.trap": "함정: halb drei = 2:30",
-    "emergency.title": "독일 긴급 전화",
-
-    "gram.title": "핵심 문법 핵심 요약",
-    "gram.gender": "명사의 세 가지 성",
-    "gram.cases": "4격 변화",
-    "gram.verbs": "현재 시제 동사",
-    "gram.v2": "V2 어순",
-    "lesson.title": "여행·일상 회화 13과",
-    "lesson.intro": "상황",
-    "lesson.stars": "⭐ 핵심 단어",
-    "lesson.gram": "문법 해설",
-    "lesson.mini": "간단 확인 퀴즈",
-    "dlg.normal": "보통 속도",
-    "dlg.slow": "느린 속도",
-    "dlg.playAll": "전체 재생",
-    "dlg.stop": "정지",
-    "spk.a": "화자 A",
-    "spk.b": "화자 B",
-
-    "quiz.title": "모듈 통합 퀴즈",
-    "quiz.filter": "분류 필터",
-    "quiz.start": "시작",
-    "quiz.next": "다음 문제",
-    "quiz.correct": "정답",
-    "quiz.wrong": "오답",
-    "quiz.expl": "해설",
-    "quiz.score": "점수",
-    "quiz.done": "완료",
-    "srs.title": "🔄 SRS 오답 복습",
-    "srs.flip": "카드 뒤집기",
-    "srs.again": "Again 다시",
-    "srs.good": "Good 기억 남",
-    "srs.easy": "Easy 쉬움",
-    "srs.due": "복습 예정",
-    "fav.title": "⭐ 즐겨찾기",
-    "fav.speak": "읽어 주기",
-    "fav.remove": "삭제",
-    "stats.title": "📊 통계 패널",
-    "stats.mastered": "마스터한 알파벳",
-    "stats.writes": "필기 횟수",
-    "stats.dlg": "회화 완료도",
-    "stats.quiz": "문제 풀이 수",
-    "stats.acc": "정답률",
-    "stats.export": "데이터 내보내기",
-    "stats.reset": "초기화",
-    "back": "뒤로",
-
-    "err.nospeech": "이 브라우저에 de-DE 음성이 없어 재생할 수 없습니다.",
-    "err.speech": "재생에 실패했습니다. 다시 시도하세요.",
-    "tts.note": "0.5배 초저속은 브라우저 음성 엔진 지원에 따라 달라집니다.",
-    "tts.testing": "음성 테스트 중…",
-    "tts.playOK": "재생 완료",
-    "toast.learned": "학습 중으로 표시했습니다",
-    "toast.mastered": "마스터함으로 표시했습니다"
-  },
-
-  /* ============================ th-TH ไทย ============================ */
-  "th-TH": {
-    "guide.title": "คู่มือเริ่มต้น",
-    "guide.open": "เปิดคู่มือ",
-    "spd.lbl": "ความเร็วเสียง",
-    "spd.slow": "🐢 ช้า",
-    "spd.norm": "🚶 ปกติ",
-    "spd.fast": "🏃 เร็ว",
-    "dark.on": "โหมดมืด",
-    "dark.off": "โหมดสว่าง",
-    "settings.title": "ตั้งค่า",
-    "reset.btn": "รีเซ็ตความคืบหน้า",
-    "reset.confirm": "ลบความคืบหน้าทั้งหมดหรือไม่?",
-    "reset.done": "รีเซ็ตแล้ว",
-
-    "preset.beginner": "🌱 โหมดเริ่มต้น (แสดงทั้งหมด)",
-    "preset.advanced": "🎓 โหมดขั้นสูง (เฉพาะภาษาเยอรมัน)",
-    "layer.ipa": "สัทอักษรสากล (IPA)",
-    "layer.native": "เสียงใกล้เคียงตามภาษาแม่",
-    "layer.actual": "การเชื่อมเสียงและเน้นเสียงจริง",
-    "layer.trans": "คำแปลหลายภาษา",
-    "layer.notes": "เคล็ดลับเสียงและไวยากรณ์",
-
-    "nav.home": "หน้าแรก",
-    "nav.alphabet": "ตัวอักษรและการออกเสียง",
-    "nav.numbers": "ตัวเลขและคำนับ",
-    "nav.grammar": "ไวยากรณ์และบทสนทนา",
-    "nav.quiz": "แบบทดสอบและสถิติ",
-
-    "hero.welcome": "Willkommen! เริ่มต้นเส้นทางภาษาเยอรมัน",
-    "hero.sub": "ตัวอักษร ตัวเลข ไวยากรณ์ และบทสนทนาท่องเที่ยว ทีละขั้นตอน",
-    "goal.title": "เป้าหมายประจำวัน",
-    "goal.min5": "5 นาที",
-    "goal.min10": "10 นาที",
-    "goal.min15": "15 นาที",
-    "goal.min30": "30 นาที",
-    "goal.streak": "วันเรียนต่อเนื่อง",
-    "goal.today": "เรียนวันนี้",
-    "goal.tasks": "ภารกิจแนะนำวันนี้",
-    "goal.taskAlpha": "ทบทวนตัวอักษร 3 ตัว",
-    "goal.taskNum": "ฝึกแปลงตัวเลข",
-    "goal.taskDlg": "อ่านตามบทสนทนา 1 บท",
-    "voice.title": "สถานะเครื่องยนต์เสียง",
-    "voice.ok": "✅ รองรับ de-DE แล้ว",
-    "voice.fail": "❌ ไม่พบเสียงภาษาเยอรมัน",
-    "voice.testing": "กำลังทดสอบ…",
-    "voice.test": "🔊 ทดสอบเสียง",
-    "mod1.title": "ศูนย์ตัวอักษรและการออกเสียง",
-    "mod1.desc": "เชี่ยวชาญ 30 ตัวอักษร สัทอักษร IPA และเสียงเยอรมันแท้",
-    "mod2.title": "ตัวเลข·วันที่·คำนับ",
-    "mod2.desc": "ตัวเลข เวลา เงิน และคำนับภาษาเยอรมันในทางปฏิบัติ",
-    "mod3.title": "ไวยากรณ์และบทสนทนาท่องเที่ยว",
-    "mod3.desc": "ไวยากรณ์หลัก + บทสนทนาชีวิตจริง 13 บท",
-    "mod4.title": "แบบทดสอบ·SRS·รายการโปรด",
-    "mod4.desc": "แบบทดสอบข้ามโมดูล ทบทวนเว้นระยะ และคำศัพท์ที่บันทึก",
-    "mod.progress": "ความคืบหน้า",
-    "mod.cta": "เข้าเรียน",
-
-    "atab.letters": "อักษร 30 ตัว",
-    "atab.pairs": "ตัดกันระหว่างเสียงก้อง-ไม่ก้องและอูมเลาต์",
-    "atab.compound": "ตัวสร้างคำประสม",
-    "atab.rules": "กฎการออกเสียง 7 ข้อ",
-    "atab.confuse": "การสะกดที่สับสนง่าย",
-    "atab.trainer": "🎙️ A5 ฟังแล้วพูดตาม",
-    "st.new": "ยังไม่เรียน",
-    "st.learned": "กำลังเรียน",
-    "st.mastered": "เชี่ยวชาญแล้ว",
-    "st.review": "รอทบทวน",
-    "ltr.speak": "🔊 ออกเสียง",
-    "ltr.expand": "ขยาย",
-    "ltr.collapse": "ย่อ",
-    "ltr.openLesson": "เปิดบทเรียน",
-    "badge.mastered": "เชี่ยวชาญแล้ว",
-
-    "m.title": "บทเรียนตัวอักษร",
-    "m.animate": "▶️ แสดงลำดับเส้นปากกา",
-    "m.trace": "เขียนตามรอย",
-    "m.free": "เขียนอิสระ",
-    "m.undo": "↩️ เลิกทำ",
-    "m.clear": "🧹 ล้าง",
-    "m.evaluate": "✅ ให้คะแนน",
-    "m.strokes": "จำนวนเส้น",
-    "m.traceLen": "ความยาวรอยเขียน",
-    "m.cover": "การคลุมตาราง 3×3",
-    "m.score": "คะแนนเทียบรูปทรง (ไม่ใช่การให้คะแนนเสียง)",
-    "m.note": "คะแนนนี้เป็นการเทียบรูปทรงเท่านั้น",
-    "m.saved": "บันทึกลายมือแล้ว",
-
-    "num.title": "ตัวเลข·วันที่·เวลา·คำนับ",
-    "num.sub": "แปลง ฟัง และฝึกตัวเลขเยอรมันตามบริบท",
-    "conv.title": "🧮 ตัวแปลงเรียลไทม์",
-    "conv.input": "ป้อนตัวเลข เช่น 3850 หรือ 4,50",
-    "conv.btn": "แปลง",
-    "conv.ctx": "บริบท",
-    "ctx.count": "นับเลข",
-    "ctx.age": "อายุ",
-    "ctx.money": "จำนวนเงิน",
-    "ctx.phone": "โทรศัพท์",
-    "ctx.time": "เวลา",
-    "ctx.year": "ปี",
-    "ctx.ordinal": "เลขลำดับที่",
-    "conv.hint": "ลอง: 21 / 99 / 3850 / 1998 / 4,50",
-    "listen.title": "🎧 ฟังราคาสุ่ม",
-    "listen.btn": "เล่นราคาสุ่ม",
-    "listen.again": "ฟังอีกครั้ง",
-    "cat.flag": "ไม่เป็นไปกฎ",
-    "measure.title": "คำนับและการนับ",
-    "measure.applies": "ใช้กับ",
-    "measure.trap": "ข้อผิดพลาดที่พบบ่อย",
-    "measure.table": "ตารางจับคู่ 1–5",
-    "time.trap": "กับดัก: halb drei = 2:30 น.",
-    "emergency.title": "เบอร์ฉุกเฉินเยอรมนี",
-
-    "gram.title": "สรุปไวยากรณ์หลัก",
-    "gram.gender": "เพศนาม 3 เพศ",
-    "gram.cases": "กาพ 4 รูป",
-    "gram.verbs": "กริยากาลปัจจุบัน",
-    "gram.v2": "ลำดับคำแบบ V2",
-    "lesson.title": "บทสนทนาท่องเที่ยว-ชีวิตประจำวัน 13 บท",
-    "lesson.intro": "สถานการณ์",
-    "lesson.stars": "⭐ คำศัพท์สำคัญ",
-    "lesson.gram": "คำอธิบายไวยากรณ์",
-    "lesson.mini": "แบบฝึกสั้น ๆ",
-    "dlg.normal": "ความเร็วปกติ",
-    "dlg.slow": "ความเร็วช้า",
-    "dlg.playAll": "เล่นทั้งหมด",
-    "dlg.stop": "หยุด",
-    "spk.a": "ผู้พูด A",
-    "spk.b": "ผู้พูด B",
-
-    "quiz.title": "แบบทดสอบข้ามโมดูล",
-    "quiz.filter": "กรองตามหมวด",
-    "quiz.start": "เริ่ม",
-    "quiz.next": "ข้อต่อไป",
-    "quiz.correct": "ถูก",
-    "quiz.wrong": "ผิด",
-    "quiz.expl": "คำอธิบาย",
-    "quiz.score": "คะแนน",
-    "quiz.done": "เสร็จสิ้น",
-    "srs.title": "🔄 ทบทวนข้อผิดพลาดด้วย SRS",
-    "srs.flip": "พลิกการ์ด",
-    "srs.again": "Again ทำอีกครั้ง",
-    "srs.good": "Good จำได้",
-    "srs.easy": "Easy ง่าย",
-    "srs.due": "ถึงกำหนดทบทวน",
-    "fav.title": "⭐ รายการโปรด",
-    "fav.speak": "อ่านออกเสียง",
-    "fav.remove": "นำออก",
-    "stats.title": "📊 แผงสถิติ",
-    "stats.mastered": "ตัวอักษรที่เชี่ยวชาญ",
-    "stats.writes": "จำนวนครั้งที่เขียน",
-    "stats.dlg": "ความสำเร็จบทสนทนา",
-    "stats.quiz": "จำนวนข้อที่ทำ",
-    "stats.acc": "อัตราถูกต้อง",
-    "stats.export": "ส่งออกข้อมูล",
-    "stats.reset": "รีเซ็ต",
-    "back": "กลับ",
-
-    "err.nospeech": "เบราว์เซอร์ไม่มีเสียง de-DE จึงเล่นไม่ได้",
-    "err.speech": "เล่นไม่สำเร็จ โปรดลองอีกครั้ง",
-    "tts.note": "ความเร็ว 0.5 เท่านั้น ขึ้นอยู่กับเครื่องยนต์เสียงของเบราว์เซอร์",
-    "tts.testing": "กำลังทดสอบเสียง…",
-    "tts.playOK": "เล่นเสร็จสิ้น",
-    "toast.learned": "ทำเครื่องหมายว่ากำลังเรียน",
-    "toast.mastered": "ทำเครื่องหมายว่าเชี่ยวชาญ"
-  },
-
-  /* ============================ vi-VN Tiếng Việt ============================ */
-  "vi-VN": {
-    "guide.title": "Hướng dẫn bắt đầu",
-    "guide.open": "Mở hướng dẫn",
-    "spd.lbl": "Tốc độ đọc",
-    "spd.slow": "🐢 Chậm",
-    "spd.norm": "🚶 Bình thường",
-    "spd.fast": "🏃 Nhanh",
-    "dark.on": "Chế độ tối",
-    "dark.off": "Chế độ sáng",
-    "settings.title": "Cài đặt",
-    "reset.btn": "Đặt lại tiến độ",
-    "reset.confirm": "Xóa toàn bộ tiến độ?",
-    "reset.done": "Đã đặt lại",
-
-    "preset.beginner": "🌱 Chế độ người mới (hiện tất cả)",
-    "preset.advanced": "🎓 Chế độ nâng cao (chỉ tiếng Đức)",
-    "layer.ipa": "Phiên âm IPA",
-    "layer.native": "Âm gần đúng theo tiếng mẹ đẻ",
-    "layer.actual": "Nối âm và trọng âm thực tế",
-    "layer.trans": "Dịch đa ngôn ngữ",
-    "layer.notes": "Lưu ý phát âm & ngữ pháp",
-
-    "nav.home": "Trang chủ",
-    "nav.alphabet": "Bảng chữ & phát âm",
-    "nav.numbers": "Số & lượng từ",
-    "nav.grammar": "Ngữ pháp & hội thoại",
-    "nav.quiz": "Kiểm tra & phân tích",
-
-    "hero.welcome": "Willkommen! Bắt đầu hành trình tiếng Đức",
-    "hero.sub": "Chữ cái, số, ngữ pháp và hội thoại du lịch — từng bước một.",
-    "goal.title": "Mục tiêu hằng ngày",
-    "goal.min5": "5 phút",
-    "goal.min10": "10 phút",
-    "goal.min15": "15 phút",
-    "goal.min30": "30 phút",
-    "goal.streak": "Số ngày liên tiếp",
-    "goal.today": "Học hôm nay",
-    "goal.tasks": "Nhiệm vụ gợi ý hôm nay",
-    "goal.taskAlpha": "Ôn 3 chữ cái",
-    "goal.taskNum": "Luyện đổi số",
-    "goal.taskDlg": "Đọc theo một bài hội thoại",
-    "voice.title": "Trạng thái bộ máy giọng nói",
-    "voice.ok": "✅ Đã hỗ trợ de-DE",
-    "voice.fail": "❌ Không tìm thấy giọng tiếng Đức",
-    "voice.testing": "Đang kiểm tra…",
-    "voice.test": "🔊 Kiểm tra phát âm",
-    "mod1.title": "Trung tâm chữ & chính âm",
-    "mod1.desc": "Nắm vững 30 chữ cái, phiên âm IPA và phát âm Đức chuẩn.",
-    "mod2.title": "Số · ngày tháng · lượng từ",
-    "mod2.desc": "Số, giờ, tiền tệ và lượng từ tiếng Đức thực hành.",
-    "mod3.title": "Ngữ pháp & hội thoại du lịch",
-    "mod3.desc": "Ngữ pháp cốt lõi kèm 13 bài hội thoại du lịch thực tế.",
-    "mod4.title": "Kiểm tra · SRS · yêu thích",
-    "mod4.desc": "Đề kiểm tra đa mô-đun, ôn tập cách quãng và từ đã lưu.",
-    "mod.progress": "Tiến độ",
-    "mod.cta": "Vào",
-
-    "atab.letters": "Bảng 30 chữ cái",
-    "atab.pairs": "Đối lập vô/thanh và nguyên âm đổi",
-    "atab.compound": "Trình ghép từ ghép",
-    "atab.rules": "7 quy tắc chính âm lớn",
-    "atab.confuse": "Cách viết dễ nhầm",
-    "atab.trainer": "🎙️ A5 nghe rồi bắt chước",
-    "st.new": "Chưa học",
-    "st.learned": "Đang học",
-    "st.mastered": "Đã thành thạo",
-    "st.review": "Cần ôn lại",
-    "ltr.speak": "🔊 Phát âm",
-    "ltr.expand": "Mở rộng",
-    "ltr.collapse": "Thu gọn",
-    "ltr.openLesson": "Mở bài học",
-    "badge.mastered": "Đã thành thạo",
-
-    "m.title": "Bài học chữ cái",
-    "m.animate": "▶️ Animation nét viết",
-    "m.trace": "Tô theo",
-    "m.free": "Viết tự do",
-    "m.undo": "↩️ Hoàn tác",
-    "m.clear": "🧹 Xóa",
-    "m.evaluate": "✅ Chấm điểm",
-    "m.strokes": "Số nét",
-    "m.traceLen": "Độ dài nét vẽ",
-    "m.cover": "Phủ ô lưới 3×3",
-    "m.score": "Điểm so khớp hình học (không phải chấm giọng)",
-    "m.note": "Điểm này chỉ so khớp hình học.",
-    "m.saved": "Đã lưu nét viết",
-
-    "num.title": "Số · ngày · giờ · lượng từ",
-    "num.sub": "Đổi, nghe và luyện số tiếng Đức theo từng ngữ cảnh.",
-    "conv.title": "🧮 Bộ đổi tức thì",
-    "conv.input": "Nhập số, vd 3850 hoặc 4,50",
-    "conv.btn": "Đổi",
-    "conv.ctx": "Ngữ cảnh",
-    "ctx.count": "Đếm",
-    "ctx.age": "Tuổi",
-    "ctx.money": "Số tiền",
-    "ctx.phone": "Điện thoại",
-    "ctx.time": "Giờ",
-    "ctx.year": "Năm",
-    "ctx.ordinal": "Số thứ tự",
-    "conv.hint": "Thử: 21 / 99 / 3850 / 1998 / 4,50",
-    "listen.title": "🎧 Nghe giá ngẫu nhiên",
-    "listen.btn": "Phát giá ngẫu nhiên",
-    "listen.again": "Nghe lại",
-    "cat.flag": "Bất quy tắc",
-    "measure.title": "Lượng từ & cách đếm",
-    "measure.applies": "Dùng cho",
-    "measure.trap": "Lỗi hay gặp",
-    "measure.table": "Bảng phối hợp 1–5",
-    "time.trap": "Bẫy: halb drei = 2:30",
-    "emergency.title": "Điện thoại khẩn cấp Đức",
-
-    "gram.title": "Tra cứu nhanh ngữ pháp cốt lõi",
-    "gram.gender": "Ba giống danh từ",
-    "gram.cases": "Bốn cách biến cách",
-    "gram.verbs": "Động từ thì hiện tại",
-    "gram.v2": "Trật tự từ V2",
-    "lesson.title": "13 bài hội thoại du lịch & đời sống",
-    "lesson.intro": "Tình huống",
-    "lesson.stars": "⭐ Từ vựng trọng tâm",
-    "lesson.gram": "Giải thích ngữ pháp",
-    "lesson.mini": "Kiểm tra nhanh",
-    "dlg.normal": "Tốc độ bình thường",
-    "dlg.slow": "Tốc độ chậm",
-    "dlg.playAll": "Phát tất cả",
-    "dlg.stop": "Dừng",
-    "spk.a": "Người nói A",
-    "spk.b": "Người nói B",
-
-    "quiz.title": "Đề kiểm tra đa mô-đun",
-    "quiz.filter": "Lọc theo loại",
-    "quiz.start": "Bắt đầu",
-    "quiz.next": "Câu tiếp",
-    "quiz.correct": "Đúng",
-    "quiz.wrong": "Sai",
-    "quiz.expl": "Giải thích",
-    "quiz.score": "Điểm",
-    "quiz.done": "Hoàn thành",
-    "srs.title": "🔄 Ôn sai bằng SRS",
-    "srs.flip": "Lật thẻ",
-    "srs.again": "Again làm lại",
-    "srs.good": "Good nhớ rồi",
-    "srs.easy": "Easy dễ",
-    "srs.due": "Đến hạn ôn",
-    "fav.title": "⭐ Yêu thích",
-    "fav.speak": "Đọc to",
-    "fav.remove": "Xóa",
-    "stats.title": "📊 Bảng thống kê",
-    "stats.mastered": "Chữ đã thành thạo",
-    "stats.writes": "Số lần viết tay",
-    "stats.dlg": "Mức hoàn thành hội thoại",
-    "stats.quiz": "Số câu đã làm",
-    "stats.acc": "Tỉ lệ đúng",
-    "stats.export": "Xuất dữ liệu",
-    "stats.reset": "Đặt lại",
-    "back": "Quay lại",
-
-    "err.nospeech": "Trình duyệt không có giọng de-DE, không thể phát.",
-    "err.speech": "Phát lỗi, vui lòng thử lại.",
-    "tts.note": "Tốc độ siêu chậm 0.5x tùy bộ máy giọng của trình duyệt.",
-    "tts.testing": "Đang kiểm tra giọng…",
-    "tts.playOK": "Phát xong",
-    "toast.learned": "Đã đánh dấu đang học",
-    "toast.mastered": "Đã đánh dấu thành thạo"
+  "zh-HK": {
+    "app.title": "德語 Step by Step",
+    "app.subtitle": "國際版 International",
+    "nav.home": "🏠 主頁與計劃",
+    "nav.alpha": "🔤 30字母與正音",
+    "nav.numbers": "🔢 數字與量詞 (模組C)",
+    "nav.travel": "💬 會話與文法",
+    "nav.quiz": "🎯 測驗與 SRS",
+    "hero.title": "一步一步學好德語",
+    "hero.sub": "由 30 個德語字母、7 大正音規則、數字日期時間、量詞搭配到 13 課德國旅遊實戰會話。",
+    "stat.alpha": "已學字母",
+    "stat.streak": "連續天數",
+    "stat.quiz": "測驗正確率",
+    "stat.srs": "收藏夾 / 待複習",
+    "alpha.title": "德語 30 字母表 (A–Z, Ä, Ö, Ü, ß)",
+    "alpha.sub": "撳每格右上角 🔊 可直接發音（絕不跳出視窗）；撳卡片其他區域可開啟筆順動畫與手寫畫布。",
+    "alpha.tab.cards": "🔤 30 字母發音卡",
+    "alpha.tab.rules": "📏 7 大正音法則",
+    "alpha.tab.pairs": "⚖️ 清濁與長短音對比",
+    "alpha.tab.comp": "🧩 複合詞合成器",
+    "alpha.tab.conf": "🔍 易混淆拼寫辨析",
+    "alpha.tab.a5": "🎧 52 組聽力跟讀清單",
+    "num.conv.title": "🧮 即時德語數字、負數、小數、時間與歐元轉換器",
+    "num.conv.btn": "轉換並發音 🔊",
+    "num.tab.modc": "📘 模組 C 核心教材（冠詞格位・8大例句・地址・德奧瑞差異）",
+    "num.tab.cats": "🔢 12 大數字與日期矩陣",
+    "num.tab.measure": "🍺 15 大容器與量詞表",
+    "travel.tab.dlg": "💬 13 課情境多輪會話",
+    "travel.tab.gram": "📘 核心文法速查表",
+    "quiz.title": "綜合測驗、SRS 錯題本與收藏夾",
+    "btn.speak.letter": "🔊 字母讀音",
+    "btn.speak.word": "🔊 例詞讀音",
+    "btn.master": "✓ 標記已掌握",
+    "btn.unmaster": "↺ 取消已掌握",
+    "err.nospeech": "您的瀏覽器未提供德語 (de-DE) 語音套件。"
   }
+  // TODO: 其餘 14 國語言介面字串可在此擴充，未定義時由 t() 自動安全回退至 en-GB
 };
 
-/* Node/browser interop (no DOM). */
-/* ============================================================================
- * MODULE C: 日期、時間、數量及單位 (Dates, Time, Quantities & Units) 擴充教材庫
- * 完整填寫 en-GB 與 zh-HK 範本，其餘 14 語系預留 // TODO 供開發者後續補上
- * ========================================================================== */
-function i18nC(enText, zhText) {
-  return {
-    'en-GB': enText,
-    'zh-HK': zhText,
-    en: enText,
-    zh: zhText
-    // TODO: 這裡由開發者後續補上其餘 14 種語言:
-    // 'fr-FR': '', 'ja-JP': '', 'es-ES': '', 'ru-RU': '', 'uk-UA': '',
-    // 'it-IT': '', 'ko-KR': '', 'th-TH': '', 'vi-VN': '', 'my-MM': '',
-    // 'id-ID': '', 'fil-PH': '', 'km-KH': '', 'de-DE': ''
-  };
+/* ================= 9. VIEW ROUTER & RENDERERS ================= */
+let currentTab = 'home';
+let alphaSubTab = 'cards';
+let numSubTab = 'modc';
+let activeNumCatId = 'c0to12';
+let travelSubTab = 'dlg';
+let activeLessonId = 'L1';
+let lessonQuizAnswers = {};
+let quizAnswers = {};
+let cvStrokes = [];
+
+function initLogo() {
+  const slot = document.getElementById('headerLogoSlot');
+  if (!slot) return;
+  slot.innerHTML = '<span style="font-weight:900;color:#0F1E36;font-size:.95rem;">DE</span>';
 }
 
-const DE_MODULE_C_EXT = {
-  header: {
-    title: i18nC(
-      'Module C: Dates, Time, Quantities, Units & Containers',
-      '模組 C：日期、時間、數量、單位及容器搭配專區'
-    ),
-    sub: i18nC(
-      'Master how German numbers combine with noun gender, singular/plural forms, cases (ein/eine/einen), containers, addresses, and DACH regional formats.',
-      '掌握德語數字與名詞陰陽中性、單複數、格位（ein/eine/einen）、容器單位、地址房號及德奧瑞地區差異的正確搭配。'
-    )
-  },
+function renderHeaderAndNav() {
+  document.documentElement.lang = state.locale;
+  document.documentElement.classList.toggle('dark', !!state.dark);
+  const locObj = SUPPORTED_LOCALES.find(l => l.code === state.locale) || SUPPORTED_LOCALES[1];
+  document.getElementById('activeLangFlag').textContent = locObj.flag;
+  document.getElementById('activeLangLabel').textContent = locObj.name;
+  document.getElementById('uiAppTitle').textContent = t('app.title');
+  document.getElementById('uiAppSubtitle').textContent = t('app.subtitle');
 
-  /* 1. 經過德語文法校對的 8 句指定核心例句（附音訊、IPA、詞性與文法條件解析） */
-  verifiedSentences: {
-    title: i18nC(
-      '1. Verified Core Sentences: Numbers, Nouns & Containers',
-      '1. 德語教材核心例句（經文法校對・點擊即發音）'
-    ),
-    items: [
-      {
-        de: 'ein Buch',
-        ipa: 'aɪn buːx',
-        grammarTag: 'Neutrum (das Buch) · Singular · Nominativ / Akkusativ',
-        tr: i18nC('one book / a book', '一本書。'),
-        note: i18nC(
-          'Neuter noun (das Buch): uses "ein" (no ending) in both Nominative and Accusative singular.',
-          '中性名詞（das Buch）：單數主格（Nominativ）與受格（Akkusativ）均使用無字尾的「ein」。'
-        )
-      },
-      {
-        de: 'zwei Bücher',
-        ipa: 'tsvaɪ ˈbyːçɐ',
-        grammarTag: 'Neutrum Plural (die Bücher) · Umlaut u → ü + -er',
-        tr: i18nC('two books', '兩本書。'),
-        note: i18nC(
-          'Plural of das Buch is die Bücher (vowel umlaut u → ü plus -er ending). Cardinal numbers 2+ do not inflect.',
-          'das Buch 的複數為 die Bücher（母音變音 u → ü 並加字尾 -er）。2 以上的基數詞本身不作詞尾變化。'
-        )
-      },
-      {
-        de: 'eine Person',
-        ipa: 'ˈaɪnə pɛʁˈzoːn',
-        grammarTag: 'Femininum (die Person) · Singular · Nominativ / Akkusativ',
-        tr: i18nC('one person', '一個人。'),
-        note: i18nC(
-          'Feminine noun (die Person): requires "eine" (-e ending) for "one / a" in Nominative and Accusative.',
-          '陰性名詞（die Person）：表示「一個」時，主格與受格均須加上 -e 字尾變成「eine」。'
-        )
-      },
-      {
-        de: 'drei Personen',
-        ipa: 'dʁaɪ pɛʁˈzoːnən',
-        grammarTag: 'Femininum Plural (die Personen) · + -en',
-        tr: i18nC('three people / three persons', '三個人。'),
-        note: i18nC(
-          'Feminine nouns ending in suffix -on form their plural with -en (die Personen). Used in restaurants & hotels.',
-          '以 -on 結尾的陰性名詞加 -en 構成複數（die Personen），廣泛用於餐廳候位與酒店訂房。'
-        )
-      },
-      {
-        de: 'ein Glas Wasser',
-        ipa: 'aɪn ɡlaːs ˈvasɐ',
-        grammarTag: 'Neutrum Maßwort (das Glas) + Stoffnomen (Wasser)',
-        tr: i18nC('a glass of water', '一杯水。'),
-        note: i18nC(
-          'Container noun "das Glas" is neuter ("ein Glas"). The substance "Wasser" follows in direct apposition without "von".',
-          '容器「das Glas（玻璃杯）」為中性，故用「ein Glas」；後接物質名詞「Wasser」直接並置，不加介詞 von。'
-        )
-      },
-      {
-        de: 'zwei Flaschen Wasser',
-        ipa: 'tsvaɪ ˈflaʃn̩ ˈvasɐ',
-        grammarTag: 'Femininum Maßwort im Plural (die Flaschen) + Stoffnomen im Singular',
-        tr: i18nC('two bottles of water', '兩瓶水。'),
-        note: i18nC(
-          'Feminine container nouns ending in -e take plural form (zwei Flaschen), while uncountable "Wasser" stays singular.',
-          '以 -e 結尾的陰性容器名詞在數量 2 以上時必須變複數（zwei Flaschen），但不可數的內容物「Wasser」保持單數。'
-        )
-      },
-      {
-        de: 'eine Tasse Kaffee',
-        ipa: 'ˈaɪnə ˈtasə ˈkafeː',
-        grammarTag: 'Femininum Maßwort (die Tasse) + Stoffnomen (Kaffee)',
-        tr: i18nC('a cup of coffee', '一杯咖啡。'),
-        note: i18nC(
-          '"die Tasse" (cup with handle) is feminine, so it uses "eine Tasse". Plural: zwei Tassen Kaffee.',
-          '「die Tasse（有耳杯）」是陰性名詞，故搭配「eine Tasse」。若是兩杯則說「zwei Tassen Kaffee」。'
-        )
-      },
-      {
-        de: 'drei Paar Schuhe',
-        ipa: 'dʁaɪ paːɐ̯ ˈʃuːə',
-        grammarTag: 'Neutrum Maßwort unverändert (Paar) + Pluralnomen (Schuhe)',
-        tr: i18nC('three pairs of shoes', '三雙鞋。'),
-        note: i18nC(
-          'Capitalized "Paar" (pair) is a neuter measure unit and stays singular after numbers (drei Paar), while "Schuhe" is plural.',
-          '大寫「Paar（雙／對）」作為中性計量單位時，接在數字後維持單數不變形（drei Paar），而後方的鞋子用複數「Schuhe」。'
-        )
-      }
-    ]
-  },
+  const menu = document.getElementById('langMenuList');
+  menu.innerHTML = SUPPORTED_LOCALES.map(l =>
+    `<button type="button" class="lang-item ${l.code === state.locale ? 'active' : ''}" data-loc="${l.code}">
+      <span>${l.flag} ${esc(l.name)}</span><span class="muted">${l.code}</span>
+    </button>`
+  ).join('');
+  menu.querySelectorAll('[data-loc]').forEach(btn => {
+    btn.onclick = () => {
+      state.locale = btn.getAttribute('data-loc');
+      persist();
+      menu.classList.remove('open');
+      renderApp();
+    };
+  });
 
-  /* 2. ein / eine / einen 等形式及其文法條件 + 單複數搭配規則 */
-  einGrammar: {
-    title: i18nC(
-      '2. Grammar Conditions for "eins" vs. "ein / eine / einen" & Noun Plurals',
-      '2. 數字「1」與不定冠詞（eins vs. ein / eine / einen）及單複數文法條件'
-    ),
-    explanation: i18nC(
-      'In German, "eins" is only used when counting abstractly on its own (1, 2, 3 = eins, zwei, drei). As soon as "1" stands before a noun, it functions as the indefinite article/numeral "ein-" and MUST inflect according to the noun\'s gender (masculine, feminine, neuter) and grammatical case (Nominative, Accusative, Dative).',
-      '在德語中，「eins」只在單獨數數或報數時使用（1, 2, 3 = eins, zwei, drei）。一旦「1」放在名詞前面搭配使用，就必須轉為「ein-」並根據該名詞的「陰陽中性」與句子中的「格位（主格／受格／與格）」進行詞尾變化！'
-    ),
-    tableHeaders: i18nC(
-      ['Gender', 'Definite Article', 'Nominative (Subject)', 'Accusative (Direct Object)', 'Dative (After mit/in/zu)', 'Plural (2, 3...)'],
-      ['名詞性別', '定冠詞', '主格 Nominativ (作主詞)', '受格 Akkusativ (作直接受詞/點餐)', '與格 Dativ (接在 mit/in 等後)', '複數 (搭配 2, 3 以上數字)']
-    ),
-    rows: [
-      {
-        gender: i18nC('Masculine (陽性)', '陽性 Maskulinum'),
-        defArt: 'der Tisch / der Kaffee',
-        nom: 'ein Tisch / ein Kaffee',
-        akk: 'einen Tisch / einen Kaffee',
-        dat: 'einem Tisch / einem Kaffee',
-        pl: 'zwei Tische'
-      },
-      {
-        gender: i18nC('Feminine (陰性)', '陰性 Femininum'),
-        defArt: 'die Person / die Tasse',
-        nom: 'eine Person / eine Tasse',
-        akk: 'eine Person / eine Tasse',
-        dat: 'einer Person / einer Tasse',
-        pl: 'drei Personen / zwei Tassen'
-      },
-      {
-        gender: i18nC('Neuter (中性)', '中性 Neutrum'),
-        defArt: 'das Buch / das Glas',
-        nom: 'ein Buch / ein Glas',
-        akk: 'ein Buch / ein Glas',
-        dat: 'einem Buch / einem Glas',
-        pl: 'zwei Bücher / zwei Glas Wasser'
-      }
-    ],
-    keyRules: [
-      {
-        de: 'Ich hätte gern einen Kaffee, eine Tasse Tee und ein Glas Wasser.',
-        tr: i18nC(
-          'I would like a coffee (Masc. Acc. = einen), a cup of tea (Fem. Acc. = eine), and a glass of water (Neut. Acc. = ein).',
-          '我想要一杯咖啡（陽性受格 = einen）、一杯茶（陰性受格 = eine）和一杯水（中性受格 = ein）。'
-        )
-      },
-      {
-        de: 'Maßeinheiten: Maskuline/neutrale Einheiten bleiben im Plural unverändert (zwei Glas, drei Stück, zwei Kilo); feminine auf -e werden pluralisiert (zwei Flaschen, drei Tassen).',
-        tr: i18nC(
-          'Measure units rule: Masculine & neuter units stay singular after numbers (zwei Glas, drei Stück, zwei Kilo), whereas feminine units ending in -e take plural endings (zwei Flaschen, drei Tassen).',
-          '單位單複數鐵則：陽性與中性度量／容器單位在數字 2 以上時保持單數不變形（zwei Glas, drei Stück, zwei Kilo）；但以 -e 結尾的陰性容器則必須變複數（zwei Flaschen, drei Tassen）。'
-        )
-      }
-    ]
-  },
-
-  /* 3. 地址、門牌號碼與房間號碼 (Addresses & Room Numbers) */
-  addressesAndRooms: {
-    title: i18nC(
-      '3. Addresses, House Numbers, Room Numbers & Dates/Years in Context',
-      '3. 地址、門牌號碼、酒店房間號碼與年份／日期格式'
-    ),
-    items: [
-      {
-        topic: i18nC('Street Address Order (街道與門牌順序)', '德國地址與門牌順序（街名在前、門牌在後）'),
-        de: 'Ich wohne in der Bahnhofstraße 12 (zwölf), 10115 (einhunderteins fünfzehn) Berlin.',
-        tr: i18nC(
-          'I live at Bahnhofstraße 12, 10115 Berlin. (Street name first, house number second; 5-digit postcode before city).',
-          '我住在柏林（郵遞區號 10115）車站街 12 號。（德語地址先寫街道名、後寫門牌號碼；五位數郵遞區號寫在城市名前方）。'
-        )
-      },
-      {
-        topic: i18nC('Hotel Room Numbers (酒店房間號碼讀法)', '酒店房間號碼讀法（三位數房號）'),
-        de: 'Ihr Zimmer ist Nummer 214 (zweihundertvierzehn / zwei-eins-vier) im zweiten Stock.',
-        tr: i18nC(
-          'Your room is number 214 (read as a full number "zweihundertvierzehn" or digit-by-digit "zwei-eins-vier") on the second floor.',
-          '您的房間在二樓（台灣/香港三樓）214 號房（可連讀為「zweihundertvierzehn」或逐字讀「zwei-eins-vier」）。'
-        )
-      },
-      {
-        topic: i18nC('Formal vs. Colloquial Dates & Years (正式與口語日期及年份)', '正式與口語日期、月份及年份讀法'),
-        de: 'Heute ist der 3. Mai 1998 (der dritte Mai neunzehnhundertachtundneunzig). Am 20.10.2026 (am zwanzigsten Oktober zweitausendsechsundzwanzig).',
-        tr: i18nC(
-          'Written dates use a dot after the day and month (20.10.2026 = ordinal marker!). Nominative: "der dritte Mai"; after "am" (an + dem, Dative): "am dritten Mai". Years 1100–1999 are read in hundreds (1998 = 19-hundert-98); 2000+ as full thousands.',
-          '德語書寫日期在日與月後加句點「.」代表序數（20.10.2026）。主格讀「der dritte Mai（五月三日）」，接在「am（在…日，與格）」後詞尾加 -n 讀「am dritten Mai」。1999 年以前按百位拆讀，2000 年起按千位讀。'
-        )
-      }
-    ]
-  },
-
-  /* 4. 德語 vs. 西班牙語常見負遷移誤區警示 */
-  spanishContrast: {
-    title: i18nC(
-      '4. Crucial Warning: German is NOT Spanish! (Avoiding Cross-Language Traps)',
-      '4. 跨語言誤區警示：德語不是西班牙語！切勿套用西語規則'
-    ),
-    points: [
-      {
-        contrast: 'ein / eine / einen ≠ uno / un / una',
-        de: 'Eins → ein Buch (Neutrum), eine Person (Femininum), einen Kaffee (Maskulinum Akkusativ).',
-        tr: i18nC(
-          'Unlike Spanish (which only has masculine un/uno and feminine una), German has THREE genders (der/die/das) and changes the article for case (e.g., masculine direct object becomes "einen").',
-          '不可套用西語二性（un/una）：德語有「陽、陰、中」三性，且「ein-」必須隨四格變化（例如點餐時陽性受格必須變為 einen Kaffee）。'
-        )
-      },
-      {
-        contrast: 'sein ≠ ser / estar',
-        de: 'Ich bin müde (Zustand). Ich bin Lehrer (Beruf). Das Hotel ist in Berlin (Ort).',
-        tr: i18nC(
-          'German has only ONE verb "sein" (to be) for permanent traits, temporary states, and locations — never split it into Spanish ser/estar.',
-          '不可套用西語 ser/estar 二分法：德語只有一個動詞「sein」，同時用於身分、暫時狀態與所在位置（搭配 liegen/stehen 表示物體擺放）。'
-        )
-      },
-      {
-        contrast: 'es gibt + Akkusativ ≠ hay',
-        de: 'Hier gibt es einen Supermarkt (Akkusativ!) und zwei Bäckereien.',
-        tr: i18nC(
-          'To express existence ("there is / there are"), German uses "es gibt" followed strictly by the ACCUSATIVE case (einen Supermarkt), not an invariable word like Spanish "hay".',
-          '不可套用西語不變形的 hay：德語表達「有／存在」使用「es gibt」，且後方名詞必須強制使用「第四格受格（Akkusativ）」，如 es gibt einen Park。'
-        )
-      }
-    ]
-  },
-
-  /* 5. 德國 (DE)、奧地利 (AT)、瑞士 (CH) 常見格式與表達差異 */
-  dachDifferences: {
-    title: i18nC(
-      '5. Regional Format & Usage Differences: Germany (DE) vs. Austria (AT) vs. Switzerland (CH)',
-      '5. 德國（DE）與奧地利（AT）、瑞士（CH）常見格式及表達差異'
-    ),
-    items: [
-      {
-        region: '🇩🇪 🇦🇹 🇨🇭 Number & Currency Formatting (數字與貨幣格式)',
-        de: 'DE/AT: 1.250,50 € (Punkt = Tausender, Komma = Dezimal) · CH: CHF 1’250.50 (Franken & Rappen)',
-        tr: i18nC(
-          'Germany & Austria use a dot for thousands and a comma for decimals (1.250,50 €). Switzerland often uses an apostrophe for thousands and a dot for currency decimals (CHF 1’250.50, Franken & Rappen).',
-          '德國與奧地利使用「句點」分隔千位、「逗號」作為小數點（1.250,50 €）；瑞士則使用瑞士法郎（Franken 與 Rappen），常以撇號分隔千位（CHF 1’250.50）。'
-        )
-      },
-      {
-        region: '🇩🇪 🇦🇹 🇨🇭 Regional Time Expressions (10:15 & 10:45 地區時間說法)',
-        de: '10:15 = Viertel nach zehn (West-DE/CH) / viertel elf (Ost-DE/Süd-DE/AT) · 10:45 = Viertel vor elf / dreiviertel elf',
-        tr: i18nC(
-          '10:15 is "Viertel nach zehn" in western Germany/Switzerland, but "viertel elf" (one quarter toward 11) in eastern/southern Germany & Austria. 10:45 is "Viertel vor elf" or "dreiviertel elf".',
-          '10:15 在西德與瑞士說「Viertel nach zehn」，但在東德、南德與奧地利則常說「viertel elf（邁向11點的四分之一）」；10:45 則對應「Viertel vor elf」或「dreiviertel elf」。'
-        )
-      },
-      {
-        region: '🇩🇪 🇦🇹 🇨🇭 Months & Spelling (月份與拼寫差異)',
-        de: 'DE: Januar, Februar, Straße (mit ß) · AT: Jänner, Feber · CH: Januar, Strasse (immer ss statt ß)',
-        tr: i18nC(
-          'In Austria, January is officially "Jänner" (and February colloquially "Feber"). In Switzerland, the letter "ß" is not used at all ("Straße" is always written "Strasse").',
-          '奧地利將一月稱為「Jänner」（二月口語常稱 Feber）；瑞士德語則完全不使用字母「ß」，一律以「ss」取代（如 Straße 寫作 Strasse）。'
-        )
-      }
-    ]
-  }
-};
-
-/*===VIEWS==*/
-'use strict';
-/* ================= NAV + ROUTER ================= */
-const NAV=[
-  {hash:'#/home',key:'nav.home',icon:'🏠'},
-  {hash:'#/alphabet',key:'nav.alphabet',icon:'🔤'},
-  {hash:'#/numbers',key:'nav.numbers',icon:'🔢'},
-  {hash:'#/grammar',key:'nav.grammar',icon:'📘'},
-  {hash:'#/quiz',key:'nav.quiz',icon:'🎯'}
-];
-function curHash(){ const h=location.hash||'#/home'; return h; }
-function renderNav(){
-  const c=document.getElementById('mainNavContainer');
-  c.innerHTML=NAV.map(n=>'<button class="nav-tab'+(curHash()===n.hash?' active':'')+'" data-hash="'+n.hash+'">'+n.icon+' '+t(n.key)+'</button>').join('');
-  c.querySelectorAll('.nav-tab').forEach(b=>b.onclick=()=>{ location.hash=b.getAttribute('data-hash'); });
-}
-function lyr(layer){ return !!state.layers[layer]; }
-
-/* ================= HOME ================= */
-function letterProgress(){
-  const total=GERMAN_ALPHABET.length;
-  let m=0; GERMAN_ALPHABET.forEach(l=>{ if(state.letterState[l.id]==='mastered') m++; });
-  return {done:m,total:total,pct:Math.round(m/total*100)};
-}
-function renderHome(){
-  const lp=letterProgress();
-  const mins=Math.round(state.studiedSec/60);
-  const voiceOk=voiceAvailable();
-  let html='<div class="hero-card"><h2 style="color:var(--navy-900)">'+t('hero.welcome')+'</h2>'+
-    '<p class="muted" style="margin-top:6px">'+t('hero.sub')+'</p></div>';
-
-  /* daily goal card */
-  html+='<div class="panel"><h3 style="color:var(--navy-900)">🎯 '+t('goal.title')+'</h3><div class="row" style="margin:8px 0">';
-  [5,10,15,30].forEach(m=>{ html+='<button class="btn btn-sm '+(state.goal===m?'btn-gold':'btn-outline')+'" data-goal="'+m+'">'+t('goal.min'+m)+'</button>'; });
-  html+='</div><div class="row"><span>🔥 '+t('goal.streak')+': <b>'+state.streak+'</b></span><span>⏱ '+t('goal.today')+': <b>'+mins+'</b>/'+state.goal+' min</span></div>';
-  html+='<div class="progressbar"><div style="width:'+Math.min(100,Math.round(mins/state.goal*100))+'%"></div></div>';
-  html+='<div class="subtabs" style="margin-top:10px">'+
-    '<button class="subtab" data-go-task="alphabet">🔁 '+t('goal.taskAlpha')+'</button>'+
-    '<button class="subtab" data-go-task="numbers">🔢 '+t('goal.taskNum')+'</button>'+
-    '<button class="subtab" data-go-task="grammar">💬 '+t('goal.taskDlg')+'</button></div></div>';
-
-  /* voice status */
-  html+='<div class="panel"><h3 style="color:var(--navy-900)">🔊 '+t('voice.title')+'</h3>'+
-    '<div style="margin:8px 0">'+(voiceOk?'<span class="banner-ok">✅ '+t('voice.ok')+'</span>':'<span class="banner-err">❌ '+t('voice.fail')+'</span>')+'</div>'+
-    '<button class="btn btn-outline btn-sm" id="voiceTestBtn">🔊 '+t('voice.test')+'</button></div>';
-
-  /* 4 module cards */
-  const mods=[
-    {i:'🔤',title:'mod1.title',desc:'mod1.desc',hash:'#/alphabet',pct:lp.pct},
-    {i:'🔢',title:'mod2.title',desc:'mod2.desc',hash:'#/numbers',pct:0},
-    {i:'📘',title:'mod3.title',desc:'mod3.desc',hash:'#/grammar',pct:0},
-    {i:'🎯',title:'mod4.title',desc:'mod4.desc',hash:'#/quiz',pct:state.quizStat.done?Math.round(state.quizStat.done/20*100):0}
+  const tabs = [
+    { id: 'home', lbl: t('nav.home') },
+    { id: 'alpha', lbl: t('nav.alpha') },
+    { id: 'numbers', lbl: t('nav.numbers') },
+    { id: 'travel', lbl: t('nav.travel') },
+    { id: 'quiz', lbl: t('nav.quiz') }
   ];
-  html+='<div class="grid grid-4">';
-  mods.forEach(m=>{
-    html+='<div class="card" data-go-mod="'+m.hash+'" style="cursor:pointer"><div style="font-size:1.6rem">'+m.i+'</div>'+
-      '<h3>'+t(m.title)+'</h3><p class="muted" style="font-size:.82rem">'+t(m.desc)+'</p>'+
-      '<div class="progressbar"><div style="width:'+m.pct+'%"></div></div>'+
-      '<span class="muted">'+t('mod.progress')+': '+m.pct+'%</span></div>';
+  const nav = document.getElementById('mainNavContainer');
+  nav.innerHTML = tabs.map(tb =>
+    `<button type="button" class="nav-tab ${currentTab === tb.id ? 'active' : ''}" data-tab="${tb.id}">${esc(tb.lbl)}</button>`
+  ).join('');
+  nav.querySelectorAll('[data-tab]').forEach(btn => {
+    btn.onclick = () => {
+      currentTab = btn.getAttribute('data-tab');
+      renderApp();
+    };
   });
-  html+='</div>';
-
-  const root=document.getElementById('appRoot'); root.innerHTML=html;
-  root.querySelectorAll('[data-goal]').forEach(b=>b.onclick=()=>{ state.goal=parseInt(b.getAttribute('data-goal'),10); persist(); renderHome(); });
-  root.querySelectorAll('[data-go-task]').forEach(b=>b.onclick=()=>{ location.hash='#'+b.getAttribute('data-go-task'); });
-  root.querySelectorAll('[data-go-mod]').forEach(b=>b.onclick=()=>{ location.hash=b.getAttribute('data-go-mod'); });
-  document.getElementById('voiceTestBtn').onclick=()=>{ if(!voiceAvailable()){toast(t('err.nospeech'));return;} speak('Guten Tag! Lernen wir Deutsch Schritt für Schritt.',1.0); };
 }
 
-/* ================= ALPHABET VIEW ================= */
-let alphaTab='letters';
-function letterStatusBadge(id){
-  const s=state.letterState[id]||'new';
-  const cls={new:'chip-new',learned:'chip-learned',mastered:'chip-mastered',review:'chip-review'}[s];
-  return '<span class="chip '+cls+'">'+t('st.'+s)+'</span>';
-}
-function renderAlphabet(){
-  const root=document.getElementById('appRoot');
-  let html='<div class="subtabs">';
-  [['letters','atab.letters'],['pairs','atab.pairs'],['compound','atab.compound'],['rules','atab.rules'],['confuse','atab.confuse'],['trainer','atab.trainer']].forEach(x=>{
-    html+='<button class="subtab'+(alphaTab===x[0]?' active':'')+'" data-atab="'+x[0]+'">'+t(x[1])+'</button>';
-  });
-  html+='</div><div id="alphaPane"></div>';
-  root.innerHTML=html;
-  root.querySelectorAll('[data-atab]').forEach(b=>b.onclick=()=>{ alphaTab=b.getAttribute('data-atab'); renderAlphabet(); });
-  const pane=document.getElementById('alphaPane');
-  if(alphaTab==='letters') pane.innerHTML=tabLetters();
-  else if(alphaTab==='pairs') pane.innerHTML=tabPairs();
-  else if(alphaTab==='compound') pane.innerHTML=tabCompound();
-  else if(alphaTab==='rules') pane.innerHTML=tabRules();
-  else if(alphaTab==='confuse') pane.innerHTML=tabConfuse();
-  else if(alphaTab==='trainer') pane.innerHTML=tabTrainer();
-  bindAlphabet(pane);
-}
-function tabsShow(){ return 'style="display:'+(lyr('ipa')||lyr('native')||lyr('actual')||lyr('trans')||lyr('notes')?'':'none')+'"'; }
-function tabLetters(){
-  let h='<div class="letter-grid">';
-  GERMAN_ALPHABET.forEach(l=>{
-    const ex=(typeof DE_LETTER_EXTRA!=='undefined'&&DE_LETTER_EXTRA[l.id])?DE_LETTER_EXTRA[l.id]:null;
-    h+='<div class="letter-card'+(state.letterState[l.id]==='mastered'?' mastered':'')+'" data-letter="'+l.id+'">'+
-      '<div class="row" style="justify-content:space-between"><span class="letter-big">'+l.upper+' '+l.lower+'</span>'+letterStatusBadge(l.id)+'</div>'+
-      '<div class="muted" style="font-size:.8rem">'+esc(l.letterName)+'</div><div class="pron">';
-    if(lyr('ipa')) h+='<span class="l-ipa">/'+esc(l.ipa)+'/</span>';
-    if(lyr('native')&&ex&&ex.approx6) h+='<span class="l-native">'+esc(tr6(ex.approx6))+'</span>';
-    if(lyr('actual')) h+='<span class="l-actual">'+esc(l.ipa)+'</span>';
-    if(lyr('trans')) h+='<span class="l-trans">'+esc(l.word)+' · '+esc(l10(l.meaning))+'</span>';
-    if(lyr('notes')) h+='<span class="l-note">'+esc(l10(l.tip))+'</span>';
-    h+='</div><div class="row"><button class="btn btn-outline btn-sm" data-speak="'+esc(l.letterName.replace(/\[.*?\]/,'').trim())+'">🔊</button>'+
-      '<button class="btn btn-primary btn-sm" data-openletter="'+l.id+'">'+t('ltr.openLesson')+'</button></div></div>';
-  });
-  h+='</div>'; return h;
-}
-function tabPairs(){
-  let h='<div class="grid grid-2">';
-  DE_PAIRS.forEach(g=>{
-    h+='<div class="card"><h3>'+esc(tr6(g.title6))+'</h3><p class="muted" style="font-size:.82rem;margin-bottom:8px">'+esc(tr6(g.intro6))+'</div>';
-    h='<div class="card" data-pair="'+g.id+'"><h3>'+esc(tr6(g.title6))+'</h3><p class="muted" style="font-size:.82rem;margin-bottom:8px">'+esc(tr6(g.intro6))+'</p>';
-    g.pairs.forEach(pr=>{
-      h+='<div class="row" style="justify-content:space-between;padding:5px 0;border-top:1px dashed var(--border-color)">'+
-        '<span><b>'+esc(pr.a.de)+'</b> <span class="l-ipa">/'+esc(pr.a.ipa)+'/</span> <span class="muted">'+esc(tr6(pr.a.tr6))+'</span></span>'+
-        '<button class="btn btn-outline btn-sm" data-spk="'+esc(pr.a.de)+'">🔊</button>'+
-        '<span style="color:var(--de-red)">~</span>'+
-        '<span><b>'+esc(pr.b.de)+'</b> <span class="l-ipa">/'+esc(pr.b.ipa)+'/</span> <span class="muted">'+esc(tr6(pr.b.tr6))+'</span></span>'+
-        '<button class="btn btn-outline btn-sm" data-spk="'+esc(pr.b.de)+'">🔊</button></div>';
-    });
-    h+='</div>';
-  });
-  return h+'</div>';
-}
-function tabCompound(){
-  let h='<div class="grid grid-2">';
-  DE_COMPOUNDS.forEach(c=>{
-    h+='<div class="card" data-comp="'+esc(c.full)+'" style="cursor:pointer"><h3>'+esc(c.full)+'</h3>'+
-      '<div class="row"><button class="chip chip-learned">'+esc(c.art)+'</button><span class="l-ipa">/'+esc(c.ipa)+'/</span></div>'+
-      '<p class="muted" style="font-size:.82rem;margin:6px 0">'+esc(c.part1)+' + '+esc(c.part2)+'</p>'+
-      '<div class="muted">'+esc(tr6(c.gloss6.full))+' · '+esc(c.stress)+'</div>'+
-      '<div class="row" style="margin-top:6px"><button class="btn btn-outline btn-sm" data-spk="'+esc(c.full)+'">🔊</button></div></div>';
-  });
-  return h+'</div>';
-}
-function tabRules(){
-  let h='<div class="grid grid-2">';
-  DE_RULES7.forEach(r=>{
-    h+='<div class="card"><h3>'+esc(tr6(r.title6))+'</h3><p style="font-size:.86rem;margin:6px 0">'+esc(tr6(r.body6))+'</p>';
-    r.examples.forEach(e=>{
-      h+='<div class="row" style="justify-content:space-between;padding:3px 0"><span><b>'+esc(e.de)+'</b> <span class="l-ipa">/'+esc(e.ipa)+'/</span> <span class="muted">'+esc(tr6(e.tr6))+'</span></span><button class="btn btn-outline btn-sm" data-spk="'+esc(e.de)+'">🔊</button></div>';
-    });
-    h+='</div>';
-  });
-  return h+'</div>';
-}
-function tabConfuse(){
-  let h='<div class="grid grid-2">';
-  DE_CONFUSE.forEach(g=>{
-    h+='<div class="card"><h3>'+esc(tr6(g.title6))+'</h3>';
-    g.items.forEach(it=>{
-      h+='<div style="padding:6px 0;border-top:1px dashed var(--border-color)"><div class="row" style="justify-content:space-between">'+
-        '<span><b>'+esc(it.a.de)+'</b> <span class="l-ipa">/'+esc(it.a.ipa)+'/</span> <button class="btn btn-outline btn-sm" data-spk="'+esc(it.a.de)+'">🔊</button></span>'+
-        '<span style="color:var(--de-red)">|</span>'+
-        '<span><b>'+esc(it.b.de)+'</b> <span class="l-ipa">/'+esc(it.b.ipa)+'/</span> <button class="btn btn-outline btn-sm" data-spk="'+esc(it.b.de)+'">🔊</button></span></div>'+
-        '<p class="l-note" style="margin-top:4px">'+esc(tr6(it.note6))+'</p></div>';
-    });
-    h+='</div>';
-  });
-  return h+'</div>';
-}
-let trainerCur=null, trainerStats={done:0,ok:0};
-function tabTrainer(){
-  return '<div class="card" style="text-align:center"><h3>'+t('atab.trainer')+'</h3>'+
-    '<p class="muted">📊 '+t('st.new')+': '+trainerStats.done+'</p>'+
-    '<div id="trDisplay" style="font-size:2rem;margin:14px 0;font-weight:800">?</div>'+
-    '<div class="row" style="justify-content:center"><button class="btn btn-primary" id="trNext">🎧 Next</button>'+
-    '<button class="btn btn-outline" id="trReplay">🔊</button></div>'+
-    '<div class="row" style="justify-content:center;margin-top:12px"><button class="btn btn-gold btn-sm" id="trGood">😊 '+t('srs.good')+'</button>'+
-    '<button class="btn btn-red btn-sm" id="trAgain">🔁 '+t('srs.again')+'</button></div></div>';
-}
-function bindAlphabet(pane){
-  // 修復：加入 e.stopPropagation()，確保按下小喇叭只直接發音，絕不彈出教學視窗
-  pane.querySelectorAll('[data-speak]').forEach(b=>b.onclick=(e)=>{
-    e.stopPropagation();
-    speak(b.getAttribute('data-speak'));
-  });
-  pane.querySelectorAll('[data-spk]').forEach(b=>b.onclick=(e)=>{
-    e.stopPropagation();
-    speak(b.getAttribute('data-spk'));
-  });
-  pane.querySelectorAll('[data-openletter]').forEach(b=>b.onclick=(e)=>{
-    e.stopPropagation();
-    openLetterModal(b.getAttribute('data-openletter'));
-  });
-  pane.querySelectorAll('[data-letter]').forEach(b=>b.onclick=()=>openLetterModal(b.getAttribute('data-letter')));
-  if(alphaTab==='trainer'){
-    const next=()=>{ const it=DE_A5LIST[Math.floor(Math.random()*DE_A5LIST.length)]; trainerCur=it;
-      document.getElementById('trDisplay').textContent='?'; speak(it.text,state.speed); };
-    next();
-    document.getElementById('trNext').onclick=next;
-    document.getElementById('trReplay').onclick=()=>{ if(trainerCur) speak(trainerCur.text,state.speed); };
-    document.getElementById('trGood').onclick=()=>{ document.getElementById('trDisplay').textContent=trainerCur.text+'  /'+trainerCur.ipa+'/'; trainerStats.done++; toast('✓'); };
-    document.getElementById('trAgain').onclick=()=>{ if(trainerCur) speak(trainerCur.text,0.5); };
+/* 【ISS-02 核心修復】：小喇叭按鈕獨立發音，呼叫 stopPropagation()，絕不跳出教學彈窗 */
+function populateAlphabetCards(container) {
+  if (!container) return;
+  const ly = state.layers;
+  container.innerHTML = GERMAN_ALPHABET.map(item => {
+    const ext = (typeof DE_LETTER_EXTRA !== 'undefined' && DE_LETTER_EXTRA[item.id]) ? DE_LETTER_EXTRA[item.id] : null;
+    const st = state.letterState[item.id] || 'new';
+    const speakChar = item.id === 'SS' ? 'Eszett' : item.lower;
+    return `
+      <div class="letter-card ${st === 'mastered' ? 'mastered' : ''}" data-card-id="${item.id}">
+        <div class="row" style="justify-content:space-between;align-items:flex-start;">
+          <div>
+            <div class="letter-big">${esc(item.upper)} ${esc(item.lower)}</div>
+            <div class="muted">${esc(item.letterName)}</div>
+          </div>
+          <div class="row" style="gap:6px;">
+            <span class="chip chip-${st}">${esc(st)}</span>
+            <button type="button" class="btn btn-red btn-sm" data-quick-speak="${esc(speakChar)}" title="直接發音 (不開啟彈窗)">🔊</button>
+          </div>
+        </div>
+        <div class="pron">
+          ${ly.ipa ? `<div class="l-ipa">IPA: ${esc(item.ipa)}</div>` : ''}
+          ${ly.native && ext ? `<div class="l-native">🗣️ ${esc(tr6(ext.approx6))}</div>` : ''}
+          ${ly.actual ? `<div class="l-actual">${esc(item.word)}</div>` : ''}
+          ${ly.trans ? `<div class="l-trans">${esc(l10(item.meaning))}</div>` : ''}
+          ${ly.notes ? `<div class="l-note">${esc(l10(item.tip))}</div>` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
 
+  container.querySelectorAll('[data-quick-speak]').forEach(spkBtn => {
+    spkBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      speak(this.getAttribute('data-quick-speak'));
+    });
+  });
+
+  container.querySelectorAll('[data-card-id]').forEach(card => {
+    card.addEventListener('click', function(e) {
+      if (e.target.closest('[data-quick-speak]')) return;
+      openLetterModal(this.getAttribute('data-card-id'));
+    });
+  });
+}
+
+function renderHomeView(root) {
+  const learnedCount = Object.values(state.letterState).filter(v => v === 'learned' || v === 'mastered').length;
+  const acc = state.quizStat.done > 0 ? Math.round((state.quizStat.correct / state.quizStat.done) * 100) : 0;
+  root.innerHTML = `
+    <div class="hero-card">
+      <h1 style="font-size:1.65rem;color:var(--navy-900);margin-bottom:6px;">${esc(t('hero.title'))}</h1>
+      <p class="muted" style="margin-bottom:14px;">${esc(t('hero.sub'))}</p>
+      <div class="row">
+        <button type="button" class="btn btn-primary" data-goto="alpha">${esc(t('nav.alpha'))} ➔</button>
+        <button type="button" class="btn btn-red" data-goto="numbers">${esc(t('nav.numbers'))} ➔</button>
+        <button type="button" class="btn btn-gold" data-goto="travel">${esc(t('nav.travel'))} ➔</button>
+        <button type="button" class="btn btn-outline" id="homeTestVoiceBtn">🔊 Guten Tag!</button>
+      </div>
+    </div>
+    <div class="grid grid-4" style="margin-bottom:18px;">
+      <div class="card"><h3>${learnedCount} / 30</h3><span class="muted">${esc(t('stat.alpha'))}</span></div>
+      <div class="card"><h3>🔥 ${state.streak}</h3><span class="muted">${esc(t('stat.streak'))}</span></div>
+      <div class="card"><h3>${acc}%</h3><span class="muted">${esc(t('stat.quiz'))} (${state.quizStat.done})</span></div>
+      <div class="card"><h3>⭐ ${state.stars.length} / 🔄 ${state.wrong.length}</h3><span class="muted">${esc(t('stat.srs'))}</span></div>
+    </div>
+    <div class="panel">
+      <div class="row" style="justify-content:space-between;margin-bottom:12px;">
+        <h2 style="font-size:1.2rem;">${esc(t('alpha.title'))}</h2>
+        <span class="muted">${esc(t('alpha.sub'))}</span>
+      </div>
+      <div class="letter-grid" id="homeAlphaGrid"></div>
+    </div>
+  `;
+  root.querySelectorAll('[data-goto]').forEach(b => {
+    b.onclick = () => { currentTab = b.getAttribute('data-goto'); renderApp(); };
+  });
+  const tv = document.getElementById('homeTestVoiceBtn');
+  if (tv) tv.onclick = () => speak('Guten Tag! Lernen wir Deutsch Schritt für Schritt.');
+  populateAlphabetCards(document.getElementById('homeAlphaGrid'));
+}
+
+function renderAlphaView(root) {
+  root.innerHTML = `
+    <div class="panel">
+      <h2 style="font-size:1.25rem;margin-bottom:4px;">${esc(t('alpha.title'))}</h2>
+      <p class="muted" style="margin-bottom:12px;">${esc(t('alpha.sub'))}</p>
+      <div class="subtabs">
+        <button type="button" class="subtab ${alphaSubTab==='cards'?'active':''}" data-asub="cards">${esc(t('alpha.tab.cards'))}</button>
+        <button type="button" class="subtab ${alphaSubTab==='rules'?'active':''}" data-asub="rules">${esc(t('alpha.tab.rules'))}</button>
+        <button type="button" class="subtab ${alphaSubTab==='pairs'?'active':''}" data-asub="pairs">${esc(t('alpha.tab.pairs'))}</button>
+        <button type="button" class="subtab ${alphaSubTab==='comp'?'active':''}" data-asub="comp">${esc(t('alpha.tab.comp'))}</button>
+        <button type="button" class="subtab ${alphaSubTab==='conf'?'active':''}" data-asub="conf">${esc(t('alpha.tab.conf'))}</button>
+        <button type="button" class="subtab ${alphaSubTab==='a5'?'active':''}" data-asub="a5">${esc(t('alpha.tab.a5'))}</button>
+      </div>
+      <div id="alphaSubBody"></div>
+    </div>
+  `;
+  root.querySelectorAll('[data-asub]').forEach(b => {
+    b.onclick = () => { alphaSubTab = b.getAttribute('data-asub'); renderAlphaView(root); };
+  });
+  const body = document.getElementById('alphaSubBody');
+  if (alphaSubTab === 'cards') {
+    body.innerHTML = `<div class="letter-grid" id="mainAlphaGrid"></div>`;
+    populateAlphabetCards(document.getElementById('mainAlphaGrid'));
+  } else if (alphaSubTab === 'rules') {
+    body.innerHTML = DE_RULES7.map(r => `
+      <div class="card" style="margin-bottom:12px;">
+        <h3>${esc(tr6(r.title6))}</h3>
+        <p style="margin-bottom:10px;">${esc(tr6(r.body6))}</p>
+        <div class="row">
+          ${r.examples.map(ex => `<button type="button" class="btn btn-outline btn-sm" data-spk="${esc(ex.de)}">🔊 <b>${esc(ex.de)}</b> /${esc(ex.ipa)}/ — ${esc(tr6(ex.tr6))}</button>`).join('')}
+        </div>
+      </div>
+    `).join('');
+  } else if (alphaSubTab === 'pairs') {
+    body.innerHTML = DE_PAIRS.map(p => `
+      <div class="card" style="margin-bottom:12px;">
+        <h3>${esc(tr6(p.title6))}</h3>
+        <p class="muted" style="margin-bottom:8px;">${esc(tr6(p.intro6))}</p>
+        ${p.pairs.map(pr => `
+          <div class="row" style="margin-top:6px;">
+            <button type="button" class="btn btn-outline btn-sm" data-spk="${esc(pr.a.de)}">🔊 ${esc(pr.a.de)} /${esc(pr.a.ipa)}/ (${esc(tr6(pr.a.tr6))})</button>
+            <span>vs</span>
+            <button type="button" class="btn btn-outline btn-sm" data-spk="${esc(pr.b.de)}">🔊 ${esc(pr.b.de)} /${esc(pr.b.ipa)}/ (${esc(tr6(pr.b.tr6))})</button>
+          </div>
+        `).join('')}
+      </div>
+    `).join('');
+  } else if (alphaSubTab === 'comp') {
+    body.innerHTML = `<div class="grid grid-2">` + DE_COMPOUNDS.map(c => `
+      <div class="card">
+        <h3>${esc(c.part1)} + ${esc(c.part2)} ➔ <span style="color:var(--de-red);">${esc(c.full)}</span></h3>
+        <div class="muted">IPA: /${esc(c.ipa)}/ · ${esc(tr6(c.gloss6.full))}</div>
+        <button type="button" class="btn btn-primary btn-sm" style="margin-top:8px;" data-spk="${esc(c.full)}">🔊 ${esc(c.full)}</button>
+      </div>
+    `).join('') + `</div>`;
+  } else if (alphaSubTab === 'conf') {
+    body.innerHTML = DE_CONFUSE.map(cf => `
+      <div class="card" style="margin-bottom:12px;">
+        <h3>${esc(tr6(cf.title6))}</h3>
+        ${cf.items.map(it => `
+          <div style="margin-top:8px;">
+            <div class="row">
+              <button type="button" class="btn btn-outline btn-sm" data-spk="${esc(it.a.de)}">🔊 ${esc(it.a.de)} (${esc(tr6(it.a.tr6))})</button>
+              <button type="button" class="btn btn-outline btn-sm" data-spk="${esc(it.b.de)}">🔊 ${esc(it.b.de)} (${esc(tr6(it.b.tr6))})</button>
+            </div>
+            <div class="muted" style="margin-top:4px;">💡 ${esc(tr6(it.note6))}</div>
+          </div>
+        `).join('')}
+      </div>
+    `).join('');
+  } else {
+    body.innerHTML = `<div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(175px,1fr));">` + DE_A5LIST.map(w => `
+      <div class="num-cell">
+        <div class="row" style="justify-content:space-between;">
+          <b>${esc(w.text)}</b>
+          <button type="button" class="btn btn-outline btn-sm" data-spk="${esc(w.text)}">🔊</button>
+        </div>
+        <div class="l-ipa">/${esc(w.ipa)}/</div>
+      </div>
+    `).join('') + `</div>`;
   }
+  body.querySelectorAll('[data-spk]').forEach(b => {
+    b.onclick = () => speak(b.getAttribute('data-spk'));
+  });
 }
 
-'use strict';
-/* ================= LETTER MODAL: stroke order + handwriting ================= */
-let writeStrokes=[];   // array of arrays of {x,y}
-let curDraw=null;
-function openLetterModal(id){
-  const L=GERMAN_ALPHABET.find(x=>x.id===id); if(!L) return;
-  writeStrokes=[]; curDraw=null;
-  const ex=(typeof DE_LETTER_EXTRA!=='undefined'&&DE_LETTER_EXTRA[id])?DE_LETTER_EXTRA[id]:null;
-  let html='<button class="modal-close" data-close="letterModal">✕</button>';
-  html+='<h2>'+t('m.title')+': '+L.upper+' '+L.lower+' <span class="muted">'+esc(L.letterName)+'</span></h2>';
-  html+='<div class="row" style="justify-content:center;margin:8px 0"><button class="btn btn-gold" id="stAnim">▶️ '+t('m.animate')+'</button>'+
-    '<button class="btn btn-outline" id="stSpeak">🔊</button></div>';
-  html+='<div class="canvas-stage"><canvas id="guideCanvas" width="300" height="300"></canvas><canvas id="writeCanvas" width="300" height="300" style="position:absolute;top:0;left:0"></canvas></div>';
-  html+='<div class="row" style="justify-content:center;margin-top:10px">'+
-    '<button class="btn btn-outline btn-sm" id="wUndo">'+t('m.undo')+'</button>'+
-    '<button class="btn btn-outline btn-sm" id="wClear">'+t('m.clear')+'</button>'+
-    '<button class="btn btn-primary btn-sm" id="wEval">✅ '+t('m.evaluate')+'</button></div>';
-  html+='<div id="evalOut" class="muted" style="text-align:center;margin-top:8px"></div>';
-  html+='<p class="muted" style="text-align:center;margin-top:6px">ℹ️ '+t('m.score')+'</p>';
-  if(ex){ html+='<div class="panel" style="margin-top:12px"><b>'+esc(ex.ex.de)+'</b> <span class="l-ipa">/'+esc(ex.ex.ipa)+'/</span>'+
-    (lyr('trans')?'<div class="muted">'+esc(tr6(ex.ex.tr6))+'</div>':'')+
-    (lyr('notes')?'<div class="l-note">'+esc(tr6(ex.mnemonic6))+'</div>':'')+
-    '<div class="row" style="margin-top:6px"><button class="btn btn-outline btn-sm" data-spk="'+esc(ex.ex.de)+'">🔊</button></div></div>'; }
-  const body=document.getElementById('letterModalBody');
-  body.innerHTML=html;
-  document.getElementById('letterModal').classList.add('open');
-  drawGuide(id,'upper');
-
-  document.getElementById('stAnim').onclick=()=>animateStrokes(id,'upper');
-  document.getElementById('stSpeak').onclick=()=>{ speak(L.letterName.replace(/\[.*?\]/,'').trim()); };
-  body.querySelectorAll('[data-spk]').forEach(b=>b.onclick=()=>speak(b.getAttribute('data-spk')));
-
-  const wc=document.getElementById('writeCanvas');
-  const rect=()=>wc.getBoundingClientRect();
-  function pos(e){ const r=rect(); return {x:(e.clientX-r.left)/r.width*300, y:(e.clientY-r.top)/r.height*300}; }
-  wc.onpointerdown=(e)=>{ wc.setPointerCapture(e.pointerId); curDraw=[pos(e)]; writeStrokes.push(curDraw); redrawWrite(); };
-  wc.onpointermove=(e)=>{ if(curDraw){ curDraw.push(pos(e)); redrawWrite(); } };
-  wc.onpointerup=()=>{ curDraw=null; };
-  document.getElementById('wUndo').onclick=()=>{ writeStrokes.pop(); redrawWrite(); };
-  document.getElementById('wClear').onclick=()=>{ writeStrokes=[]; redrawWrite(); };
-  document.getElementById('wEval').onclick=()=>evalWrite(id);
-}
-function guideCtx(){ return document.getElementById('guideCanvas').getContext('2d'); }
-function drawGuide(id,case_){
-  const c=guideCtx(); c.clearRect(0,0,300,300);
-  c.strokeStyle='#E5D7B4'; c.lineWidth=2; c.strokeRect(10,10,280,280);
-  c.save(); c.translate(30,30); c.scale(240,240);
-  const st=(STROKES[id]&&STROKES[id][case_[0]])||[];
-  c.strokeStyle='#CBD5E1'; c.lineWidth=4/240; c.lineCap='round'; c.lineJoin='round';
-  st.forEach(poly=>{ c.beginPath(); poly.forEach((p,i)=>{ i?c.lineTo(p[0],p[1]):c.moveTo(p[0],p[1]); }); c.stroke(); });
-  c.restore();
-}
-function animateStrokes(id,case_){
-  const c=guideCtx();
-  const st=(STROKES[id]&&STROKES[id][case_[0]])||[];
-  let sIdx=0,pt=0;
-  c.clearRect(0,0,300,300); c.save(); c.translate(30,30); c.scale(240,240);
-  c.strokeStyle='var(--de-red)'; c.strokeStyle='#D9232E'; c.lineWidth=6/240; c.lineCap='round'; c.lineJoin='round';
-  function step(){
-    if(sIdx>=st.length){ c.restore(); return; }
-    const poly=st[sIdx];
-    c.beginPath(); c.moveTo(poly[0][0],poly[0][1]);
-    for(let i=1;i<=pt&&i<poly.length;i++) c.lineTo(poly[i][0],poly[i][1]);
-    c.stroke();
-    pt++;
-    if(pt>poly.length){ sIdx++; pt=0; }
-    setTimeout(step,160);
+function buildCellsForCategory(cat) {
+  const c = cat.cells;
+  const out = [];
+  if (c === '0to12') {
+    for (let n = 0; n <= 12; n++) out.push({ sym: String(n), de: numberToGerman(n), red: n === 0 || n === 1 || n === 11 || n === 12 });
+  } else if (c === '13to19') {
+    for (let n = 13; n <= 19; n++) out.push({ sym: String(n), de: numberToGerman(n), red: n === 16 || n === 17 });
+  } else if (c === 'tens20to90') {
+    for (let n = 20; n <= 90; n += 10) out.push({ sym: String(n), de: numberToGerman(n), red: n === 20 || n === 30 || n === 60 || n === 70 });
+  } else if (c === '21to99') {
+    for (let n = 21; n <= 99; n++) { if (n % 10 !== 0) out.push({ sym: String(n), de: numberToGerman(n), red: n % 10 === 1 }); }
+  } else if (c === '100to900') {
+    for (let n = 100; n <= 900; n += 100) out.push({ sym: String(n), de: numberToGerman(n), red: n === 100 });
+  } else if (c === '1000to9000') {
+    for (let n = 1000; n <= 9000; n += 1000) out.push({ sym: String(n), de: numberToGerman(n), red: n === 1000 });
+  } else if (c === 'scales') {
+    [10000, 100000, 1000000, 1000000000, 1000000000000].forEach(n => out.push({ sym: n.toLocaleString('de-DE'), de: numberToGerman(n), red: true }));
+  } else if (c === 'euro') {
+    [[1.5,'ein Euro fünfzig'],[4.5,'vier Euro fünfzig'],[12.9,'zwölf Euro neunzig'],[50,'fünfzig Prozent Rabatt']].forEach(([s,d]) => out.push({ sym: typeof s==='number'?'€'+s.toFixed(2).replace('.',','):s, de: d, red: true }));
+  } else if (c === 'weekmonth') {
+    DE_WEEKMONTH.weekdays.forEach(w => out.push({ sym: tr6(w.tr6), de: w.de, red: false }));
+    DE_WEEKMONTH.months.forEach(m => out.push({ sym: tr6(m.tr6), de: m.de, red: false }));
+  } else if (c === 'days1to31') {
+    for (let d = 1; d <= 31; d++) out.push({ sym: d + '.', de: 'der ' + ordinalToGerman(d), red: d === 1 || d === 3 || d === 7 || d === 8 || d === 20 });
+  } else if (c === 'time') {
+    DE_TIME_PHRASES.forEach(tp => out.push({ sym: `${tp.h}:${String(tp.m).padStart(2,'0')}`, de: `${tp.de} (${tp.formal})`, red: tp.de.indexOf('halb') >= 0 }));
+  } else if (c === 'age') {
+    DE_FLOORS.forEach(f => out.push({ sym: `Floor ${f.n}`, de: `${f.de} (${tr6(f.tr6)})`, red: f.n === 0 }));
+    DE_EMERGENCY.forEach(em => out.push({ sym: `🚨 ${em.num}`, de: `${em.de} — ${tr6(em.tr6)}`, red: true }));
   }
-  step();
-}
-function redrawWrite(){
-  const wc=document.getElementById('writeCanvas'); if(!wc) return;
-  const c=wc.getContext('2d'); c.clearRect(0,0,300,300);
-  c.strokeStyle='#0F1E36'; c.lineWidth=5; c.lineCap='round'; c.lineJoin='round';
-  writeStrokes.forEach(poly=>{ if(poly.length<2) return; c.beginPath(); poly.forEach((p,i)=>{ i?c.lineTo(p.x,p.y):c.moveTo(p.x,p.y); }); c.stroke(); });
-}
-function evalWrite(id){
-  const out=document.getElementById('evalOut');
-  if(!writeStrokes.length){ out.textContent='…'; return; }
-  const strokes=writeStrokes.length;
-  let totalLen=0; writeStrokes.forEach(poly=>{ for(let i=1;i<poly.length;i++){ totalLen+=Math.hypot(poly[i].x-poly[i-1].x,poly[i].y-poly[i-1].y); } });
-  /* 3x3 coverage */
-  const cells=new Set();
-  writeStrokes.forEach(poly=>poly.forEach(p=>{ const gx=Math.min(2,Math.floor(p.x/100)), gy=Math.min(2,Math.floor(p.y/100)); cells.add(gx+'_'+gy); }));
-  const cover=cells.size/9;
-  let score=Math.min(100, Math.round(cover*60 + Math.min(20,strokes*8) + Math.min(20,totalLen/15)));
-  state.writeCount++; persist();
-  /* mark letter as learned if not yet */
-  if(!state.letterState[id]) state.letterState[id]='learned';
-  else if(state.letterState[id]==='new') state.letterState[id]='learned';
-  persist();
-  out.innerHTML='<b>'+t('m.evaluate')+': '+score+'/100</b> · '+t('m.strokes')+': '+strokes+' · '+t('m.cover')+': '+Math.round(cover*100)+'%';
-  toast(t('m.saved'));
+  return out;
 }
 
-/* ================= NUMBERS VIEW ================= */
-function renderNumbers(){
-  const root=document.getElementById('appRoot');
-  let html='<div class="panel"><h3 style="color:var(--navy-900)">'+t('conv.title')+'</h3>'+
-    '<div class="row" style="margin:8px 0"><input type="text" id="convInput" style="flex:1;min-width:160px" placeholder="'+t('conv.input')+'">'+
-    '<select id="convCtx">'+['count','age','money','phone','time','year','ordinal'].map(c=>'<option value="'+c+'">'+t('ctx.'+c)+'</option>').join('')+'</select>'+
-    '<button class="btn btn-primary" id="convBtn">'+t('conv.btn')+'</button></div>'+
-    '<div class="muted">'+t('conv.hint')+'</div><div id="convOut" style="margin-top:10px;font-size:1.2rem;font-weight:700"></div></div>';
-
-  /* price listening */
-  html+='<div class="panel"><h3 style="color:var(--navy-900)">'+t('listen.title')+'</h3><div class="row">'+
-    '<button class="btn btn-outline" id="listenBtn">🎧 '+t('listen.btn')+'</button>'+
-    '<button class="btn btn-outline" id="listenReplay">🔊 '+t('listen.again')+'</button>'+
-    '<button class="btn btn-gold btn-sm" id="listenReveal">👁</button><span id="listenAns" class="muted"></span></div></div>';
-
-  /* 12 categories */
-  DE_NUM_CATS.forEach(cat=>{
-    html+='<div class="panel"><h3 style="color:var(--navy-900)">'+esc(tr6(cat.title6))+'</h3>'+
-      '<p class="muted" style="font-size:.84rem;margin-bottom:10px">'+esc(tr6(cat.desc6))+'</p>'+
-      '<div class="grid grid-4" data-cat="'+cat.id+'"></div></div>';
-  });
-
-  /* measures */
-  html+='<div class="panel"><h3 style="color:var(--navy-900)">'+t('measure.title')+'</h3><div class="grid grid-2">';
-  DE_MEASURE_FULL.forEach(m=>{
-    html+='<div class="card"><h3>'+esc(m.de)+' <span class="muted">/'+esc(m.ipa)+'/</span></h3>'+
-      '<p class="muted" style="font-size:.8rem">'+t('measure.applies')+': '+m.applies.map(a=>esc(a.de)).join(' · ')+'</p>'+
-      '<p style="font-size:.82rem;margin:5px 0">'+esc(tr6(m.note.tr6))+'</p>'+
-      '<p class="rule-note">⚠ '+t('measure.trap')+': '+esc(tr6(m.trap.tr6))+'</p>'+
-      '<div class="muted">'+t('measure.table')+': '+m.table.join(' · ')+'</div></div>';
-  });
-  html+='</div></div>';
-
-  /* emergency */
-  html+='<div class="panel"><h3 style="color:var(--navy-900)">🚨 '+t('emergency.title')+'</h3>';
-  DE_EMERGENCY.forEach(e=>{
-    html+='<div class="row" style="justify-content:space-between;padding:5px 0;border-bottom:1px dashed var(--border-color)">'+
-      '<span><b>'+e.num+'</b> — '+esc(e.de)+' <span class="muted">'+esc(tr6(e.tr6))+'</span></span>'+
-      '<button class="btn btn-outline btn-sm" data-spk="'+e.num+'">🔊</button></div>';
-  });
-  html+='</div>';
-  /* === 新增：渲染模組 C（日期、時間、數量及單位）5 大深度教學區塊 === */
-  if (typeof DE_MODULE_C_EXT !== 'undefined') {
-    const mc = DE_MODULE_C_EXT;
-    html += '<div class="hero-card" style="margin-top:18px"><h2 style="color:var(--navy-900)">📐 ' + esc(tr6(mc.header.title)) + '</h2>' +
-      '<p class="muted" style="margin-top:4px">' + esc(tr6(mc.header.sub)) + '</p></div>';
-
-    /* 1. 8 句經文法校對的核心例句 */
-    html += '<div class="panel"><h3 style="color:var(--navy-900)">✅ ' + esc(tr6(mc.verifiedSentences.title)) + '</h3><div class="grid grid-2" style="margin-top:10px">';
-    mc.verifiedSentences.items.forEach(it => {
-      html += '<div class="card"><div class="row" style="justify-content:space-between">' +
-        '<span style="font-size:1.15rem;font-weight:800;color:var(--navy-900)">' + esc(it.de) + '</span>' +
-        '<button class="btn btn-outline btn-sm" data-spk="' + esc(it.de) + '">🔊</button></div>' +
-        (lyr('ipa') ? '<div class="l-ipa">/' + esc(it.ipa) + '/</div>' : '') +
-        '<div class="chip chip-learned" style="margin:4px 0">' + esc(it.grammarTag) + '</div>' +
-        (lyr('trans') ? '<div class="l-trans" style="margin-top:4px">' + esc(tr6(it.tr)) + '</div>' : '') +
-        (lyr('notes') ? '<div class="l-note">' + esc(tr6(it.note)) + '</div>' : '') +
-        '</div>';
-    });
-    html += '</div></div>';
-
-    /* 2. ein / eine / einen 文法條件與單複數表格 */
-    const eg = mc.einGrammar;
-    const ths = tr6(eg.tableHeaders) || eg.tableHeaders['en-GB'];
-    html += '<div class="panel"><h3 style="color:var(--navy-900)">📘 ' + esc(tr6(eg.title)) + '</h3>' +
-      '<p style="font-size:.86rem;margin:6px 0">' + esc(tr6(eg.explanation)) + '</p>' +
-      '<div style="overflow-x:auto"><table class="gram-table"><tr>' + ths.map(h => '<th>' + esc(h) + '</th>').join('') + '</tr>';
-    eg.rows.forEach(r => {
-      html += '<tr><td><b>' + esc(tr6(r.gender)) + '</b></td><td>' + esc(r.defArt) + '</td>' +
-        '<td><b>' + esc(r.nom) + '</b></td><td style="color:var(--de-red);font-weight:700">' + esc(r.akk) + '</td>' +
-        '<td>' + esc(r.dat) + '</td><td>' + esc(r.pl) + '</td></tr>';
-    });
-    html += '</table></div>';
-    eg.keyRules.forEach(kr => {
-      html += '<div class="row" style="justify-content:space-between;padding:6px 0;border-top:1px dashed var(--border-color)">' +
-        '<span><b>' + esc(kr.de) + '</b><br><span class="muted">' + esc(tr6(kr.tr)) + '</span></span>' +
-        '<button class="btn btn-outline btn-sm" data-spk="' + esc(kr.de) + '">🔊</button></div>';
-    });
-    html += '</div>';
-
-    /* 3. 地址、門牌、房間號碼與正式/口語日期年份 */
-    html += '<div class="panel"><h3 style="color:var(--navy-900)">🏠 ' + esc(tr6(mc.addressesAndRooms.title)) + '</h3><div class="grid grid-2" style="margin-top:8px">';
-    mc.addressesAndRooms.items.forEach(it => {
-      html += '<div class="card"><h3>' + esc(tr6(it.topic)) + '</h3>' +
-        '<div style="font-weight:700;margin:6px 0">' + esc(it.de) + ' <button class="btn btn-outline btn-sm" data-spk="' + esc(it.de.replace(/\(.*?\)/g, '')) + '">🔊</button></div>' +
-        '<p class="muted" style="font-size:.82rem">' + esc(tr6(it.tr)) + '</p></div>';
-    });
-    html += '</div></div>';
-
-    /* 4. 德語 vs. 西班牙語誤區對比 */
-    html += '<div class="panel"><h3 style="color:var(--de-red)">⚠️ ' + esc(tr6(mc.spanishContrast.title)) + '</h3><div class="grid grid-2" style="margin-top:8px">';
-    mc.spanishContrast.points.forEach(pt => {
-      html += '<div class="card" style="border-color:var(--de-red)"><h3>' + esc(pt.contrast) + '</h3>' +
-        '<div style="font-weight:700;margin:5px 0">' + esc(pt.de) + ' <button class="btn btn-outline btn-sm" data-spk="' + esc(pt.de.replace(/\(.*?\)/g, '')) + '">🔊</button></div>' +
-        '<p class="muted" style="font-size:.82rem">' + esc(tr6(pt.tr)) + '</p></div>';
-    });
-    html += '</div></div>';
-
-    /* 5. 德、奧、瑞 (DACH) 格式差異 */
-    html += '<div class="panel"><h3 style="color:var(--navy-900)">🌍 ' + esc(tr6(mc.dachDifferences.title)) + '</h3><div class="grid grid-2" style="margin-top:8px">';
-    mc.dachDifferences.items.forEach(it => {
-      html += '<div class="card"><h3>' + esc(it.region) + '</h3>' +
-        '<div style="font-weight:700;margin:5px 0">' + esc(it.de) + '</div>' +
-        '<p class="muted" style="font-size:.82rem">' + esc(tr6(it.tr)) + '</p></div>';
-    });
-    html += '</div></div>';
-  }
-  root.innerHTML=html;
-  /* build cells */
-  DE_NUM_CATS.forEach(cat=>buildNumCells(cat));
-  /* converter */
-  document.getElementById('convBtn').onclick=doConvert;
-  document.getElementById('convInput').addEventListener('keydown',e=>{ if(e.key==='Enter') doConvert(); });
-  /* listening */
-  let curPrice=null;
-  const newPrice=()=>{ curPrice=(Math.round(Math.random()*4990)+10)/100; document.getElementById('listenAns').textContent=''; };
-  document.getElementById('listenBtn').onclick=()=>{ newPrice(); speak(moneyToGerman(curPrice)); };
-  document.getElementById('listenReplay').onclick=()=>{ if(curPrice!==null) speak(moneyToGerman(curPrice)); };
-  document.getElementById('listenReveal').onclick=()=>{ if(curPrice!==null) document.getElementById('listenAns').textContent='€'+curPrice.toFixed(2)+' = '+moneyToGerman(curPrice); };
-  root.querySelectorAll('[data-spk]').forEach(b=>b.onclick=()=>speak(b.getAttribute('data-spk')));
-}
-function doConvert(){
-  const v=document.getElementById('convInput').value;
-  const ctx=document.getElementById('convCtx').value;
-  const r=convertByCtx(v,ctx);
-  const out=document.getElementById('convOut');
-  if(!r){ out.innerHTML='<span class="banner-err">?</span>'; return; }
-  out.innerHTML=esc(r.text)+' <button class="btn btn-outline btn-sm" id="convSpk">🔊</button>';
-  document.getElementById('convSpk').onclick=()=>speak(r.text);
-}
-function redSet(cat){ const s={}; (cat.reds||[]).forEach(r=>s[r.key]=r); return s; }
-function numTrans(key){
-  /* translation layer from DE_NUM_WORDS / special */
-  const k=String(Math.round(Number(key)));
-  const w=DE_NUM_WORDS[k]; if(w) return tr6(w);
-  return '';
-}
-function buildNumCells(cat){
-  const box=document.querySelector('[data-cat="'+cat.id+'"]'); if(!box) return;
-  const reds=redSet(cat); let cells=[];
-  const push=(sym,de,isRed,note,trans)=>{ cells.push({sym:String(sym),de:de,red:!!isRed,note:note||'',trans:trans||numTrans(sym)}); };
-  const kind=cat.kind;
-  if(kind==='cardinal'){
-    if(cat.cells==='0to12'){ for(let i=0;i<=12;i++) push(i,numberToGerman(i),reds[i]); }
-    else if(cat.cells==='13to19'){ for(let i=13;i<=19;i++) push(i,numberToGerman(i),reds[i]); }
-    else if(cat.cells==='tens20to90'){ [20,30,40,50,60,70,80,90].forEach(i=>push(i,numberToGerman(i),reds[i])); }
-    else if(cat.cells==='21to99'){ for(let i=21;i<=99;i++) push(i,numberToGerman(i),reds[i]); }
-    else if(cat.cells==='100to900'){ for(let i=1;i<=9;i++) push(i*100,numberToGerman(i*100),reds[i*100]); }
-    else if(cat.cells==='1000to9000'){ for(let i=1;i<=9;i++) push(i*1000,numberToGerman(i*1000),reds[i*1000]); }
-    else if(cat.cells==='scales'){
-      push('10 000','zehntausend'); push('100 000','hunderttausend');
-      push('1 000 000','eine Million',reds[1000000]);
-      push('10 000 000','zehn Millionen'); push('100 000 000','hundert Millionen');
-      push('1 000 000 000','eine Milliarde',reds[1000000000]);
-      push('10 000 000 000','zehn Milliarden'); push('100 000 000 000','hundert Milliarden');
-      push('1 000 000 000 000','eine Billion',reds[1000000000000]);
+function renderNumbersView(root) {
+  root.innerHTML = `
+    <div class="panel">
+      <h2 style="font-size:1.25rem;margin-bottom:10px;">${esc(t('num.conv.title'))}</h2>
+      <div class="row">
+        <input type="text" id="numConvInput" value="21,5" style="flex:1;min-width:160px;" placeholder="e.g. 21, -5, 2,5, 14:30">
+        <select id="numConvCtx">
+          <option value="count">Count / Decimal (21 / -5 / 2,5)</option>
+          <option value="money">Euro (4,50)</option>
+          <option value="time">Time (14:30)</option>
+          <option value="year">Year (1998 / 2026)</option>
+          <option value="ordinal">Ordinal (1. / 21.)</option>
+          <option value="age">Age (25)</option>
+          <option value="phone">Phone (0301234)</option>
+        </select>
+        <button type="button" class="btn btn-red" id="numConvBtn">${esc(t('num.conv.btn'))}</button>
+      </div>
+      <div id="numConvOut" class="card" style="margin-top:10px;font-weight:700;color:var(--navy-900);">einundzwanzig Komma fünf</div>
+    </div>
+    <div class="panel">
+      <div class="subtabs">
+        <button type="button" class="subtab ${numSubTab==='modc'?'active':''}" data-nsub="modc">${esc(t('num.tab.modc'))}</button>
+        <button type="button" class="subtab ${numSubTab==='cats'?'active':''}" data-nsub="cats">${esc(t('num.tab.cats'))}</button>
+        <button type="button" class="subtab ${numSubTab==='measure'?'active':''}" data-nsub="measure">${esc(t('num.tab.measure'))}</button>
+      </div>
+      <div id="numSubBody"></div>
+    </div>
+  `;
+  document.getElementById('numConvBtn').onclick = () => {
+    const val = document.getElementById('numConvInput').value;
+    const ctx = document.getElementById('numConvCtx').value;
+    const res = convertByCtxEnhanced(val, ctx);
+    const box = document.getElementById('numConvOut');
+    if (res && res.text) {
+      box.textContent = res.text;
+      if (res.text.indexOf('⚠️') < 0) speak(res.text);
+    } else {
+      box.textContent = '?';
     }
-  }
-  else if(kind==='euro'){
-    [['0,05','fünf Cent'],['1,00','ein Euro'],['1,50','ein Euro fünfzig'],
-     ['2,50','zwei Euro fünfzig'],['4,50','vier Euro fünfzig',reds['euro']],
-     ['9,95','neun Euro fünfundneunzig'],['10,00','zehn Euro'],
-     ['19,99','neunzehn Euro neunundneunzig'],['20,00','zwanzig Euro'],
-     ['49,99','neunundvierzig Euro neunundneunzig'],['50,00','fünfzig Euro'],
-     ['99,99','neunundneunzig Euro neunundneunzig'],['100,00','hundert Euro'],
-     ['199,99','einhundertneunundneunzig Euro neunundneunzig'],
-     ['999,99','neunhundertneunundneunzig Euro neunundneunzig']]
-     .forEach(c=>push('€'+c[0],c[1],c[2]));
-    [10,20,25,30,50,75,100].forEach(p=>push(p+' %',numberToGerman(p)+' Prozent',reds['percent']));
-  }
-  else if(kind==='weekmonth'){
-    DE_WEEKMONTH.weekdays.forEach(w=>push(w.de,w.de,false,'',tr6(w.tr6)));
-    DE_WEEKMONTH.months.forEach(m=>push(m.de,m.de,false,'',tr6(m.tr6)));
-  }
-  else if(kind==='ordinalDay'){
-    for(let i=1;i<=31;i++) push(i+'.',ordinalToGerman(i),reds[i]);
-  }
-  else if(kind==='time'){
-    for(let h=1;h<=24;h++) push(h+':00',numberToGerman(h)+' Uhr');
-    for(let m=1;m<=60;m++) push(':'+m,numberToGerman(m)+' Minuten');
-    for(let h=1;h<=12;h++){ const next=(h%12)+1; push((h+1)+' vor '+next, 'halb '+numberToGerman(next),reds['halbdrei']); }
-    for(let h=1;h<=12;h++){ const next=(h%12)+1; push((h)+':15','viertel '+numberToGerman(h),reds['halbdrei']); push((h)+':45','viertel vor '+numberToGerman(next),reds['halbdrei']); }
-    DE_TIME_PHRASES.forEach(p=>push(p.h+':'+(p.m<10?'0':'')+p.m,p.de+' / '+p.formal,reds['halbdrei'],tr6(p.note6)));
-  }
-  else if(kind==='age'){
-    for(let i=0;i<=100;i++) push(i,numberToGerman(i)+' Jahre alt',i===2?'':'');
-    DE_FLOORS.forEach(f=>push('Floor '+f.n,f.de,false,'',tr6(f.tr6)));
-    DE_EMERGENCY.forEach(e=>push(e.num,e.de,false,'',tr6(e.tr6)));
-  }
-  box.innerHTML=cells.map(c=>'<div class="num-cell'+(c.red?' red':'')+'">'+
-    '<div class="num-sym">'+esc(c.sym)+'</div>'+
-    '<div class="num-de">'+esc(c.de)+' <button class="btn btn-outline btn-sm" data-spk="'+esc(c.de)+'">🔊</button></div>'+
-    (lyr('trans')&&c.trans?'<div class="num-trans">'+esc(c.trans)+'</div>':'')+
-    (c.red&&c.note?'<div class="rule-note">⚠ '+esc(c.note)+'</div>':'')+'</div>').join('');
-  box.querySelectorAll('[data-spk]').forEach(b=>b.onclick=()=>speak(b.getAttribute('data-spk')));
-}
+  };
+  root.querySelectorAll('[data-nsub]').forEach(b => {
+    b.onclick = () => { numSubTab = b.getAttribute('data-nsub'); renderNumbersView(root); };
+  });
 
-'use strict';
-/* ================= GRAMMAR + LESSONS ================= */
-let grammarTab='ref';   // ref | lessonList | lessonDetail
-let openLessonId=null;
-function renderGrammar(){
-  const root=document.getElementById('appRoot');
-  let html='<div class="subtabs">'+
-    '<button class="subtab'+(grammarTab==='ref'?' active':'')+'" data-gtab="ref">📘 '+t('gram.title')+'</button>'+
-    '<button class="subtab'+(grammarTab==='lessonList'?' active':'')+'" data-gtab="lessonList">💬 '+t('lesson.title')+'</button></div>';
-  root.innerHTML=html+'<div id="gramPane"></div>';
-  root.querySelectorAll('[data-gtab]').forEach(b=>b.onclick=()=>{ grammarTab=b.getAttribute('data-gtab'); openLessonId=null; renderGrammar(); });
-  const pane=document.getElementById('gramPane');
-  if(grammarTab==='ref') pane.innerHTML=gramRef();
-  else if(grammarTab==='lessonList') pane.innerHTML=lessonList();
-  else if(grammarTab==='lessonDetail') pane.innerHTML=lessonDetail(openLessonId);
-  bindGrammar(pane);
-}
-function gramRef(){
-  const g=DE_GRAMMAR_REF; let h='<div class="grid grid-2">';
-  h+='<div class="card"><h3>'+t('gram.gender')+'</h3><p style="font-size:.84rem">'+esc(tr6(g.gender.intro.tr6))+'</p><table class="gram-table"><tr><th>Art</th><th>Beispiel</th></tr>';
-  g.gender.table.forEach(r=>{ h+='<tr><td>'+esc(r.art)+'</td><td>'+esc(r.ex)+(lyr('trans')?' · '+esc(tr6(r.tr6)):'')+'</td></tr>'; });
-  h+='</table><p class="l-note">'+esc(tr6(g.gender.tip.tr6))+'</p></div>';
-  h+='<div class="card"><h3>'+t('gram.cases')+'</h3><p style="font-size:.84rem">'+esc(tr6(g.cases.intro.tr6))+'</p><table class="gram-table"><tr><th>Fall</th><th>Beispiel</th></tr>';
-  g.cases.table.forEach(r=>{ h+='<tr><td>'+esc(r.case)+'</td><td>'+esc(r.de)+(lyr('trans')?' · '+esc(tr6(r.tr6)):'')+'</td></tr>'; });
-  h+='</table></div>';
-  /* verbs */
-  h+='<div class="card"><h3>'+t('gram.verbs')+'</h3><p style="font-size:.84rem">'+esc(tr6(g.verbs.intro.tr6))+'</p>';
-  ['sein','haben','moechten','regular'].forEach(v=>{
-    const V=g.verbs[v]; const forms=V.forms;
-    h+='<div style="margin:6px 0"><b>'+(v==='moechten'?'möchten':v)+'</b> ';
-    if(Array.isArray(forms)){ h+=forms.map(f=>esc(f)).join(', '); }
-    else { const pron=['ich','du','er','wir','ihr','sie']; h+=pron.map(p=>p+' '+forms[p]).join(', '); }
-    h+='</div>';
-  });
-  h+='</div>';
-  /* v2 */
-  h+='<div class="card"><h3>'+t('gram.v2')+'</h3>';
-  g.v2.rules.forEach(r=>{ h+='<p style="font-size:.84rem;margin:4px 0">• '+esc(r.de)+(lyr('trans')?' <span class="muted">'+esc(tr6(r.tr6))+'</span>':'')+'</p>'; });
-  h+='</div></div>';
-  return h;
-}
-function lessonList(){
-  let h='<div class="grid grid-2">';
-  DE_LESSONS.forEach((l,i)=>{
-    h+='<div class="card" data-lesson="'+l.id+'" style="cursor:pointer"><h3>'+(i+1)+'. '+esc(tr6(l.title6))+'</h3>'+
-      '<p class="muted" style="font-size:.82rem">'+esc(tr6(l.intro6))+'</p></div>';
-  });
-  return h+'</div>';
-}
-function lessonDetail(id){
-  const L=DE_LESSONS.find(l=>l.id===id); if(!L) return '';
-  let h='<button class="btn btn-outline btn-sm" id="backLessons">← '+t('back')+'</button>';
-  h+='<div class="panel" style="margin-top:10px"><h3>'+esc(tr6(L.title6))+'</h3><p class="muted">'+esc(tr6(L.intro6))+'</p>'+
-    '<div class="row" style="margin:8px 0"><button class="btn btn-gold btn-sm" id="dlgPlayAll">🔊 '+t('dlg.playAll')+'</button>'+
-    '<button class="btn btn-outline btn-sm" id="dlgStop">⏹ '+t('dlg.stop')+'</button></div>';
-  L.lines.forEach((ln,i)=>{
-    h+='<div class="dlg-line"><span class="spk">'+(ln.spk==='A'?L.spkA:L.spkB)+'</span><div style="flex:1">'+
-      '<div><b>'+esc(ln.de)+'</b> <button class="btn btn-outline btn-sm" data-spkde="'+i+'">🔊'+(lyr('actual')?'':'')+'</button> '+
-      '<button class="btn btn-outline btn-sm" data-spkslow="'+i+'">🐢</button></div>'+
-      (lyr('ipa')?'<div class="l-ipa">/'+esc(ln.ipa)+'/</div>':'')+
-      (lyr('trans')?'<div class="muted">'+esc(tr6(ln.tr6))+'</div>':'')+'</div></div>';
-  });
-  h+='</div>';
-  /* stars */
-  h+='<div class="panel"><h3>'+t('lesson.stars')+'</h3><div class="row">';
-  L.stars.forEach(s=>{
-    h+='<span class="chip chip-learned" data-fav="'+esc(s.de)+'" style="cursor:pointer">⭐ '+esc(s.de)+(lyr('trans')?' · '+esc(tr6(s.tr6)):'')+'</span>';
-  });
-  h+='</div></div>';
-  /* grammar */
-  h+='<div class="panel"><h3>'+t('lesson.gram')+'</h3><p style="font-size:.86rem">'+esc(L.gram.de)+'</p>'+(lyr('trans')?'<p class="muted">'+esc(tr6(L.gram.tr6))+'</p>':'')+'</div>';
-  /* mini quiz */
-  h+='<div class="panel"><h3>'+t('lesson.mini')+'</h3><div id="miniQuiz"></div></div>';
-  return h;
-}
-function bindGrammar(pane){
-  pane.querySelectorAll('[data-lesson]').forEach(b=>b.onclick=()=>{ openLessonId=b.getAttribute('data-lesson'); grammarTab='lessonDetail'; renderGrammar(); });
-  const back=pane.querySelector('#backLessons'); if(back) back.onclick=()=>{ grammarTab='lessonList'; renderGrammar(); };
-  const L=DE_LESSONS.find(l=>l.id===openLessonId);
-  if(!L) return;
-  const playAll=()=>{ let i=0; (function next(){ if(i>=L.lines.length) return; speak(L.lines[i].de,1.0); i++; setTimeout(next,1800); })(); };
-  const pa=pane.querySelector('#dlgPlayAll'); if(pa) pa.onclick=playAll;
-  const st=pane.querySelector('#dlgStop'); if(st) st.onclick=()=>stopSpeak();
-  pane.querySelectorAll('[data-spkde]').forEach(b=>b.onclick=()=>speak(L.lines[+b.getAttribute('data-spkde')].de,1.0));
-  pane.querySelectorAll('[data-spkslow]').forEach(b=>b.onclick=()=>speak(L.lines[+b.getAttribute('data-spkslow')].de,0.5));
-  pane.querySelectorAll('[data-fav]').forEach(b=>b.onclick=()=>{ const p=b.getAttribute('data-fav'); if(!state.stars.includes(p)){ state.stars.push(p); persist(); toast('⭐'); } });
-  renderMiniQuiz(pane.querySelector('#miniQuiz'),L.miniQuiz);
-}
-function renderMiniQuiz(mount,quiz){
-  if(!mount) return;
-  let h='';
-  quiz.forEach((q,qi)=>{
-    h+='<div style="margin:10px 0"><p style="font-weight:700">'+(qi+1)+'. '+esc(q.q.de)+(lyr('trans')?' <span class="muted">'+esc(tr6(q.q.tr6))+'</span>':'')+'</p>';
-    q.opts.forEach((o,oi)=>{
-      h+='<button class="quiz-opt" data-mq="'+qi+'_'+oi+'">'+esc(o.de)+(lyr('trans')?' <span class="muted">'+esc(tr6(o.tr6))+'</span>':'')+'</button>';
+  const body = document.getElementById('numSubBody');
+  if (numSubTab === 'modc') {
+    const mc = DE_MOD_C_ESSENTIALS;
+    body.innerHTML = `
+      <h3 style="margin-bottom:10px;">1️⃣ 八句必背核心數量與容器搭配（點擊 🔊 發音）</h3>
+      <div class="grid grid-2" style="margin-bottom:16px;">
+        ${mc.examples8.map(ex => `
+          <div class="card">
+            <div class="row" style="justify-content:space-between;">
+              <b style="font-size:1.05rem;color:var(--navy-900);">${esc(ex.de)}</b>
+              <button type="button" class="btn btn-red btn-sm" data-spk="${esc(ex.de)}">🔊</button>
+            </div>
+            <div class="l-ipa">/${esc(ex.ipa)}/</div>
+            <div class="muted" style="margin-top:4px;">${esc(tr6(ex.tr))}</div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="card" style="margin-bottom:16px;">
+        <h3>2️⃣ 數字 1 的變身：eins vs. ein / eine / einen 文法條件</h3>
+        <table class="gram-table">
+          <thead><tr><th>形式</th><th>文法條件與格位</th><th>正確範例</th></tr></thead>
+          <tbody>
+            ${mc.articleRules.map(r => `<tr><td><b>${esc(r.form)}</b></td><td>${esc(tr6(r.cond))}</td><td><button type="button" class="btn btn-outline btn-sm" data-spk="${esc(r.ex.split('(')[0])}">🔊 ${esc(r.ex)}</button></td></tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
+      <div class="grid grid-2" style="margin-bottom:16px;">
+        ${mc.addressRules.map(ar => `
+          <div class="card">
+            <h3>${esc(tr6(ar.title))}</h3>
+            <div style="font-weight:700;color:var(--de-red);margin:6px 0;">${esc(ar.de)}</div>
+            <div class="muted">${esc(tr6(ar.note))}</div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="card">
+        <h3>3️⃣ 德國・奧地利・瑞士（DACH 德語區）常見格式差異</h3>
+        <table class="gram-table">
+          <thead><tr><th>比較項目</th><th>🇩🇪 德國 / 🇦🇹 奧地利</th><th>🇨🇭 瑞士</th></tr></thead>
+          <tbody>
+            ${mc.dachDiff.map(d => `<tr><td><b>${esc(tr6(d.item))}</b></td><td>${esc(d.de_at)}</td><td>${esc(d.ch)}</td></tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  } else if (numSubTab === 'cats') {
+    const cat = DE_NUM_CATS.find(c => c.id === activeNumCatId) || DE_NUM_CATS[0];
+    const cells = buildCellsForCategory(cat);
+    body.innerHTML = `
+      <div class="subtabs">
+        ${DE_NUM_CATS.map(c => `<button type="button" class="subtab ${c.id===cat.id?'active':''}" data-ncat="${c.id}">${esc(tr6(c.title6))}</button>`).join('')}
+      </div>
+      <p class="muted" style="margin-bottom:10px;">${esc(tr6(cat.desc6))}</p>
+      ${cat.reds.map(r => `<div class="rule-note" style="margin-bottom:6px;">⚠️ <b>${esc(r.de)}</b> — ${esc(tr6(r.tr6))}</div>`).join('')}
+      <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr));margin-top:10px;">
+        ${cells.map(cl => `
+          <div class="num-cell ${cl.red?'red':''}">
+            <div class="row" style="justify-content:space-between;">
+              <span class="num-sym">${esc(cl.sym)}</span>
+              <button type="button" class="btn btn-outline btn-sm" data-spk="${esc(cl.de)}">🔊</button>
+            </div>
+            <div class="num-de">${esc(cl.de)}</div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    body.querySelectorAll('[data-ncat]').forEach(b => {
+      b.onclick = () => { activeNumCatId = b.getAttribute('data-ncat'); renderNumbersView(root); };
     });
-    h+='<div class="mq-expl" id="mqexpl'+qi+'" style="display:none"></div></div>';
-  });
-  mount.innerHTML=h;
-  mount.querySelectorAll('.quiz-opt').forEach(b=>b.onclick=()=>{
-    const [qi,oi]=b.getAttribute('data-mq').split('_').map(Number);
-    const q=quiz[qi];
-    b.parentElement.querySelectorAll('.quiz-opt').forEach((x,i)=>{ x.className='quiz-opt'+(i===q.correct?' correct':(i===oi?' wrong':'')); });
-    const ex=document.getElementById('mqexpl'+qi);
-    ex.style.display='block'; ex.innerHTML='<span class="muted">'+t('quiz.expl')+': '+esc(tr6(q.expl6))+'</span>';
-  });
-}
-
-'use strict';
-/* ================= QUIZ / SRS / FAV / STATS ================= */
-let qFilter='all', qIdx=0, qScore=0, qAnswered=0;
-function renderQuiz(){
-  const root=document.getElementById('appRoot');
-  const cats=['all','alphabet','sound','numbers','measure','grammar','conversation'];
-  let html='<div class="panel"><h3 style="color:var(--navy-900)">🎯 '+t('quiz.title')+'</h3><div class="subtabs">';
-  cats.forEach(c=>{ html+='<button class="subtab'+(qFilter===c?' active':'')+'" data-qf="'+c+'">'+(c==='all'?'All':c)+'</button>'; });
-  html+='</div><div id="quizPane"></div></div>';
-  html+='<div class="panel"><h3>🔄 '+t('srs.title')+'</h3><div id="srsPane"></div></div>';
-  html+='<div class="panel"><h3>⭐ '+t('fav.title')+'</h3><div id="favPane"></div></div>';
-  html+='<div class="panel"><h3>📊 '+t('stats.title')+'</h3><div id="statPane"></div></div>';
-  root.innerHTML=html;
-  root.querySelectorAll('[data-qf]').forEach(b=>b.onclick=()=>{ qFilter=b.getAttribute('data-qf'); qIdx=0; qScore=0; qAnswered=0; renderQuiz(); });
-  renderQuizPane(); renderSrs(); renderFav(); renderStats();
-}
-function filteredQuiz(){ return DE_QUIZ20.filter(q=>qFilter==='all'||q.cat===qFilter); }
-function renderQuizPane(){
-  const list=filteredQuiz();
-  const pane=document.getElementById('quizPane');
-  if(qIdx>=list.length){
-    pane.innerHTML='<div class="banner-ok">'+t('quiz.done')+' — '+t('quiz.score')+': '+qScore+'/'+list.length+'</div>'+
-      '<button class="btn btn-primary" id="qRestart" style="margin-top:10px">'+t('quiz.start')+'</button>';
-    document.getElementById('qRestart').onclick=()=>{ qIdx=0; qScore=0; qAnswered=0; renderQuizPane(); };
-    return;
+  } else {
+    body.innerHTML = `<div class="grid grid-2">` + DE_MEASURE_FULL.map(m => `
+      <div class="card">
+        <div class="row" style="justify-content:space-between;">
+          <h3>${esc(m.de)} <span class="muted">/${esc(m.ipa)}/</span></h3>
+          <button type="button" class="btn btn-outline btn-sm" data-spk="${esc(m.de)}">🔊</button>
+        </div>
+        <p style="font-size:.86rem;margin:6px 0;">${esc(tr6(m.note.tr6))}</p>
+        <div class="rule-note">⚠️ ${esc(tr6(m.trap.tr6))}</div>
+        <div class="row" style="margin-top:8px;">
+          ${m.table.map(ex => `<button type="button" class="btn btn-outline btn-sm" data-spk="${esc(ex)}">🔊 ${esc(ex)}</button>`).join('')}
+        </div>
+      </div>
+    `).join('') + `</div>`;
   }
-  const q=list[qIdx];
-  pane.innerHTML='<p class="muted">'+(qIdx+1)+'/'+list.length+' · '+q.cat+'</p>'+
-    '<p style="font-weight:700;font-size:1.05rem;margin:6px 0">'+esc(q.q.de)+(lyr('trans')?' <span class="muted">'+esc(tr6(q.q.tr6))+'</span>':'')+'</p>';
-  q.opts.forEach((o,i)=>{
-    pane.innerHTML+='<button class="quiz-opt" data-opt="'+i+'">'+esc(o)+'</button>';
+  body.querySelectorAll('[data-spk]').forEach(b => {
+    b.onclick = () => speak(b.getAttribute('data-spk'));
   });
-  pane.innerHTML+='<div class="qexpl" id="qexpl" style="display:none"></div>';
-  pane.querySelectorAll('[data-opt]').forEach(b=>b.onclick=()=>{
-    const oi=+b.getAttribute('data-opt');
-    pane.querySelectorAll('[data-opt]').forEach((x,i)=>{ x.className='quiz-opt'+(i===q.correct?' correct':(i===oi?' wrong':'')); });
-    state.quizStat.done++; state.quizStat.correct+=(oi===q.correct?1:0);
-    if(oi!==q.correct) upsertWrong(q);
-    if(oi===q.correct) qScore++;
+}
+
+function renderTravelView(root) {
+  root.innerHTML = `
+    <div class="panel">
+      <div class="subtabs">
+        <button type="button" class="subtab ${travelSubTab==='dlg'?'active':''}" data-tsub="dlg">${esc(t('travel.tab.dlg'))}</button>
+        <button type="button" class="subtab ${travelSubTab==='gram'?'active':''}" data-tsub="gram">${esc(t('travel.tab.gram'))}</button>
+      </div>
+      <div id="travelSubBody"></div>
+    </div>
+  `;
+  root.querySelectorAll('[data-tsub]').forEach(b => {
+    b.onclick = () => { travelSubTab = b.getAttribute('data-tsub'); renderTravelView(root); };
+  });
+  const body = document.getElementById('travelSubBody');
+  if (travelSubTab === 'dlg') {
+    const les = DE_LESSONS.find(l => l.id === activeLessonId) || DE_LESSONS[0];
+    body.innerHTML = `
+      <div class="subtabs">
+        ${DE_LESSONS.map(l => `<button type="button" class="subtab ${l.id===les.id?'active':''}" data-les="${l.id}">${l.id}: ${esc(tr6(l.title6))}</button>`).join('')}
+      </div>
+      <div class="card" style="margin-bottom:14px;">
+        <h3>${les.id} · ${esc(tr6(les.title6))}</h3>
+        <p class="muted" style="margin-bottom:10px;">${esc(tr6(les.intro6))}</p>
+        ${les.lines.map(ln => `
+          <div class="dlg-line">
+            <span class="spk">${esc(ln.spk === 'A' ? les.spkA : les.spkB)}:</span>
+            <div style="flex:1;">
+              <div style="font-weight:700;">${esc(ln.de)}</div>
+              ${state.layers.ipa && ln.ipa ? `<div class="l-ipa">/${esc(ln.ipa)}/</div>` : ''}
+              ${state.layers.trans ? `<div class="muted">${esc(tr6(ln.tr6))}</div>` : ''}
+            </div>
+            <div class="row" style="gap:4px;">
+              <button type="button" class="btn btn-outline btn-sm" data-star="${esc(ln.de)}" title="收藏句型">⭐</button>
+              <button type="button" class="btn btn-outline btn-sm" data-spk="${esc(ln.de)}">🔊</button>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="grid grid-2" style="margin-bottom:14px;">
+        <div class="card">
+          <h3>⭐ 重點必背句型</h3>
+          <div class="row" style="margin-top:8px;">
+            ${(les.stars || []).map(s => `<button type="button" class="btn btn-outline btn-sm" data-spk="${esc(s.de)}">🔊 <b>${esc(s.de)}</b> — ${esc(tr6(s.tr6))}</button>`).join('')}
+          </div>
+        </div>
+        <div class="card">
+          <h3>📘 本課文法精要</h3>
+          <p style="margin-top:6px;font-size:.88rem;">${esc(tr6(les.gram.tr6))}</p>
+        </div>
+      </div>
+      ${(les.miniQuiz && les.miniQuiz.length) ? `
+        <div class="card">
+          <h3>🎯 隨堂小測驗 (${les.id})</h3>
+          ${les.miniQuiz.map((mq, mi) => {
+            const mkey = les.id + '_' + mi;
+            const picked = lessonQuizAnswers[mkey];
+            const answered = typeof picked === 'number';
+            return `
+              <div style="margin-top:10px;padding-top:10px;border-top:1px dashed var(--border-color);">
+                <div style="font-weight:700;">Q${mi+1}. ${esc(mq.q.de)} <span class="muted">(${esc(tr6(mq.q.tr6))})</span></div>
+                ${mq.opts.map((o, oi) => {
+                  let cls = 'quiz-opt';
+                  if (answered) {
+                    if (oi === mq.correct) cls += ' correct';
+                    else if (oi === picked) cls += ' wrong';
+                  }
+                  const lbl = typeof o === 'string' ? o : `${o.de} (${tr6(o.tr6)})`;
+                  return `<button type="button" class="${cls}" data-mkey="${mkey}" data-mcorr="${mq.correct}" data-moi="${oi}">${esc(lbl)}</button>`;
+                }).join('')}
+                ${answered ? `<div class="muted" style="margin-top:6px;">💡 ${esc(tr6(mq.expl6))}</div>` : ''}
+              </div>
+            `;
+          }).join('')}
+        </div>
+      ` : ''}
+    `;
+    body.querySelectorAll('[data-les]').forEach(b => {
+      b.onclick = () => { activeLessonId = b.getAttribute('data-les'); renderTravelView(root); };
+    });
+    body.querySelectorAll('[data-spk]').forEach(b => {
+      b.onclick = () => speak(b.getAttribute('data-spk'));
+    });
+    body.querySelectorAll('[data-star]').forEach(b => {
+      b.onclick = () => {
+        const phrase = b.getAttribute('data-star');
+        if (!state.stars.includes(phrase)) { state.stars.push(phrase); persist(); toast('⭐ 已加入收藏夾'); }
+      };
+    });
+    body.querySelectorAll('[data-mkey]').forEach(b => {
+      b.onclick = () => {
+        const k = b.getAttribute('data-mkey');
+        lessonQuizAnswers[k] = Number(b.getAttribute('data-moi'));
+        renderTravelView(root);
+      };
+    });
+  } else {
+    const gr = DE_GRAMMAR_REF;
+    body.innerHTML = `
+      <div class="card" style="margin-bottom:12px;">
+        <h3>1️⃣ 名詞三性與冠詞 (der / die / das)</h3>
+        <p style="margin-bottom:8px;">${esc(tr6(gr.gender.intro.tr6))}</p>
+        <table class="gram-table">
+          <tbody>${gr.gender.table.map(r => `<tr><td><b>${esc(r.art)}</b></td><td>${esc(r.ex)}</td><td>${esc(tr6(r.tr6))}</td></tr>`).join('')}</tbody>
+        </table>
+      </div>
+      <div class="card" style="margin-bottom:12px;">
+        <h3>2️⃣ 德語四格變化 (Nominativ · Akkusativ · Dativ · Genitiv)</h3>
+        <p style="margin-bottom:8px;">${esc(tr6(gr.cases.intro.tr6))}</p>
+        <table class="gram-table">
+          <tbody>${gr.cases.table.map(r => `<tr><td><b>${esc(r.case)}</b></td><td>${esc(r.de)}</td><td>${esc(tr6(r.tr6))}</td></tr>`).join('')}</tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h3>3️⃣ 動詞第二位原則 (V2 Word Order)</h3>
+        ${gr.v2.rules.map(r => `<p style="margin:6px 0;">• ${esc(tr6(r.tr6))}</p>`).join('')}
+        <div class="row" style="margin-top:8px;">
+          ${gr.v2.examples.map(ex => `<button type="button" class="btn btn-outline btn-sm" data-spk="${esc(ex.de)}">🔊 <b>${esc(ex.de)}</b> — ${esc(tr6(ex.tr6))}</button>`).join('')}
+        </div>
+      </div>
+    `;
+    body.querySelectorAll('[data-spk]').forEach(b => {
+      b.onclick = () => speak(b.getAttribute('data-spk'));
+    });
+  }
+}
+
+function renderQuizView(root) {
+  root.innerHTML = `
+    <div class="panel">
+      <h2 style="font-size:1.25rem;margin-bottom:12px;">${esc(t('quiz.title'))}</h2>
+      ${state.stars.length ? `
+        <div class="card" style="margin-bottom:14px;">
+          <h3>⭐ 我的收藏句型 (${state.stars.length})</h3>
+          <div class="row" style="margin-top:8px;">
+            ${state.stars.map(s => `<button type="button" class="btn btn-outline btn-sm" data-spk="${esc(s)}">🔊 ${esc(s)}</button>`).join('')}
+          </div>
+        </div>
+      ` : ''}
+      ${DE_QUIZ20.map((q, idx) => {
+        const picked = quizAnswers[q.id];
+        const answered = typeof picked === 'number';
+        return `
+          <div class="card" style="margin-bottom:12px;">
+            <h3>Q${idx + 1}. ${esc(tr6(q.q))}</h3>
+            ${q.opts.map((opt, oi) => {
+              let cls = 'quiz-opt';
+              if (answered) {
+                if (oi === q.correct) cls += ' correct';
+                else if (oi === picked) cls += ' wrong';
+              }
+              return `<button type="button" class="${cls}" data-qid="${q.id}" data-oi="${oi}">${esc(opt)}</button>`;
+            }).join('')}
+            ${answered ? `<div class="muted" style="margin-top:8px;">💡 ${esc(tr6(q.exp))}</div>` : ''}
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `;
+  root.querySelectorAll('[data-spk]').forEach(b => {
+    b.onclick = () => speak(b.getAttribute('data-spk'));
+  });
+  root.querySelectorAll('[data-qid]').forEach(btn => {
+    btn.onclick = () => {
+      const qid = btn.getAttribute('data-qid');
+      const oi = Number(btn.getAttribute('data-oi'));
+      const qObj = DE_QUIZ20.find(x => x.id === qid);
+      if (!qObj) return;
+      quizAnswers[qid] = oi;
+      state.quizStat.done += 1;
+      if (oi === qObj.correct) state.quizStat.correct += 1;
+      else if (!state.wrong.includes(qid)) state.wrong.push(qid);
+      bumpStreak();
+      persist();
+      renderQuizView(root);
+    };
+  });
+}
+
+function openLetterModal(id) {
+  const item = GERMAN_ALPHABET.find(x => x.id === id);
+  if (!item) return;
+  if (!state.letterState[id] || state.letterState[id] === 'new') {
+    state.letterState[id] = 'learned';
+    bumpStreak();
     persist();
-    const ex=document.getElementById('qexpl'); ex.style.display='block';
-    ex.innerHTML='<span class="muted">'+t('quiz.expl')+': '+esc(tr6(q.expl6))+'</span>'+
-      '<div class="row" style="margin-top:8px"><button class="btn btn-primary" id="qNext">'+t('quiz.next')+' →</button></div>';
-    document.getElementById('qNext').onclick=()=>{ qIdx++; renderQuizPane(); };
-  });
-}
-/* SRS: real spaced-repetition scheduling */
-let srsFlip=false;
-function todayNo(){ return Math.floor(Date.now()/86400000); }
-function srsDueList(){
-  const t=todayNo();
-  return Object.keys(state.srs).map(k=>{ const c=state.srs[k]; c.key=k; c.due=c.due||t; c.ivl=c.ivl||1; return c; })
-    .filter(c=>c.due<=t).sort((a,b)=>a.due-b.due);
-}
-function upsertWrong(q){
-  const k=q.de;
-  if(!state.srs[k]) state.srs[k]={front:q.de,back:tr6(q.expl6),due:todayNo(),ivl:1,ease:2.5};
-  else { state.srs[k].back=tr6(q.expl6); state.srs[k].due=todayNo(); }
-}
-function renderSrs(){
-  const pane=document.getElementById('srsPane');
-  const due=srsDueList();
-  const total=Object.keys(state.srs).length;
-  pane.innerHTML='<p class="muted">'+t('srs.due')+': '+due.length+' / '+total+'</p>';
-  if(!due.length){ pane.innerHTML+='<span class="banner-ok">✓ '+t('srs.done')+'</span>'; return; }
-  const card=due[0];
-  pane.innerHTML+='<div class="srs-card" id="srsCard" style="margin-top:10px;cursor:pointer">'+(srsFlip?esc(card.back):'<b>'+esc(card.front)+'</b><br><span class="muted">'+t('srs.flip')+'</span>')+'</div>'+
-    '<div class="row" style="justify-content:center;margin-top:10px">'+
-    '<button class="btn btn-red btn-sm" id="sAgain">'+t('srs.again')+'</button>'+
-    '<button class="btn btn-outline btn-sm" id="sGood">'+t('srs.good')+'</button>'+
-    '<button class="btn btn-gold btn-sm" id="sEasy">'+t('srs.easy')+'</button></div>'+
-    '<p class="muted" style="text-align:center;font-size:.78rem">Next: '+due.length+' cards · ivl='+card.ivl+'d</p>';
-  document.getElementById('srsCard').onclick=()=>{ srsFlip=!srsFlip; renderSrs(); };
-  const reschedule=(mode)=>{
-    const c=state.srs[card.key]; if(!c){ srsFlip=false; renderSrs(); return; }
-    const t=todayNo();
-    if(mode==='again'){ c.due=t+0; c.ivl=1; }
-    else if(mode==='good'){ c.ivl=Math.min(30,Math.max(c.ivl+1,Math.round(c.ivl*2))); c.due=t+c.ivl; }
-    else { c.ivl=Math.min(30,Math.round(c.ivl*3)); c.due=t+c.ivl; }
-    srsFlip=false; persist(); renderSrs();
+  }
+  const ext = DE_LETTER_EXTRA[id];
+  const isM = state.letterState[id] === 'mastered';
+  const speakChar = item.id === 'SS' ? 'Eszett' : item.lower;
+  const modal = document.getElementById('letterModal');
+  const body = document.getElementById('letterModalBody');
+  body.innerHTML = `
+    <h2>${esc(item.upper)} ${esc(item.lower)} — ${esc(item.letterName)}</h2>
+    <div class="grid grid-2">
+      <div>
+        <div class="pron">
+          <div class="l-ipa">IPA: ${esc(item.ipa)}</div>
+          ${ext ? `<div class="l-native">🗣️ ${esc(tr6(ext.approx6))}</div>` : ''}
+          <div class="l-actual">${esc(item.word)} — ${esc(l10(item.meaning))}</div>
+          <div class="l-note">${esc(l10(item.tip))}</div>
+        </div>
+        ${ext && ext.ex ? `<div class="card" style="margin-top:10px;"><b>${esc(ext.ex.de)}</b><div class="muted">${esc(tr6(ext.ex.tr6))}</div></div>` : ''}
+        <div class="row" style="margin-top:12px;">
+          <button type="button" class="btn btn-primary btn-sm" id="modSpkLetter">${esc(t('btn.speak.letter'))}</button>
+          <button type="button" class="btn btn-red btn-sm" id="modSpkWord">${esc(t('btn.speak.word'))}</button>
+          <button type="button" class="btn btn-gold btn-sm" id="modMasterBtn">${isM ? esc(t('btn.unmaster')) : esc(t('btn.master'))}</button>
+        </div>
+      </div>
+      <div style="text-align:center;">
+        <div class="canvas-stage"><canvas id="modalWriteCanvas" width="300" height="300"></canvas></div>
+        <div class="row" style="justify-content:center;margin-top:8px;">
+          <button type="button" class="btn btn-outline btn-sm" id="cvAnimBtn">▶️ 筆順示範</button>
+          <button type="button" class="btn btn-outline btn-sm" id="cvClearBtn">🧹 清除畫布</button>
+        </div>
+      </div>
+    </div>
+  `;
+  modal.classList.add('open');
+  document.getElementById('modSpkLetter').onclick = () => speak(speakChar);
+  document.getElementById('modSpkWord').onclick = () => speak(item.word);
+  document.getElementById('modMasterBtn').onclick = () => {
+    state.letterState[id] = isM ? 'learned' : 'mastered';
+    persist();
+    openLetterModal(id);
+    renderApp();
   };
-  document.getElementById('sAgain').onclick=()=>reschedule('again');
-  document.getElementById('sGood').onclick=()=>reschedule('good');
-  document.getElementById('sEasy').onclick=()=>reschedule('easy');
-}
-function renderFav(){
-  const pane=document.getElementById('favPane');
-  if(!state.stars.length){ pane.innerHTML='<span class="muted">—</span>'; return; }
-  pane.innerHTML=state.stars.map(s=>'<div class="row" style="justify-content:space-between;padding:5px 0;border-bottom:1px dashed var(--border-color)"><span>⭐ '+esc(s)+'</span><span><button class="btn btn-outline btn-sm" data-fspk="'+esc(s)+'">🔊</button><button class="btn btn-outline btn-sm" data-fdel="'+esc(s)+'">✕</button></span></div>').join('');
-  pane.querySelectorAll('[data-fspk]').forEach(b=>b.onclick=()=>speak(b.getAttribute('data-fspk')));
-  pane.querySelectorAll('[data-fdel]').forEach(b=>b.onclick=()=>{ state.stars=state.stars.filter(x=>x!==b.getAttribute('data-fdel')); persist(); renderFav(); });
-}
-function renderStats(){
-  const lp=letterProgress();
-  const acc=state.quizStat.done?Math.round(state.quizStat.correct/state.quizStat.done*100):0;
-  const pane=document.getElementById('statPane');
-  pane.innerHTML='<div class="row" style="flex-wrap:wrap;gap:16px">'+
-    '<span>🔤 '+t('stats.mastered')+': '+lp.done+'/'+lp.total+'</span>'+
-    '<span>✍️ '+t('stats.writes')+': '+state.writeCount+'</span>'+
-    '<span>💬 '+t('stats.dlg')+': '+DE_LESSONS.length+'</span>'+
-    '<span>🎯 '+t('stats.quiz')+': '+state.quizStat.done+' ('+acc+'%)</span></div>'+
-    '<div class="row" style="margin-top:12px"><button class="btn btn-outline btn-sm" id="expBtn">📤 '+t('stats.export')+'</button>'+
-    '<button class="btn btn-red btn-sm" id="resetBtn">↺ '+t('stats.reset')+'</button></div>';
-  document.getElementById('expBtn').onclick=()=>{
-    const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});
-    const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='german-progress.json'; a.click();
-  };
-  document.getElementById('resetBtn').onclick=()=>{ if(confirm(t('reset.confirm'))){ Object.keys(localStorage).filter(k=>k.indexOf('gss.')===0).forEach(k=>localStorage.removeItem(k)); location.reload(); } };
+  initModalCanvas(item);
 }
 
-/* ================= HEADER / WIRING ================= */
-function renderHeaderLang(){
-  const tr=document.getElementById('langTriggerBtn');
-  const cur=SUPPORTED_LOCALES.find(l=>l.code===state.locale)||SUPPORTED_LOCALES[1];
-  document.getElementById('activeLangFlag').textContent=cur.flag;
-  document.getElementById('activeLangLabel').textContent=cur.name;
-  const menu=document.getElementById('langMenuList');
-  menu.innerHTML=SUPPORTED_LOCALES.map(l=>'<button class="lang-item'+(l.code===state.locale?' active':'')+'" data-lcode="'+l.code+'"><span>'+l.flag+' '+l.name+'</span><span>'+l.code+'</span></button>').join('');
-  menu.querySelectorAll('[data-lcode]').forEach(b=>b.onclick=()=>{
-    state.locale=b.getAttribute('data-lcode'); persist(); menu.classList.remove('open'); renderAll();
+function initModalCanvas(item) {
+  const cv = document.getElementById('modalWriteCanvas');
+  if (!cv) return;
+  const ctx = cv.getContext('2d');
+  cvStrokes = [];
+  const drawBg = () => {
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    ctx.fillStyle = 'rgba(15,30,54,0.10)';
+    ctx.font = 'bold 140px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(item.upper + item.lower, 150, 155);
+    ctx.strokeStyle = '#0F1E36';
+    ctx.lineWidth = 6;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    cvStrokes.forEach(s => {
+      if (!s.length) return;
+      ctx.beginPath();
+      ctx.moveTo(s[0].x, s[0].y);
+      for (let i = 1; i < s.length; i++) ctx.lineTo(s[i].x, s[i].y);
+      ctx.stroke();
+    });
+  };
+  drawBg();
+  let drawing = false;
+  const pt = e => {
+    const r = cv.getBoundingClientRect();
+    const cx = e.touches ? e.touches[0].clientX : e.clientX;
+    const cy = e.touches ? e.touches[0].clientY : e.clientY;
+    return { x: ((cx - r.left) / r.width) * cv.width, y: ((cy - r.top) / r.height) * cv.height };
+  };
+  cv.onpointerdown = e => { drawing = true; cvStrokes.push([pt(e)]); drawBg(); };
+  cv.onpointermove = e => { if (!drawing) return; cvStrokes[cvStrokes.length - 1].push(pt(e)); drawBg(); };
+  cv.onpointerup = () => { drawing = false; state.writeCount += 1; persist(); };
+  document.getElementById('cvClearBtn').onclick = () => { cvStrokes = []; drawBg(); };
+  const animBtn = document.getElementById('cvAnimBtn');
+  if (animBtn && typeof STROKES !== 'undefined' && STROKES[item.id]) {
+    animBtn.onclick = () => {
+      drawBg();
+      const lines = STROKES[item.id].u || [];
+      ctx.strokeStyle = '#D9232E';
+      ctx.lineWidth = 5;
+      lines.forEach((poly, idx) => {
+        setTimeout(() => {
+          ctx.beginPath();
+          poly.forEach(([nx, ny], i) => {
+            const x = nx * 160 + 20, y = ny * 200 + 50;
+            if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+          });
+          ctx.stroke();
+        }, idx * 350);
+      });
+    };
+  }
+}
+
+function renderApp() {
+  renderHeaderAndNav();
+  const root = document.getElementById('appRoot');
+  if (!root) return;
+  if (currentTab === 'home') renderHomeView(root);
+  else if (currentTab === 'alpha') renderAlphaView(root);
+  else if (currentTab === 'numbers') renderNumbersView(root);
+  else if (currentTab === 'travel') renderTravelView(root);
+  else if (currentTab === 'quiz') renderQuizView(root);
+}
+
+function bindGlobalControls() {
+  initLogo();
+  const trigger = document.getElementById('langTriggerBtn');
+  if (trigger) {
+    trigger.onclick = e => {
+      e.stopPropagation();
+      document.getElementById('langMenuList').classList.toggle('open');
+    };
+  }
+  document.addEventListener('click', () => {
+    const m = document.getElementById('langMenuList');
+    if (m) m.classList.remove('open');
+  });
+  const homeBtn = document.getElementById('brandHomeBtn');
+  if (homeBtn) homeBtn.onclick = () => { currentTab = 'home'; renderApp(); };
+  const darkBtn = document.getElementById('darkToggleBtn');
+  if (darkBtn) darkBtn.onclick = () => { state.dark = !state.dark; persist(); renderApp(); };
+
+  document.querySelectorAll('#spdGroup [data-spd]').forEach(b => {
+    b.onclick = () => {
+      state.speed = parseFloat(b.getAttribute('data-spd'));
+      document.querySelectorAll('#spdGroup [data-spd]').forEach(x => x.classList.toggle('active', x === b));
+      persist();
+    };
+  });
+
+  const mapChk = [['chkIpa','ipa'],['chkNative','native'],['chkActual','actual'],['chkTrans','trans'],['chkNotes','notes']];
+  mapChk.forEach(([id, key]) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.checked = !!state.layers[key];
+    el.onchange = () => { state.layers[key] = el.checked; persist(); renderApp(); };
+  });
+
+  const begBtn = document.getElementById('presetBeginner');
+  const advBtn = document.getElementById('presetAdvanced');
+  if (begBtn && advBtn) {
+    begBtn.onclick = () => {
+      state.layers = { ipa:true, native:true, actual:true, trans:true, notes:true };
+      begBtn.classList.add('active'); advBtn.classList.remove('active');
+      mapChk.forEach(([id, k]) => { const el = document.getElementById(id); if (el) el.checked = true; });
+      persist(); renderApp();
+    };
+    advBtn.onclick = () => {
+      state.layers = { ipa:true, native:false, actual:true, trans:false, notes:false };
+      advBtn.classList.add('active'); begBtn.classList.remove('active');
+      mapChk.forEach(([id, k]) => { const el = document.getElementById(id); if (el) el.checked = state.layers[k]; });
+      persist(); renderApp();
+    };
+  }
+
+  const guideBtn = document.getElementById('guideBtn');
+  if (guideBtn) {
+    guideBtn.onclick = () => {
+      document.getElementById('guideModalBody').innerHTML = `
+        <h2>📖 學習指南 (User Guide)</h2>
+        <p style="margin:8px 0;">1. <b>30 字母與正音</b>：點擊右上角 🔊 直接聽發音；點擊卡片主體開啟筆順示範與手寫練習。</p>
+        <p style="margin:8px 0;">2. <b>數字與量詞（模組 C）</b>：包含即時數字/負數/小數轉換器、8 大必背量詞例句、ein/eine/einen 變化表與 15 大容器單位。</p>
+        <p style="margin:8px 0;">3. <b>13 課旅遊會話</b>：每課皆附完整情境對話、必背句型、文法解析與隨堂小測驗。</p>
+      `;
+      document.getElementById('guideModal').classList.add('open');
+    };
+  }
+
+  const settingsBtn = document.getElementById('settingsBtn');
+  if (settingsBtn) {
+    settingsBtn.onclick = () => {
+      document.getElementById('settingsModalBody').innerHTML = `
+        <h2>⚙️ 系統設定 (Settings)</h2>
+        <div class="row" style="margin-top:12px;">
+          <button type="button" class="btn btn-red btn-sm" id="resetProgBtn">🗑️ 重置學習進度 (Reset Progress)</button>
+        </div>
+      `;
+      document.getElementById('settingsModal').classList.add('open');
+      document.getElementById('resetProgBtn').onclick = () => {
+        state.letterState = {}; state.wrong = []; state.stars = []; state.quizStat = {done:0,correct:0};
+        persist(); document.getElementById('settingsModal').classList.remove('open'); renderApp();
+      };
+    };
+  }
+
+  document.querySelectorAll('[data-close]').forEach(b => {
+    b.onclick = () => document.getElementById(b.getAttribute('data-close')).classList.remove('open');
   });
 }
-function applyLayersUI(){
-  document.getElementById('chkIpa').checked=lyr('ipa');
-  document.getElementById('chkNative').checked=lyr('native');
-  document.getElementById('chkActual').checked=lyr('actual');
-  document.getElementById('chkTrans').checked=lyr('trans');
-  document.getElementById('chkNotes').checked=lyr('notes');
-  document.getElementById('lblIpa').textContent=t('layer.ipa');
-  document.getElementById('lblNative').textContent=t('layer.native');
-  document.getElementById('lblActual').textContent=t('layer.actual');
-  document.getElementById('lblTrans').textContent=t('layer.trans');
-  document.getElementById('lblNotes').textContent=t('layer.notes');
-  document.getElementById('presetBeginner').textContent=t('preset.beginner');
-  document.getElementById('presetAdvanced').textContent=t('preset.advanced');
-  document.querySelectorAll('#spdGroup .spd-btn').forEach(b=>b.classList.toggle('active',parseFloat(b.dataset.spd)===state.speed));
-  document.getElementById('darkToggleBtn').textContent=state.dark?'☀️':'🌙';
-}
-function route(){
-  const h=curHash();
-  if(h==='#/alphabet') renderAlphabet();
-  else if(h==='#/numbers') renderNumbers();
-  else if(h==='#/grammar') renderGrammar();
-  else if(h==='#/quiz') renderQuiz();
-  else renderHome();
-  renderNav();
-}
-function renderAll(){
-  bumpStreak();
-  document.getElementById('uiAppTitle').textContent=t('nav.home').replace('🏠 ','')+' · Deutsch';
-  renderHeaderLang(); applyLayersUI(); route();
-}
-/* guide + settings modals */
-function openGuide(){
-  const body=document.getElementById('guideModalBody');
-  body.innerHTML='<h2>📖 '+t('guide.title')+'</h2><p style="white-space:pre-line">'+esc(t('hero.sub'))+'\n\n• 🔤 '+t('mod1.desc')+'\n• 🔢 '+t('mod2.desc')+'\n• 📘 '+t('mod3.desc')+'\n• 🎯 '+t('mod4.desc')+'\n\nℹ️ '+esc(t('m.score'))+'\n'+esc(t('tts.note'))+'</p>';
-  document.getElementById('guideModal').classList.add('open');
-}
-function openSettings(){
-  const body=document.getElementById('settingsModalBody');
-  body.innerHTML='<h2>⚙️ '+t('settings.title')+'</h2>'+
-    '<p class="muted" style="margin:8px 0">'+t('goal.title')+': '+state.goal+' min</p><div class="row">'+
-    [5,10,15,30].map(m=>'<button class="btn btn-outline btn-sm" data-setgoal="'+m+'">'+t('goal.min'+m)+'</button>').join('')+'</div>'+
-    '<div class="row" style="margin-top:14px"><button class="btn btn-red" id="setReset">↺ '+t('reset.btn')+'</button></div>';
-  document.getElementById('settingsModal').classList.add('open');
-  body.querySelectorAll('[data-setgoal]').forEach(b=>b.onclick=()=>{ state.goal=parseInt(b.dataset.setgoal,10); persist(); toast(t('reset.done')||'saved'); });
-  document.getElementById('setReset').onclick=()=>{ if(confirm(t('reset.confirm'))){ Object.keys(localStorage).filter(k=>k.indexOf('gss.')===0).forEach(k=>localStorage.removeItem(k)); location.reload(); } };
-}
-function init(){
-  /* logo */
-  const slot=document.getElementById('headerLogoSlot');
-  const fb='data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><rect width="44" height="44" rx="9" fill="#0F1E36"/><rect x="8" y="12" width="28" height="6" fill="#D9232E"/><rect x="8" y="19" width="28" height="6" fill="#F2A918"/><text x="22" y="37" font-family="Arial" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">DE</text></svg>');
-  const img=document.createElement('img');
-  img.alt='logo'; img.onerror=function(){ this.onerror=null; this.src=fb; };
-  img.src=fb;
-  if(typeof navigator!=='undefined'&&navigator.onLine) img.src='https://lh3.googleusercontent.com/d/1k_rcRMTIFGacnMq1xdcENw5OHNVib_2d';
-  slot.appendChild(img);
-  /* header events */
-  document.getElementById('langTriggerBtn').onclick=(e)=>{ e.stopPropagation(); document.getElementById('langMenuList').classList.toggle('open'); };
-  document.addEventListener('click',(e)=>{ if(!e.target.closest('.lang-picker')) document.getElementById('langMenuList').classList.remove('open'); });
-  document.getElementById('brandHomeBtn').onclick=()=>{ location.hash='#/home'; };
-  document.getElementById('guideBtn').onclick=openGuide;
-  document.getElementById('settingsBtn').onclick=openSettings;
-  document.getElementById('darkToggleBtn').onclick=()=>{ state.dark=!state.dark; document.documentElement.classList.toggle('dark',state.dark); persist(); applyLayersUI(); };
-  document.querySelectorAll('#spdGroup .spd-btn').forEach(b=>b.onclick=()=>{ state.speed=parseFloat(b.dataset.spd); persist(); applyLayersUI(); });
-  /* layers */
-  const bindChk=(id,key)=>{ document.getElementById(id).onchange=(e)=>{ state.layers[key]=e.target.checked; persist(); route(); }; };
-  bindChk('chkIpa','ipa'); bindChk('chkNative','native'); bindChk('chkActual','actual'); bindChk('chkTrans','trans'); bindChk('chkNotes','notes');
-  document.getElementById('presetBeginner').onclick=()=>{ state.layers={ipa:true,native:true,actual:true,trans:true,notes:true}; persist(); applyLayersUI(); route(); };
-  document.getElementById('presetAdvanced').onclick=()=>{ state.layers={ipa:true,native:false,actual:false,trans:false,notes:false}; persist(); applyLayersUI(); route(); };
-  /* modals close */
-  document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>document.getElementById(b.dataset.close).classList.remove('open'));
-  document.querySelectorAll('.modal-mask').forEach(m=>m.addEventListener('click',(e)=>{ if(e.target===m) m.classList.remove('open'); }));
-  /* router */
-  window.addEventListener('hashchange',route);
-  /* dark apply */
-  document.documentElement.classList.toggle('dark',state.dark);
-  /* studied timer: accumulate while open */
-  setInterval(()=>{ state.studiedSec++; persist(); },60000);
-  /* preload voices */
-  if('speechSynthesis' in window){ window.speechSynthesis.onvoiceschanged=()=>{ cachedVoice=null; pickGermanVoice(); }; }
-  renderAll();
-}
-document.addEventListener('DOMContentLoaded',init);
 
+window.addEventListener('DOMContentLoaded', () => {
+  bindGlobalControls();
+  renderApp();
+});
 </script>
 </body>
 </html>
