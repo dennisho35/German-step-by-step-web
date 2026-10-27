@@ -5630,7 +5630,20 @@ let cvStrokes = [];
 function initLogo() {
   const slot = document.getElementById('headerLogoSlot');
   if (!slot) return;
-  slot.innerHTML = '<span style="font-weight:900;color:#0F1E36;font-size:.95rem;">DE</span>';
+  
+  const img = new Image();
+  // 載入同目錄下的 Logo 圖檔
+  img.src = 'German learning intl.png';
+  img.alt = 'German Step by Step Logo';
+  
+  // 若圖片成功載入則放入容器，若找不到圖片則保留 DE 文字作為安全回退
+  img.onload = function() {
+    slot.innerHTML = '';
+    slot.appendChild(img);
+  };
+  img.onerror = function() {
+    slot.innerHTML = '<span style="font-weight:900;color:#0F1E36;font-size:.95rem;">DE</span>';
+  };
 }
 
 function renderHeaderAndNav() {
